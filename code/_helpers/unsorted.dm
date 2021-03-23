@@ -1093,7 +1093,9 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 
 // call to generate a stack trace and print to runtime logs
 /proc/crash_with(msg)
-	CRASH(msg)
+	//CRASH(msg)
+	log_world(msg)
+	return
 
 /proc/pass()
 	return
