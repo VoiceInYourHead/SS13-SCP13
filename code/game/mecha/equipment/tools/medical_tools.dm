@@ -113,6 +113,7 @@
 	if(!occupant)
 		return
 	return {"<html>
+				<meta charset=\"utf-8\">
 				<head>
 				<title>[occupant] statistics</title>
 				<script language='javascript' type='text/javascript'>
@@ -362,6 +363,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/tool/syringe_gun/proc/get_reagents_page()
 	var/output = {"<html>
+						<meta charset=\"utf-8\">
 						<head>
 						<title>Reagent Synthesizer</title>
 						<script language='javascript' type='text/javascript'>

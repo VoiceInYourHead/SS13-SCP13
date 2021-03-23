@@ -83,7 +83,7 @@
 	return get_turf(src)
 
 /mob/proc/say_test(var/text)
-	var/ending = copytext_char(text, length_char(text))
+	var/ending = copytext(text, length(text))
 	if (ending == "?")
 		return "1"
 	else if (ending == "!")
@@ -93,13 +93,13 @@
 //parses the message mode code (e.g. :h, :w) from text, such as that supplied to say.
 //returns the message mode string or null for no message mode.
 //standard mode is the mode returned for the special ';' radio code.
-/mob/proc/parse_message_mode(var/message)
-	if(length(message) >= 1 && copytext(message,1,2) == ";")
-		return ";"
+/mob/proc/parse_message_mode(var/message, var/standard_mode="headset")
+	if(length_char(message) >= 1 && copytext_char(message,1,2) == get_prefix_key(/decl/prefix/radio_main_channel))
+		return standard_mode
 
-	if(length_char(message) >= 2 && (copytext_char(message,1,2) == ":" || copytext(message,1,2) == "."))
-		var/channel_prefix = copytext_char(message, 2 ,3)
-		return lowertext(channel_prefix)
+	if(length_char(message) >= 2)
+		var/channel_prefix = copytext_char(message, 1 ,3)
+		return department_radio_keys[channel_prefix]
 
 	return null
 

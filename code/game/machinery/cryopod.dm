@@ -49,7 +49,7 @@
 
 	user.set_machine(src)
 
-	var/dat
+	var/dat = "<meta charset=\"utf-8\">"
 
 	if (!( ticker ))
 		return

@@ -28,7 +28,7 @@
 	user.set_machine(src)
 	var/dat
 	if (src.temp)
-		dat = "[src.temp]<BR><BR><A href='byond://?src=\ref[src];temp=1'>Clear</A>"
+		dat = "<meta charset=\"utf-8\">[temp]<BR><BR><A href='byond://?src=\ref[src];temp=1'>Clear</A>"
 	else
 		dat = {"
 <B>Persistent Signal Locator</B><HR>
