@@ -10,6 +10,7 @@
 	heat_capacity = 312500 //a little over 5 cm thick , 312500 for 1 m by 2.5 m by 0.25 m plasteel wall
 
 	var/damage = 0
+	var/min_damage = 15
 	var/damage_overlay = 0
 	var/global/damage_overlays[16]
 	var/active
@@ -95,7 +96,7 @@
 
 	var/obj/O = AM
 	var/tforce = O.throwforce * (speed/THROWFORCE_SPEED_DIVISOR)
-	if (tforce < 15)
+	if (tforce < min_damage)
 		return
 
 	take_damage(tforce)
@@ -151,7 +152,7 @@
 	return
 
 /turf/simulated/wall/proc/take_damage(dam)
-	if(dam)
+	if(dam && dam >= min_damage)
 		damage = max(0, damage + dam)
 		update_damage()
 	return

@@ -18,6 +18,14 @@
 	health = 50
 	cover = 25
 
+/obj/structure/girder/hitby(atom/attacker, var/speed)
+	if(isobj(attacker))
+		var/obj/O = attacker
+		health -= O.throwforce
+		if(health <= 0)
+			dismantle()
+	..()
+
 /obj/structure/girder/attack_generic(var/mob/user, var/damage, var/attack_message = "smashes apart", var/wallbreaker)
 	if(!damage || !wallbreaker)
 		return 0

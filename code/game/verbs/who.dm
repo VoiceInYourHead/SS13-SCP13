@@ -110,6 +110,7 @@
 	to_chat(src, "<b>Current Mentors ([ment_count]):</b><br>[mentwho]<br>")
 	to_chat(src, "<b>Current Developers ([dev_count]):</b><br>[devwho]<br>")
 
+/*
 /client/verb/donatorwho()
 	set category = "Admin"
 	set name = "DonatorWho"
@@ -136,6 +137,7 @@
 			donator_count++
 	to_chat(src, "<b><big>Online Donators ([donator_count]):</big></b>")
 	to_chat(src, donators)
+*/
 
 /* OLD STUFF.
 /client/verb/staffwho()
