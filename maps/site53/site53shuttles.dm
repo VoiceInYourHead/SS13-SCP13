@@ -40,11 +40,11 @@
 	..()
 
 //Pods
-
+/*
 /datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod7
 	warmup_time = 10
 	shuttle_area = /area/shuttle/escape_pod7/station
-	number = 7
+	number = 7*/
 /obj/effect/shuttle_landmark/escape_pod/start/pod7
 	number = 7
 /obj/effect/shuttle_landmark/escape_pod/out/pod7
@@ -132,7 +132,7 @@
 	landmark_tag = "nav_lcz_out"
 	base_turf = /turf/simulated/floor/reinforced
 	base_area = /area/site53/ulcz/tram
-
+/*
 /datum/shuttle/autodock/multi/antag/rescue
 	name = "Rescue"
 	warmup_time = 0
@@ -163,7 +163,7 @@
 	announcer = "SEV Torch Sensor Array"
 	arrival_message = "Attention, vessel detected entering vessel proximity."
 	departure_message = "Attention, vessel detected leaving vessel proximity."
-
+*/
 /obj/effect/shuttle_landmark/ert/start
 	name = "Response Team Base"
 	landmark_tag = "nav_ert_start"

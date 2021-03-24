@@ -57,6 +57,36 @@
 		/obj/item/device/encryptionkey/headset_sec = 4
 	)
 
+/obj/item/weapon/storage/box/encryptionkeys/sci
+	name = "science encryption keys"
+	desc = "A box full of spare encryption keys."
+	startswith = list(/obj/item/device/encryptionkey/headset_sci = 8)
+
+/obj/item/weapon/storage/box/encryptionkeys/med
+	name = "medical encryption keys"
+	desc = "A box full of spare encryption keys."
+	startswith = list(/obj/item/device/encryptionkey/headset_med = 8)
+
+/obj/item/weapon/storage/box/encryptionkeys/cargo
+	name = "cargo encryption keys"
+	desc = "A box full of spare encryption keys."
+	startswith = list(/obj/item/device/encryptionkey/headset_cargo = 8)
+
+/obj/item/weapon/storage/box/encryptionkeys/service
+	name = "service encryption keys"
+	desc = "A box full of spare encryption keys."
+	startswith = list(/obj/item/device/encryptionkey/headset_service = 8)
+
+/obj/item/weapon/storage/box/encryptionkeys/eng
+	name = "engineering encryption keys"
+	desc = "A box full of spare encryption keys."
+	startswith = list(/obj/item/device/encryptionkey/headset_eng = 8)
+
+/obj/item/weapon/storage/box/encryptionkeys/sec
+	name = "security encryption keys"
+	desc = "A box full of spare encryption keys."
+	startswith = list(/obj/item/device/encryptionkey/headset_sec = 8)
+
 /obj/item/device/radio/headset/bridgeofficer
 	name = "bridge officer's headset"
 	desc = "A headset with access to the command, engineering and exploration channels."

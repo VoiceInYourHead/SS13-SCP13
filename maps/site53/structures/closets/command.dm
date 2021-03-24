@@ -38,7 +38,12 @@
 		/obj/item/clothing/gloves/foundation_service,
 		/obj/item/weapon/clipboard,
 		/obj/item/weapon/folder/blue,
-		/obj/item/weapon/storage/box/encryptionkeys,
+		/obj/item/weapon/storage/box/encryptionkeys/sci,
+		/obj/item/weapon/storage/box/encryptionkeys/med,
+		/obj/item/weapon/storage/box/encryptionkeys/cargo,
+		/obj/item/weapon/storage/box/encryptionkeys/service,
+		/obj/item/weapon/storage/box/encryptionkeys/eng,
+		/obj/item/weapon/storage/box/encryptionkeys/sec,
 		/obj/item/clothing/shoes/dutyboots,
 		/obj/item/device/radio/headset/heads/commsofficer
 	)
