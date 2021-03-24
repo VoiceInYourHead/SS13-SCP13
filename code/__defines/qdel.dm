@@ -7,8 +7,8 @@
 #define QDEL_HINT_HARDDEL_NOW	4 //qdel should assume this object won't gc, and hard del it post haste.
 #define QDEL_HINT_FINDREFERENCE	5 //functionally identical to QDEL_HINT_QUEUE if TESTING is not enabled in _compiler_options.dm.
 								  //if TESTING is enabled, qdel will call this object's find_references() verb.
-//defines for the gc_destroyed var
-
+#define QDEL_HINT_IFFAIL_FINDREFERENCE 6					
+								
 #define GC_QUEUE_PREQUEUE 1
 #define GC_QUEUE_CHECK 2
 #define GC_QUEUE_HARDDELETE 3

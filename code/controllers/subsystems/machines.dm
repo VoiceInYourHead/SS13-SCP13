@@ -34,11 +34,10 @@ if(Datum.is_processing) {\
 
 SUBSYSTEM_DEF(machines)
 	name = "Machines"
-	priority = SS_PRIORITY_MACHINERY
-	init_order = INIT_ORDER_MACHINES
+	init_order = SS_INIT_MACHINES
 	flags = SS_KEEP_TIMING
 	runlevels = RUNLEVEL_GAME|RUNLEVEL_POSTGAME
-	
+
 	var/current_step = SSMACHINES_PIPENETS
 
 	var/cost_pipenets      = 0

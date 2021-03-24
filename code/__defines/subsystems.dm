@@ -33,7 +33,7 @@
 //type and all subtypes should always call Initialize in New()
 #define INITIALIZE_IMMEDIATE(X) ##X/New(loc, ...){\
 	..();\
-	if(!initialized) {\
+	if(!(atom_flags & ATOM_FLAG_INITIALIZED)) {\
 		args[1] = TRUE;\
 		SSatoms.InitAtom(src, args);\
 	}\
@@ -43,43 +43,42 @@
 // Subsystems shutdown in the reverse of the order they initialize in
 // The numbers just define the ordering, they are meaningless otherwise.
 
-#define INIT_ORDER_SETUP 21
-#define INIT_ORDER_SKYBOX 20
-#define INIT_ORDER_DBCORE 19
-#define INIT_ORDER_BLACKBOX 18
-#define INIT_ORDER_SERVER_MAINT 17
-#define INIT_ORDER_JOBS 16
-#define INIT_ORDER_EVENTS 15
-#define INIT_ORDER_TICKER 14
-#define INIT_ORDER_MAPPING 13
-#define INIT_ORDER_HOLOMAP 12
-#define INIT_ORDER_ATOMS 11
-#define INIT_ORDER_LANGUAGE 10
-#define INIT_ORDER_MACHINES 9
-#define INIT_ORDER_SHUTTLE 3
-#define INIT_ORDER_TIMER 1
-#define INIT_ORDER_DEFAULT 0
-#define INIT_ORDER_AIR -1
-#define INIT_ORDER_ALARM -2
-#define INIT_ORDER_LIGHTING -3
-#define INIT_ORDER_MINIMAP -4
-#define INIT_ORDER_ASSETS -5
-#define INIT_ORDER_ICON_SMOOTHING -6
-#define INIT_ORDER_OVERLAY -6
-#define INIT_ORDER_XKEYSCORE -7
-#define INIT_ORDER_STICKY_BAN -8
-#define INIT_ORDER_SQUEAK -9
-#define INIT_ORDER_XENOARCH	-10
-#define INIT_ORDER_PERSISTENCE -11
-#define INIT_ORDER_OPEN_SPACE -12
-#define INIT_ORDER_TRADE -13
-#define INIT_ORDER_SUPPLY -14
-#define INIT_ORDER_EVENTS -15
-#define INIT_ORDER_EVACUATION -16
-#define INIT_ORDER_VOTING -17
-#define INIT_ORDER_NANOUI -18
-#define INIT_ORDER_TGUI -19
-#define INIT_ORDER_INACTIVITY -20
+#define SS_INIT_SETUP            28
+#define SS_INIT_HOLOMAP          17
+#define SS_INIT_GARBAGE          16
+#define SS_INIT_CHEMISTRY        15
+#define SS_INIT_MATERIALS        14
+#define SS_INIT_PLANTS           13
+#define SS_INIT_ANTAGS           12
+#define SS_INIT_CULTURE          11
+#define SS_INIT_MISC             10
+#define SS_INIT_SKYBOX           9
+#define SS_INIT_MAPPING          8
+#define SS_INIT_JOBS             7
+#define SS_INIT_CHAR_SETUP       6
+#define SS_INIT_CIRCUIT          5
+#define SS_INIT_OPEN_SPACE       4
+#define SS_INIT_ATOMS            3
+#define SS_INIT_ICON_UPDATE      2
+#define SS_INIT_MACHINES         1
+#define SS_INIT_DEFAULT          0
+#define SS_INIT_AIR             -1
+#define SS_INIT_MISC_LATE       -2
+#define SS_INIT_ALARM           -3
+#define SS_INIT_SHUTTLE         -4
+#define SS_INIT_LIGHTING        -5
+#define SS_INIT_XENOARCH        -10
+#define SS_INIT_BAY_LEGACY      -12
+#define SS_INIT_TRADE           -13
+#define SS_INIT_SUPPLY          -14
+#define SS_INIT_EVENTS          -15
+#define SS_INIT_EVACUATION      -16
+#define SS_INIT_VOTING          -17
+#define SS_INIT_NANOUI          -18
+#define SS_INIT_TGUI            -19
+#define SS_INIT_INACTIVITY      -21
+#define SS_INIT_TICKER          -20
+#define SS_INIT_UNIT_TESTS      -100
 // SS runlevels
 
 #define RUNLEVEL_INIT 0

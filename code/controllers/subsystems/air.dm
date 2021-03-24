@@ -65,7 +65,7 @@ Class Procs:
 SUBSYSTEM_DEF(air)
 	name = "Air"
 	priority = SS_PRIORITY_AIR
-	init_order = INIT_ORDER_AIR
+	init_order = SS_INIT_AIR
 	flags = SS_POST_FIRE_TIMING
 
 	//Geometry lists
@@ -452,5 +452,5 @@ Total Unsimulated Turfs: [world.maxx*world.maxy*world.maxz - simulated_turf_coun
 /datum/controller/subsystem/air/proc/process_check(var/turf/simulated/T)
 	var/area/A = get_area(T)
 	if (A && A.engine_area)
-		return TRUE 
+		return TRUE
 	return FALSE

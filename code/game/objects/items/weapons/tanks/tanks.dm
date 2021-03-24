@@ -112,7 +112,7 @@ var/list/global/tank_gauge_cache = list()
 
 	if (istype(W, /obj/item/device/analyzer))
 		return
-	
+
 	if (istype(W,/obj/item/latexballon))
 		var/obj/item/latexballon/LB = W
 		LB.blow(src)
@@ -340,6 +340,8 @@ var/list/global/tank_gauge_cache = list()
 	check_status()
 
 /obj/item/weapon/tank/update_icon()
+	if((atom_flags & ATOM_FLAG_INITIALIZED) && istype(loc, /obj/) && !istype(loc, /obj/item/clothing/suit/) && !override) //So we don't eat up our tick. Every tick, when we're not actually in play.
+		return
 
 	overlays.Cut()
 	if(proxyassembly.assembly || wired)
@@ -361,7 +363,7 @@ var/list/global/tank_gauge_cache = list()
 			gauge_pressure = -1
 		else
 			gauge_pressure = round((gauge_pressure/TANK_IDEAL_PRESSURE)*gauge_cap)
-	
+
 	var/indicator = "[gauge_icon][(gauge_pressure == -1) ? "overload" : gauge_pressure]"
 	if(!tank_gauge_cache[indicator])
 		tank_gauge_cache[indicator] = image(icon, indicator)

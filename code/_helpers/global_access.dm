@@ -47,6 +47,8 @@
 			return global.SSatoms;
 		if("SSfastprocess")
 			return global.SSfastprocess;
+		if("SSicon_update")
+			return global.SSicon_update;
 		if("SSgarbage")
 			return global.SSgarbage;
 		if("SSmachines")
@@ -1068,6 +1070,8 @@
 			global.SSair=newval;
 		if("SSairflow")
 			global.SSairflow=newval;
+		if("SSicon_update")
+			global.SSicon_update=newval;
 		if("SSatoms")
 			global.SSatoms=newval;
 		if("SSfastprocess")
@@ -2563,6 +2567,7 @@
 	"wireColours",
 	"wizards",
 	"world_topic_spam_protect_ip",
+	"SSicon_update",
 	"world_topic_spam_protect_time",
 	"world_uplinks",
 	"worths",

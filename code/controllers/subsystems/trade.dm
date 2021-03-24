@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(trade)
 	name = "Trade"
 	priority = SS_PRIORITY_TRADE
-	init_order = INIT_ORDER_TRADE
+	init_order = SS_INIT_TRADE
 	flags = SS_NO_INIT|SS_BACKGROUND
 	wait = 1 MINUTE
 

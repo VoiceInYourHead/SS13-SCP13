@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(evacuation)
 	name = "Evacuation"
 	priority = SS_PRIORITY_EVACUATION
-	init_order = INIT_ORDER_EVACUATION
+	init_order = SS_INIT_EVACUATION
 	flags = SS_BACKGROUND
 	runlevels = RUNLEVEL_GAME
 	wait = 2 SECONDS

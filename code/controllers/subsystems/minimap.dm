@@ -20,7 +20,7 @@
 SUBSYSTEM_DEF(minimap)
 	name = "Holomap"
 	flags = SS_NO_FIRE
-	init_order = INIT_ORDER_HOLOMAP
+	init_order = SS_INIT_HOLOMAP
 
 	var/list/holo_minimaps = list()
 	var/list/extra_minimaps = list()

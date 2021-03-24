@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(inactivity)
 	name = "Inactivity"
 	priority = SS_PRIORITY_INACTIVITY
-	init_order = INIT_ORDER_INACTIVITY
+	init_order = SS_INIT_INACTIVITY
 	flags = SS_NO_INIT|SS_BACKGROUND
 	wait = 1 MINUTE
 

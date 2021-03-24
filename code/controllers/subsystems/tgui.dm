@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(tgui)
 	name = "TGUI"
 	priority = SS_PRIORITY_TGUI
-	init_order = INIT_ORDER_TGUI
+	init_order = SS_INIT_TGUI
 	flags = SS_BACKGROUND
 	wait = 1 SECOND
 	var/list/tg_open_uis = list() // A list of open UIs, grouped by src_object and ui_key.
@@ -10,7 +10,7 @@ SUBSYSTEM_DEF(tgui)
 
 /datum/controller/subsystem/tgui/Initialize()
 	basehtml = file2text('tgui/tgui.html') // Read the HTML from disk.
-	
+
 /datum/controller/subsystem/tgui/fire()
 	for(var/gui in processing_uis)
 		var/datum/tgui/ui = gui

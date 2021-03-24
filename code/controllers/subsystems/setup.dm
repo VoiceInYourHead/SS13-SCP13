@@ -1,6 +1,6 @@
 SUBSYSTEM_DEF(setup)
 	name = "Setup"
-	init_order = INIT_ORDER_SETUP
+	init_order = SS_INIT_SETUP
 	priority = SS_PRIORITY_SETUP
 	flags = SS_NO_FIRE
 

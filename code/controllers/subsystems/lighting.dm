@@ -3,7 +3,7 @@ SUBSYSTEM_DEF(lighting)
 	name = "Lighting"
 	wait = 0.1 SECONDS
 	priority = SS_PRIORITY_LIGHTING
-	init_order = INIT_ORDER_LIGHTING
+	init_order = SS_INIT_LIGHTING
 
 	var/lighting_overlays_initialised = FALSE
 
@@ -16,15 +16,16 @@ SUBSYSTEM_DEF(lighting)
 	var/list/update_corners_old   = list()    // List of lighting corners  currently being updated.
 	var/list/update_overlays_old  = list()    // List of lighting overlays currently being updated.
 
-	// misc stats 
+	// misc stats
 	var/total_lighting_sources = 0
 	var/total_lighting_corners = 0
 	var/total_lighting_overlays = 0
 
-/datum/controller/subsystem/lighting/Initialize() 
+/datum/controller/subsystem/lighting/Initialize()
 	create_all_lighting_overlays()
-	lighting_overlays_initialised = TRUE 
-	fire()
+	lighting_overlays_initialised = TRUE
+
+	fire(FALSE, TRUE)
 	..()
 
 /datum/controller/subsystem/lighting/fire()

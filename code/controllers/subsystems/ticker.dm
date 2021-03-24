@@ -1,21 +1,21 @@
 SUBSYSTEM_DEF(ticker)
 	name = "Ticker"
 	priority = SS_PRIORITY_TICKER
-	init_order = INIT_ORDER_TICKER
+	init_order = SS_INIT_TICKER
 	flags = SS_BACKGROUND
 	wait = 1 SECOND
 	var/lastTickerTimeDuration
 	var/lastTickerTime
 
 /datum/controller/subsystem/ticker/Initialize()
-	
+
 	lastTickerTime = world.timeofday
 
 	if(!ticker)
 		ticker = new
 
 	ticker.pregame()
-	
+
 /datum/controller/subsystem/ticker/fire()
 	var/currentTime = world.timeofday
 

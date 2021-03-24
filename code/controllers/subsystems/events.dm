@@ -1,7 +1,7 @@
 SUBSYSTEM_DEF(events)
 	name = "Events"
 	priority = SS_PRIORITY_EVENTS
-	init_order = INIT_ORDER_EVENTS
+	init_order = SS_INIT_EVENTS
 	flags = SS_NO_INIT|SS_BACKGROUND
 	runlevels = RUNLEVEL_GAME
 	wait = 2 SECONDS
