@@ -1,5 +1,6 @@
 # SCP13 Repository
-
+[Code](https://github.com/rhailrake/SS13-SCP13) - [Discord](https://github.com/rhailrake/SS13-SCP13) 
+[![Build Status](https://travis-ci.com/rhailrake/SS13-SCP13.svg?branch=experimental)](https://travis-ci.com/rhailrake/SS13-SCP13)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 ---
