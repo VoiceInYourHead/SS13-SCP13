@@ -2,6 +2,7 @@
 	icon_state = "girder"
 	anchored = 1
 	density = 1
+	breakable = 1
 	plane = OBJ_PLANE
 	layer = BELOW_OBJ_LAYER
 	w_class = ITEM_SIZE_NO_CONTAINER
@@ -124,6 +125,9 @@
 				return ..()
 
 	else
+		health -= W.force
+		if(health <= 0)
+			dismantle()
 		return ..()
 
 /obj/structure/girder/proc/construct_wall(obj/item/stack/material/S, mob/user)
