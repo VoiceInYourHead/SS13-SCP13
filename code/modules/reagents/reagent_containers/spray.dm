@@ -159,7 +159,7 @@
 	possible_transfer_amounts = null
 	volume = 10
 
-/obj/item/weapon/reagent_containers/spray/waterflower/New()
+/obj/item/weapon/reagent_containers/spray/waterflower/Initialize()
 	..()
 	reagents.add_reagent(/datum/reagent/water, 10)
 

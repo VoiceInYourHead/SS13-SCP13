@@ -555,8 +555,8 @@
 
 /obj/item/weapon/light
 	icon = 'icons/obj/lighting.dmi'
-	force = 2
-	throwforce = 5
+	force = 1
+	throwforce = 0
 	w_class = ITEM_SIZE_TINY
 	var/status = 0		// LIGHT_OK, LIGHT_BURNED or LIGHT_BROKEN
 	var/base_state
