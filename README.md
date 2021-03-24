@@ -1,8 +1,9 @@
 # SCP13 Repository
-[Code](https://github.com/rhailrake/SS13-SCP13) - [Discord](https://github.com/rhailrake/SS13-SCP13) 
+
+[Code](https://github.com/frosty-dev/SS13-SCP13) - [Discord](https://discord.gg/5aXdgXv)
+
 [![Build Status](https://travis-ci.com/rhailrake/SS13-SCP13.svg?branch=experimental)](https://travis-ci.com/rhailrake/SS13-SCP13)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-
 ---
 
 ### LICENSE
