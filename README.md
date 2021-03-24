@@ -1,12 +1,6 @@
 # SCP13 Repository
 
-[Website](https://www.scp13.site) - [Code](https://github.com/SS13-SCP13/SS13-SCP13)
-
-[![Build Status](https://travis-ci.org/SS13-SCP13/SS13-SCP13.svg?branch=master)](https://travis-ci.org/SS13-SCP13/SS13-SCP13)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/ss13-scp13/ss13-scp13.svg)](http://isitmaintained.com/project/ss13-scp13/ss13-scp13 "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/ss13-scp13/ss13-scp13.svg)](http://isitmaintained.com/project/ss13-scp13/ss13-scp13 "Percentage of issues still open")
-[![forthebadge](https://forthebadge.com/images/badges/built-with-science.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/no-ragrets.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-responsibility.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/thats-how-they-get-you.svg)](https://forthebadge.com)
-
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 ---
 
@@ -29,9 +23,3 @@ See tgui/LICENSE.md for the MIT license.
 See tgui/assets/fonts/SIL-OFL-1.1-LICENSE.md for the SIL Open Font License.
 
 All assets including icons and sound are under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/) unless otherwise indicated.
-
-### GETTING THE CODE
-The simplest way to obtain the code is using the github .zip feature.
-The recommended way is to download our most recent releases, as they are confirmed to be stable and compiling.
-
-Compiling, running and administrating the code is unsupported by official staff of this project. If you're unfamiliar with this process, you're ill-advised to undertake this process.
