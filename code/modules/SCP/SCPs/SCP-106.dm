@@ -255,6 +255,24 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 		if (istype(O, /obj/machinery/shieldwall) || istype(O, /obj/machinery/shieldwallgen))
 			continue
 
+		if (istype(O, /obj/structure/cable))
+			continue
+
+		if (istype(O, /obj/structure/catwalk))
+			continue
+
+		if (istype(O, /obj/machinery/light))
+			continue
+
+		if (istype(O, /obj/machinery/power/apc))
+			continue
+
+		if (istype(O, /obj/machinery/button))
+			continue
+
+		if (istype(O, /obj/machinery/power/terminal))
+			continue
+
 		for (var/obj/OO in get_turf(O))
 			if (OO.density && OO != O)
 				return

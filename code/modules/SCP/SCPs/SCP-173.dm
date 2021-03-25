@@ -27,7 +27,7 @@ GLOBAL_LIST_EMPTY(scp173s)
 /mob/living/scp_173/New()
 	..()
 	GLOB.scp173s += src
-	verbs += /mob/living/proc/ventcrawl
+	verbs += /mob/living/carbon/human/proc/door_open
 	add_language(LANGUAGE_GALCOM, 1) // it's a fucking magical statue
 	add_language(LANGUAGE_EAL, 1)
 	add_language(LANGUAGE_SOL_COMMON, 1)
@@ -46,6 +46,39 @@ GLOBAL_LIST_EMPTY(scp173s)
 
 /mob/living/scp_173/say(var/message)
 	return // lol you can't talk
+
+/mob/living/carbon/human/proc/door_open(obj/machinery/door/A in filter_list(oview(1), /obj/machinery/door))
+	set name = "Pry Open Airlock"
+	set category = "SCP"
+
+	if (istype(A, /obj/machinery/door/blast/regular))
+		to_chat(src, "<span class='warning'>\ You cannot open blast doors.</span>")
+		return
+
+	if(!istype(A) || incapacitated())
+		return
+
+	if(!A.Adjacent(src))
+		to_chat(src, "<span class='warning'>\The [A] is too far away.</span>")
+		return
+
+	if(!A.density)
+		return
+
+	src.visible_message("\The [src] begins to pry open \the [A]!")
+
+	if(!do_after(src,120,A))
+		return
+
+	if(!A.density)
+		return
+
+	A.do_animate("spark")
+	sleep(6)
+	A.stat |= BROKEN
+	var/check = A.open(1)
+	src.visible_message("\The [src] slices \the [A]'s controls[check ? ", ripping it open!" : ", breaking it!"]")
+
 
 /mob/living/scp_173/proc/IsBeingWatched()
 	// Am I being watched by eye pals?
@@ -149,11 +182,7 @@ GLOBAL_LIST_EMPTY(scp173s)
 			target.scp173_killed = TRUE
 			last_snap = world.time
 
-/mob/living/scp_173/can_ventcrawl()
-	if(IsBeingWatched())
-		to_chat(src, "<span class='warning'>You're being watched!</span>")
-		return FALSE
-	return ..()
+
 
 /mob/living/scp_173/verb/get_schwifty() // plz don't kill me for the reference
 	set name = "Shit On Floor"
