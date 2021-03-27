@@ -355,4 +355,6 @@
 
 /obj/machinery/shieldwallgen/online/Initialize()
 	storedpower = max_stored_power
+	setup_field()
+	update_icon()
 	. = ..()
