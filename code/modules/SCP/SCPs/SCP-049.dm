@@ -76,7 +76,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 /mob/living/carbon/human/scp049/proc/update_stuff()
 	// stand_icon tends to come back after movement
 	fix_icons()
-	
+
 /mob/living/carbon/human/scp049/proc/fix_icons()
 	icon = null
 	icon_state = null
@@ -92,7 +92,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 
 	if (lying || resting)
 		SH.icon = turn(icon('icons/mob/scp049.dmi'), 90)
-	else 
+	else
 		SH.icon = 'icons/mob/scp049.dmi'
 
 	SH.dir = dir
@@ -260,6 +260,11 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 /mob/living/carbon/human/proc/door_049(obj/machinery/door/A in filter_list(oview(1), /obj/machinery/door))
 	set name = "Pry Open Airlock"
 	set category = "SCP-049"
+
+
+	if (istype(A, /obj/machinery/door/airlock/highsecurity))
+		to_chat(src, "<span class='warning'>\ You cannot open highsecurity doors.</span>")
+		return
 
 	if (istype(A, /obj/machinery/door/blast/regular))
 		to_chat(src, "<span class='warning'>\ You cannot open blast doors.</span>")

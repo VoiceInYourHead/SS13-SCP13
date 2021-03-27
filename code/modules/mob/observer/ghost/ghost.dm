@@ -300,7 +300,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	set category = "Ghost"
 	set name = "Become D-Class"
 	set desc = "Spawn in as a new D-Class."
-	if (world.time - timeofdeath >= 5 MINUTES)
+	if (world.time - timeofdeath >= 10 MINUTES)
 		if (ticker.current_state == GAME_STATE_PLAYING)
 			// create and possess a new mob
 			var/mob/living/carbon/human/H = new
@@ -324,14 +324,14 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		else
 			to_chat(src, "<span class = 'danger'>The game has not started yet, or has already ended.</span>")
 	else
-		to_chat(src, "<span class = 'danger'>You cannot spawn as a D-Class for [round(((5 MINUTES) - (world.time - timeofdeath))/600)] more minutes.</span>")
+		to_chat(src, "<span class = 'danger'>You cannot spawn as a D-Class for [round(((10 MINUTES) - (world.time - timeofdeath))/600)] more minutes.</span>")
 
 /mob/observer/ghost/verb/become_scp()
 	set category = "Ghost"
 	set name = "Become Euclid/Keter SCP"
 	set desc = "Take control of a clientless SCP."
 
-	if (world.time - timeofdeath >= 5 MINUTES)
+	if (world.time - timeofdeath >= 10 MINUTES)
 
 		var/list/scps = list()
 
@@ -401,7 +401,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		else
 			to_chat(src, "<span class = 'danger'>There are no available Euclid/Keter SCPs.</span>")
 	else
-		to_chat(src, "<span class = 'danger'>You cannot spawn as a Euclid/Keter SCP for [round(((5 MINUTES) - (world.time - timeofdeath))/600)] more minutes.</span>")
+		to_chat(src, "<span class = 'danger'>You cannot spawn as a Euclid/Keter SCP for [round(((10 MINUTES) - (world.time - timeofdeath))/600)] more minutes.</span>")
 
 
 /mob/observer/ghost/proc/ghost_to_turf(var/turf/target_turf)
