@@ -40,6 +40,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	GLOB.scp049s += src
 
 	verbs += /mob/living/carbon/human/proc/SCP_049_talk
+	verbs += /mob/living/carbon/human/proc/door_049
 
 	// emotes
 	verbs += list(
@@ -255,6 +256,38 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 					else
 						target.visible_message("<span class = 'notice'>The surgery seems to have been unsucessful.</span>")
 			qdel(G)
+
+/mob/living/carbon/human/proc/door_049(obj/machinery/door/A in filter_list(oview(1), /obj/machinery/door))
+	set name = "Pry Open Airlock"
+	set category = "SCP-049"
+
+	if (istype(A, /obj/machinery/door/blast/regular))
+		to_chat(src, "<span class='warning'>\ You cannot open blast doors.</span>")
+		return
+
+	if(!istype(A) || incapacitated())
+		return
+
+	if(!A.Adjacent(src))
+		to_chat(src, "<span class='warning'>\The [A] is too far away.</span>")
+		return
+
+	if(!A.density)
+		return
+
+	src.visible_message("\The [src] begins to pry open \the [A]!")
+
+	if(!do_after(src,120,A))
+		return
+
+	if(!A.density)
+		return
+
+	A.do_animate("spark")
+	sleep(9)
+	A.stat |= BROKEN
+	var/check = A.open(1)
+	src.visible_message("\The [src] slices \the [A]'s controls[check ? ", ripping it open!" : ", breaking it!"]")
 
 // special channel that lets SCP-049 and SCP-049-1 communicate
 /mob/living/carbon/human/proc/SCP_049_talk()

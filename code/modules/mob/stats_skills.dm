@@ -180,15 +180,3 @@ proc/dexToAccuracy(var/dexterity) // i can do this better but lets take this for
 		medical_skill = medical
 	if(engineering)
 		engineering_skill = engineering
-
-/mob/living/carbon/human/verb/check_skills()//Debug tool for checking skills until I add the icon for it to the HUD.
-	set name = "Check Skills"
-	set category = "IC"
-
-	var/message = "<big><b>Skills:</b></big>\n"
-	message += "I am <b>[skillnumtodesc(melee_skill)]</b> at melee.\n"
-	message += "I am <b>[skillnumtodesc(ranged_skill)]</b> with guns.</b></i>\n"
-	message += "I am <b>[skillnumtodesc(medical_skill)]</b> with medicine.</b></i>\n"
-	message += "I am <b>[skillnumtodesc(engineering_skill)]</b> at engineering.</b></i>\n"
-
-	to_chat(src, message)

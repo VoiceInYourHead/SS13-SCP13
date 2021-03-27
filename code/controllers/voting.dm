@@ -395,12 +395,12 @@ datum/controller/vote
 				trialmin = 1 // don't know why we use both of these it's really weird, but I'm 2 lasy to refactor this all to use just admin.
 		voting |= C
 
-		. = "<html><head><title>Voting Panel</title></head><body>"
+		. = "<html><meta charset='utf-8'><head><title>Voting Panel</title></head><body>"
 		if(mode)
-			if(question)	. += "<h2>Vote: '[question]'</h2>"
-			else			. += "<h2>Vote: [capitalize(mode)]</h2>"
-			. += "Time Left: [time_remaining] s<hr>"
-			. += "<table width = '100%'><tr><td align = 'center'><b>Choices</b></td><td colspan='3' align = 'center'><b>Vote</b></td><td align = 'center'><b>Votes</b></td>"
+			if(question)	. += "<meta charset='utf-8'><h2>Vote: '[question]'</h2>"
+			else			. += "<meta charset='utf-8'><h2>Vote: [capitalize(mode)]</h2>"
+			. += "<meta charset='utf-8'>Time Left: [time_remaining] s<hr>"
+			. += "<meta charset='utf-8'><table width = '100%'><tr><td align = 'center'><b>Choices</b></td><td colspan='3' align = 'center'><b>Vote</b></td><td align = 'center'><b>Votes</b></td>"
 			if(capitalize(mode) == "Gamemode") .+= "<td align = 'center'><b>Minimum Players</b></td></tr>"
 
 			var/totalvotes = 0
