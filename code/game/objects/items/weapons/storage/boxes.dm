@@ -65,17 +65,18 @@
 /obj/item/weapon/storage/box/make_exact_fit()
 	..()
 	foldable = null //special form fitted boxes should not be foldable.
-
+/*
 /obj/item/weapon/storage/box/survival/
 	name = "crew survival kit"
-	desc = "A box decorated in warning colors that contains a limited supply of survival tools."
+	desc = "A box decorated in warning colors that contains a limited supply of survival tools. The panel and white stripe indicate this one contains oxygen."
 	icon_state = "survival"
-	startswith = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+	startswith = list(/obj/item/clothing/mask/breath = 1,
+					/obj/item/weapon/tank/emergency/oxygen = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
-					/obj/item/device/radio/beacon = 1,
-					/obj/item/device/flashlight/glowstick/random = 3,
+					/obj/item/device/flashlight/glowstick = 1,
 					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1)
-
+*/
 /obj/item/weapon/storage/box/vox/
 	name = "vox survival kit"
 	desc = "A box decorated in warning colors that contains a limited supply of survival tools. The panel and black stripe indicate this one contains nitrogen."
@@ -83,7 +84,6 @@
 	startswith = list(/obj/item/clothing/mask/breath = 1,
 					/obj/item/weapon/tank/emergency/nitrogen = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
-					/obj/item/weapon/crowbar = 1,
 					/obj/item/device/flashlight/glowstick = 1,
 					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1)
 
@@ -91,12 +91,12 @@
 	name = "engineer survival kit"
 	desc = "A box decorated in warning colors that contains a limited supply of survival tools. The panel and orange stripe indicate this one as the engineering variant."
 	icon_state = "survivaleng"
-	startswith = list(/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+	startswith = list(/obj/item/clothing/mask/breath = 1,
+					/obj/item/weapon/tank/emergency/oxygen/engi = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
 					/obj/item/weapon/reagent_containers/hypospray/autoinjector/detox = 1,
 					/obj/item/stack/medical/bruise_pack = 1,
-					/obj/item/device/radio/beacon = 1,
-					/obj/item/weapon/crowbar = 1,
-					/obj/item/device/flashlight = 1,
+					/obj/item/device/flashlight/glowstick = 1,
 					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1)
 
 /obj/item/weapon/storage/box/gloves
