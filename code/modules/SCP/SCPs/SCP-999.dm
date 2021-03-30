@@ -21,6 +21,8 @@ GLOBAL_LIST_EMPTY(scp999s)
 	var/mob/living/carbon/attached
 	var/attached_mode = HUGGING
 	var/list/last_healing = list()
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
 
 /mob/living/simple_animal/scp_999/examine(mob/user)
 	user << "<b><span class = 'success'><big>SCP-999</big></span></b> - [desc]"

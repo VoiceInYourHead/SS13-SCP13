@@ -9,6 +9,8 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 	var/last_y = -1
 	var/last_z = -1
 	var/confusing = FALSE
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
 
 /mob/living/carbon/human/scp106/examine(mob/user)
 	user << "<b><span class = 'keter'><big>SCP-106</big></span></b> - [desc]"

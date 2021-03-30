@@ -12,6 +12,9 @@ GLOBAL_LIST_EMPTY(scp173s)
 	icon_state = "173"
 	SCP = /datum/scp/SCP_173
 
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
+
 	maxHealth = 5000
 	health = 5000
 
