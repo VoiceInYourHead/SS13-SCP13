@@ -230,6 +230,14 @@
 	desc = "A synthetic armor vest. This one is blue and has patches with the word 'PRESS' on the back and front."
 	icon_state = "pvest"
 
+/obj/item/clothing/suit/armor/vest/scp/medarmor
+	name = "armored vest"
+	desc = "A synthetic armor vest."
+	icon_state = "guard-armor"
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	armor = list(melee = 40, bullet = 50, laser = 40, energy = 25, bomb = 30, bio = 15, rad = 10)
+
 /obj/item/clothing/suit/storage/vest
 	name = "webbed armor vest"
 	desc = "A synthetic armor vest. This one has added webbing and ballistic plates."

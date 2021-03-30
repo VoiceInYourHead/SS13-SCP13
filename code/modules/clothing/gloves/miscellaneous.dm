@@ -142,8 +142,8 @@
 /obj/item/clothing/gloves/tactical/scp
 	desc = "These grey tactical gloves are made from a durable synthetic, and have hardened knuckles."
 	name = "tactical gloves"
-	icon_state = "G_Gloves_IH"
-	item_state = "G_Gloves_OM"
+	icon_state = "scpgloves"
+	item_state = "scpgloves"
 	force = 5
 	siemens_coefficient = 0.50
 	permeability_coefficient = 0.05
