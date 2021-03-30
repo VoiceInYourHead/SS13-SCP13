@@ -346,3 +346,39 @@
 		to_chat(user, "<span class='warning'>You need to open the cover to unload [src].</span>")
 		return
 	..()
+
+/obj/item/weapon/gun/projectile/automatic/scp/p90
+	name = "P90 SMG"
+	desc = "A submachine gun sample of the 2010s, with a scope mounted on top"
+	icon_state = "p90"
+	item_state = "p90"
+	w_class = ITEM_SIZE_HUGE
+	force = 12
+	caliber = "10mm"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
+	slot_flags = SLOT_BELT|SLOT_BACK
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/scp/p90_mag
+	allowed_magazines = /obj/item/ammo_magazine/scp/p90_mag
+
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/p90/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "p90"
+	else
+		icon_state = "p90-empty"
+	return
+
+/obj/item/weapon/gun/projectile/automatic/scp/p90/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 0.5)

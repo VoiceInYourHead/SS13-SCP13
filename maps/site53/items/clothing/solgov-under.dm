@@ -45,7 +45,7 @@
 /obj/item/clothing/under/scp/utility/security
 	desc = "A dark black uniform. This one seems to be of the Security department. This uniform is issued to ranked personnel lower than Lieutenant. On the back, in silver lettering, are the words 'SCP FOUNDATION'."
 	name = "security uniform"
-	icon_state = "scpuniform"
+	icon_state = "scpuniform2"
 	worn_state = "uniform_s"
 
 /obj/item/clothing/under/scp/utility/security/zc
@@ -63,7 +63,7 @@
 /obj/item/clothing/under/scp/utility/medical
 	desc = "A dark black uniform. This one seems to be of the Medical department. This uniform is issued regardless of rank. On the back, in silver lettering, are the words 'SCP FOUNDATION'."
 	name = "medical uniform"
-	icon_state = "scpuniform"
+	icon_state = "scpuniform2"
 	worn_state = "uniform_m"
 
 /obj/item/clothing/under/scp/utility/engineering

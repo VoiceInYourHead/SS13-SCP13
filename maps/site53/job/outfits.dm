@@ -22,7 +22,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	id_type = /obj/item/weapon/card/id/adminlvl4
 	l_ear = /obj/item/device/radio/headset/heads/hop
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/site90/crew/command/commsofficer
 	name = OUTFIT_JOB_NAME("Communications Officer")
@@ -31,7 +31,7 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/commslvl4
 	l_ear = /obj/item/device/radio/headset/heads/commsofficer
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 // END OF COMMAND OUTFITS
 
@@ -42,6 +42,7 @@
 	id_type = /obj/item/weapon/card/id/commslvl1
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_ear = /obj/item/device/radio/headset/commsdispatcher
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 
 /decl/hierarchy/outfit/job/ds90/crew/command/chief_engineer
@@ -52,7 +53,7 @@
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
 	l_ear = /obj/item/device/radio/headset/heads/ce
-	back = null
+	back = /obj/item/weapon/storage/backpack/industrial
 
 
 // Cell Guards
@@ -83,7 +84,7 @@
 	r_pocket = /obj/item/weapon/book/manual/scp/secsop
 	l_ear = /obj/item/device/radio/headset/heads/cos
 	l_pocket = /obj/item/weapon/book/manual/scp/secsop
-	back = null
+	back = /obj/item/weapon/storage/backpack/dufflebag/sec
 
 // ZONE COMMANDER OUTFITS.
 
@@ -94,7 +95,7 @@
 	id_type = /obj/item/weapon/card/id/zcseclvl4hcz
 	l_ear = /obj/item/device/radio/headset/headset_com
 	l_pocket = /obj/item/weapon/book/manual/scp/secsop
-	back = null
+	back = /obj/item/weapon/storage/backpack/dufflebag/sec
 
 // GUARD OUTFITS
 
@@ -105,7 +106,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl3hcz
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/weapon/book/manual/scp/secsop
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel
 
 // JUNIOR GUARD OUTFITS
 /decl/hierarchy/outfit/job/site90/crew/security/enlistedofficerlcz
@@ -138,7 +139,6 @@
 	gloves = /obj/item/clothing/gloves/latex
 	l_ear = /obj/item/device/radio/headset/headset_sci
 	l_pocket = /obj/item/weapon/book/manual/scp/scisop
-	back = null
 
 /decl/hierarchy/outfit/job/site90/crew/science/seniorscientist
 	name = OUTFIT_JOB_NAME("Senior Scientist")
@@ -149,7 +149,7 @@
 	gloves = /obj/item/clothing/gloves/latex/nitrile
 	l_pocket = /obj/item/weapon/book/manual/scp/scisop
 	l_ear = /obj/item/device/radio/headset/headset_sci
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/site90/crew/science/researchdirector
 	name = OUTFIT_JOB_NAME("Research Director")
@@ -160,7 +160,7 @@
 	gloves = /obj/item/clothing/gloves/latex/nitrile
 	l_ear = /obj/item/device/radio/headset/heads/rd
 	l_pocket = /obj/item/weapon/book/manual/scp/scisop
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 
 // MISC OUTFITS
@@ -203,8 +203,8 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/bartender
-	back = null
 	l_ear = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/site90/crew/civ/archivist
 	name = OUTFIT_JOB_NAME("Archivist")
@@ -221,8 +221,8 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/adminlvl5
-	back = null
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/hop
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 // ENGINEERING STUFF
 
@@ -234,7 +234,6 @@
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/eng
 	name = OUTFIT_JOB_NAME("Engineer")
@@ -244,7 +243,6 @@
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/seneng
 	name = OUTFIT_JOB_NAME("Senior Engineer")
@@ -254,7 +252,7 @@
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
+	back = /obj/item/weapon/storage/backpack/industrial
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/conteng
 	name = OUTFIT_JOB_NAME("Containment Engineer")
@@ -264,7 +262,7 @@
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
+	back = /obj/item/weapon/storage/backpack/industrial
 
 // BRIG OFFICER
 /decl/hierarchy/outfit/job/torch/crew/security/brig_officer
@@ -285,7 +283,7 @@
 	id_type = /obj/item/weapon/card/id/chiefmedicalofficer
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
+	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/psychiatrist
 	name = OUTFIT_JOB_NAME("Psychiatrist")
@@ -295,7 +293,6 @@
 	id_type = /obj/item/weapon/card/id/psychiatrist
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
 
 /decl/hierarchy/outfit/job/ds90/medical/chemist
 	name = OUTFIT_JOB_NAME("Chemist")
@@ -315,7 +312,7 @@
 	id_type = /obj/item/weapon/card/id/doctor
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
+	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/virologist
 	name = OUTFIT_JOB_NAME("Virologist")
@@ -335,7 +332,7 @@
 	id_type = /obj/item/weapon/card/id/doctor
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/ds90/medical/emt
 	name = OUTFIT_JOB_NAME("Emergency Medical Technician")
@@ -344,7 +341,7 @@
 	id_type = /obj/item/weapon/card/id/emt
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
+	back = /obj/item/weapon/storage/backpack/medic
 
 
 // LOGISTICS OUTFITS
@@ -356,7 +353,7 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/logoff
 	l_ear = /obj/item/device/radio/headset/headset_deckofficer
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/site90/crew/command/logisticspecialist
 	name = OUTFIT_JOB_NAME("Logistics Specialist")
@@ -366,4 +363,4 @@
 	id_type = /obj/item/weapon/card/id/logspec
 	l_pocket = /obj/item/device/radio
 	l_ear = null
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
