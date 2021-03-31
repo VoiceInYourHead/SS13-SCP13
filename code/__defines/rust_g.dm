@@ -1,4 +1,6 @@
-#define RUST_G "rust_g"
+#define RUST_G (world.system_type == MS_WINDOWS ? "rust_g.dll" : "librust_g.so")
+
+#define rustg_log_write(filename, text) world.system_type == UNIX ? file(filename) << text : call(RUST_G, "log_write")(filename, text)
 
 #define rustg_dmi_strip_metadata(fname) call(RUST_G, "dmi_strip_metadata")(fname)
 
