@@ -104,7 +104,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	return 1
 
 /mob/living/carbon/human/scp049/movement_delay()
-	return -1.5
+	return 3.0
 
 // NPC stuff
 /mob/living/carbon/human/scp049/proc/getTarget()
