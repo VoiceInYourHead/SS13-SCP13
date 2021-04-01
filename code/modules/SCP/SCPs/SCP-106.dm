@@ -99,7 +99,7 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 	return 1
 
 /mob/living/carbon/human/scp106/movement_delay()
-	return -1.5
+	return 2.0
 
 /mob/living/carbon/human/scp106/say(var/message, var/datum/language/speaking = null, whispering)
 	src << "<span class = 'notice'>You cannot speak.</span>"

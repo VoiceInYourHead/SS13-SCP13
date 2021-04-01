@@ -356,7 +356,7 @@
 	force = 12
 	caliber = "10mm"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = 0 //no sprites
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/scp/p90_mag
 	allowed_magazines = /obj/item/ammo_magazine/scp/p90_mag
@@ -382,3 +382,39 @@
 	set popup_menu = 1
 
 	toggle_scope(usr, 0.5)
+
+
+/obj/item/weapon/gun/projectile/automatic/scp/m16
+	name = "M16"
+	desc = "A automatic rifle sample of the 1960s, with a scope mounted on top"
+	icon_state = "m16"
+	item_state = "m16"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	caliber = "a556"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
+	slot_flags = 0 //no sprites
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/scp/m16_mag
+	allowed_magazines = /obj/item/ammo_magazine/scp/m16_mag
+
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/m16/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "m16"
+	else
+		icon_state = "m16-empty"
+	return
+
+/obj/item/weapon/gun/projectile/automatic/scp/m16/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 1.0)
