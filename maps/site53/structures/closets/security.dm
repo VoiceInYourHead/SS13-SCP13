@@ -140,9 +140,9 @@
 		/obj/item/clothing/head/helmet/scp/security,
 		/obj/item/clothing/suit/armor/vest/scp/medarmor,
 		/obj/item/weapon/storage/belt/security/tactical,
-		/obj/item/weapon/gun/projectile/sec/sec,
+		/obj/item/weapon/gun/projectile/automatic/scp/m16,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
-		/obj/item/ammo_magazine/c45m = 4,
+		/obj/item/ammo_magazine/scp/m16_mag = 3,
 		/obj/item/weapon/gun/projectile/automatic/scp/p90,
 		/obj/item/ammo_magazine/scp/p90_mag = 2,
 		/obj/item/ammo_magazine/scp/p90_mag/rubber = 4,
@@ -170,10 +170,10 @@
 
 /obj/structure/closet/secure_closet/mtf/breachautomatics/WillContain()
 	return list(
-		/obj/item/weapon/gun/projectile/automatic/z8,
-		/obj/item/weapon/gun/projectile/automatic/z8,
-		/obj/item/weapon/gun/projectile/automatic/z8,
-		/obj/item/ammo_magazine/a762 = 12
+		/obj/item/weapon/gun/projectile/automatic/scp/m16,
+		/obj/item/weapon/gun/projectile/automatic/scp/m16,
+		/obj/item/weapon/gun/projectile/automatic/scp/m16,
+		/obj/item/ammo_magazine/scp/m16_mag = 9
 	)
 
 

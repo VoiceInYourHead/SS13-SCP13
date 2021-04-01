@@ -381,7 +381,7 @@
 	set name = "Use Scope"
 	set popup_menu = 1
 
-	toggle_scope(usr, 0.5)
+	toggle_scope(usr, 1.0)
 
 
 /obj/item/weapon/gun/projectile/automatic/scp/m16
@@ -417,4 +417,4 @@
 	set name = "Use Scope"
 	set popup_menu = 1
 
-	toggle_scope(usr, 1.0)
+	toggle_scope(usr, 0.5)
