@@ -98,7 +98,7 @@ GLOBAL_LIST_EMPTY(scp173s)
 		if(H.stat != CONSCIOUS)
 			continue
 		if(next_blinks[H] == null)
-			next_blinks[H] = world.time+rand(15 SECONDS, 15 SECONDS)
+			next_blinks[H] = world.time+rand(20 SECONDS, 40 SECONDS)
 		if(InCone(H, H.dir))
 			return TRUE
 	return FALSE
