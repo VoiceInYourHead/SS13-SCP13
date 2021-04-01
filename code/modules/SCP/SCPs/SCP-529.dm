@@ -19,6 +19,8 @@ GLOBAL_LIST_EMPTY(scp529s)
 	health = 50 //Josie is slightly more robust than most cats for anomalous reasons.
 	maxHealth = 50
 	gender = FEMALE
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
 
 /mob/living/simple_animal/cat/fluff/SCP529/examine(mob/user)
 	user << "<b><span class = 'safe'><big>SCP-529</big></span></b> - [desc]"

@@ -9,6 +9,8 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	var/mob/living/target = null
 	var/zombies = 0
 	var/next_emote = -1
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
 
 /mob/living/carbon/human/scp049/examine(mob/user)
 	user << "<b><span class = 'euclid'><big>SCP-049</big></span></b> - [desc]"

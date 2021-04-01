@@ -38,6 +38,8 @@ GLOBAL_LIST_EMPTY(scp131s)
 	var/mob/flee_target
 	var/mob/living/carbon/human/friend
 	var/befriend_job = null
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
 
 /mob/living/simple_animal/scp_131/a
 	name = "SCP-131-A"

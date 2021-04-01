@@ -12,6 +12,9 @@ GLOBAL_LIST_EMPTY(scp173s)
 	icon_state = "173"
 	SCP = /datum/scp/SCP_173
 
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
+
 	maxHealth = 5000
 	health = 5000
 
@@ -95,7 +98,7 @@ GLOBAL_LIST_EMPTY(scp173s)
 		if(H.stat != CONSCIOUS)
 			continue
 		if(next_blinks[H] == null)
-			next_blinks[H] = world.time+rand(25 SECONDS, 45 SECONDS)
+			next_blinks[H] = world.time+rand(20 SECONDS, 40 SECONDS)
 		if(InCone(H, H.dir))
 			return TRUE
 	return FALSE

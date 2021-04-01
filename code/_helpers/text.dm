@@ -24,23 +24,37 @@
 
 //Used for preprocessing entered text
 //Added in an additional check to alert players if input is too long
-/proc/sanitize(input, max_length = MAX_MESSAGE_LEN, encode = 1, trim = 1, extra = 1)
+/proc/sanitize(var/input, var/max_length = MAX_MESSAGE_LEN, var/encode = 1, var/trim = 1, var/extra = 1)
 	if(!input)
 		return
 
 	if(max_length)
+		if(length(input) >= max_length * 3)	// Кто-то попытается ввести тяжелый текст? Не более 3-х байт на символ, пожалуйста
+			to_chat(usr, "<span class='warning'>Не вводите текст с большим количеством комбинированных символов.</span>")
+			return
 		//testing shows that just looking for > max_length alone will actually cut off the final character if message is precisely max_length, so >= instead
 		if(length_char(input) >= max_length)
-			var/overflow = ((length_char(input)+1) - max_length)
+/* [BAY]
+			var/overflow = ((length(input)+1) - max_length)
 			to_chat(usr, "<span class='warning'>Your message is too long by [overflow] character\s.</span>")
 			return
-		input = copytext_char(input, 1, max_length)
+[/BAY]*/
+			if(usr)
+				while(length_char(input) >= max_length)
+					if(!input)
+						return
+					var/overflow = ((length(input)+1) - max_length)
+					input = input(usr, "Your message is too long by [overflow] character\s.", "Too long!", input) as message|null
+			else
+				// Enter debug msg here
+				return
+		input = copytext_char(input,1,max_length)
 
 	if(extra)
 		input = replace_characters(input, list("\n"=" ","\t"=" "))
 
 	if(encode)
-		// The below \ escapes have a space inserted to attempt to enable Travis auto-checking of span class usage. Please do not remove the space.
+		// The below \ escapes have a space inserted to attempt to enable unit test auto-checking of span class usage. Please do not remove the space.
 		//In addition to processing html, html_encode removes byond formatting codes like "\ red", "\ i" and other.
 		//It is important to avoid double-encode text, it can "break" quotes and some other characters.
 		//Also, keep in mind that escaped characters don't work in the interface (window titles, lower left corner of the main window, etc.)
@@ -64,7 +78,7 @@
 	return sanitize(replace_characters(input, list(">"=" ","<"=" ", "\""="'")), max_length, encode, trim, extra)
 
 //Filters out undesirable characters from names
-/proc/sanitizeName(input, max_length = MAX_NAME_LEN, allow_numbers = 0, force_first_letter_uppercase = TRUE)
+/proc/sanitizeName(var/input, var/max_length = MAX_NAME_LEN, var/allow_numbers = 0, var/force_first_letter_uppercase = TRUE)
 	if(!input || length_char(input) > max_length)
 		return //Rejects the input if it is null or if it is longer then the max length allowed
 
@@ -73,18 +87,18 @@
 	var/output = ""
 
 	for(var/i=1, i<=length_char(input), i++)
-		var/ascii_char = text2ascii_char(input,i)
+		var/ascii_char = text2ascii(input,i)
 		switch(ascii_char)
-			// A  .. Z, А .. Я
-			if(65 to 90, 1040 to 1071)			//Uppercase Letters
+			// A  .. Z
+			if(65 to 90)			//Uppercase Letters
 				output += ascii2text(ascii_char)
 				number_of_alphanumeric++
 				last_char_group = 4
 
-			// a  .. z, а .. я
-			if(97 to 122, 1072 to 1103)			//Lowercase Letters
+			// a  .. z
+			if(97 to 122)			//Lowercase Letters
 				if(last_char_group<2 && force_first_letter_uppercase)
-					output += uppertext(ascii2text(ascii_char))	//Force uppercase first character
+					output += ascii2text(ascii_char-32)	//Force uppercase first character
 				else
 					output += ascii2text(ascii_char)
 				number_of_alphanumeric++
@@ -122,7 +136,7 @@
 	if(number_of_alphanumeric < 2)	return		//protects against tiny names like "A" and also names like "' ' ' ' ' ' ' '"
 
 	if(last_char_group == 1)
-		output = copytext(output,1,length_char(output))	//removes the last character (in this case a space)
+		output = copytext_char(output,1,length(output))	//removes the last character (in this case a space)
 
 	for(var/bad_name in list("space","floor","wall","r-wall","monkey","unknown","inactive ai","plating"))	//prevents these common metagamey names
 		if(cmptext(output,bad_name))	return	//(not case sensitive)
@@ -384,7 +398,10 @@ proc/TextPreview(string, len=40)
 	t = replacetext(t, "\[/grid\]", "</td></tr></table>")
 	t = replacetext(t, "\[row\]", "</td><tr>")
 	t = replacetext(t, "\[cell\]", "<td>")
+	t = replacetext(t, "\[exologo\]", "<img src = exologo.png>")
 	t = replacetext(t, "\[logo\]", "<img src = ntlogo.png>")
+	t = replacetext(t, "я", "&#1103;")
+	t = replacetext(t, "&#255;", "&#1103;")
 	t = replacetext(t, "\[bluelogo\]", "<img src = bluentlogo.png>")
 	t = replacetext(t, "\[solcrest\]", "<img src = sollogo.png>")
 	t = replacetext(t, "\[terraseal\]", "<img src = terralogo.png>")
