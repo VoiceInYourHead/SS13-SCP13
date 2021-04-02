@@ -328,7 +328,7 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/scp/p90_mag
-	name = "magazine (10mm)"
+	name = "magazine (5.7x28mm)"
 	icon_state = "p90"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -342,7 +342,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/scp/p90_mag/ap
-	name = "magazine (10mm AP)"
+	name = "magazine (5.7x28mm AP)"
 	icon_state = "p90ap"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -353,7 +353,7 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/scp/p90_mag/rubber
-	name = "magazine (10mm rubber)"
+	name = "magazine (5.7x28mm rubber)"
 	icon_state = "p90r"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
