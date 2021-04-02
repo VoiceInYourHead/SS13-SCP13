@@ -915,3 +915,10 @@
 	name = "\improper Logistics"
 	icon_state = "quart"
 	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/site53/lhcz/scp1102entrance
+	name = "\improper SCP-1102 Bunker Entrance"
+	icon_state = "checkpoint1"
+	requires_power = 0
+	dynamic_lighting = 1
+	area_flags = AREA_FLAG_RAD_SHIELDED
