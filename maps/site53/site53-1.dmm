@@ -1425,7 +1425,7 @@
 "Bu" = (/obj/effect/catwalk_plated,/obj/structure/railing/mapped{icon_state = "railing0"; dir = 4},/obj/machinery/light/small/emergency{icon_state = "bulb1"; dir = 8},/turf/simulated/floor/plating,/area/space)
 "Bv" = (/obj/effect/floor_decal/industrial/hatch/blue,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 8},/turf/simulated/floor/tiled/dark/monotile,/area/space)
 "Bw" = (/turf/simulated/floor/tiled/monofloor{icon_state = "steel_monofloor"; dir = 1},/area/site53/llcz/dclass/cells{name = "\improper D-Class Isolation"})
-"Bx" = (/obj/structure/table/steel_reinforced,/obj/structure/window/reinforced{dir = 1; health = 1e+006},/obj/structure/window/reinforced,/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/machinery/door/window/brigdoor/eastleft,/turf/simulated/floor/tiled/dark/monotile,/area/space)
+"Bx" = (/obj/structure/table/steel_reinforced,/obj/structure/window/reinforced{dir = 1; health = 1e+006},/obj/structure/window/reinforced,/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/machinery/door/window/brigdoor/eastleft,/obj/item/weapon/scp1102ru,/turf/simulated/floor/tiled/dark/monotile,/area/space)
 "By" = (/obj/effect/floor_decal/industrial/hatch/blue,/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/turf/simulated/floor/tiled/dark/monotile,/area/space)
 "Bz" = (/obj/effect/catwalk_plated,/turf/simulated/floor/plating,/area/space)
 "BA" = (/obj/machinery/door/airlock/research{name = "Containment Chamber"; req_access = list(); req_one_access = list(301,401)},/obj/machinery/door/blast/regular{icon_state = "pdoor1"; dir = 8},/turf/simulated/floor/tiled/monotile,/area/space)
