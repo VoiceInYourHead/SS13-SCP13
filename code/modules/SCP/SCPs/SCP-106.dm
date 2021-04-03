@@ -254,6 +254,9 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 		if (!isstructure(O) && !ismachinery(O))
 			continue
 
+		if (istype(O, /obj/machinery/door/airlock/vault))
+			continue
+
 		if (istype(O, /obj/machinery/shieldwall) || istype(O, /obj/machinery/shieldwallgen))
 			continue
 
