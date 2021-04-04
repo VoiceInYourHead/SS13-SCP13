@@ -257,6 +257,9 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 		if (istype(O, /obj/machinery/door/airlock/vault))
 			continue
 
+		if (istype(O, /obj/machinery/camera))
+			continue
+
 		if (istype(O, /obj/machinery/shieldwall) || istype(O, /obj/machinery/shieldwallgen))
 			continue
 

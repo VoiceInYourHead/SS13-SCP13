@@ -10,7 +10,7 @@ var/list/nuke_disks = list()
 	extended_round_description = "The site's success and safety has attracted the prevasive eye  \
 		of the Chaos Insurgency, a heavily militarized organization in opposition to the Foundation."
 	config_tag = "mercenary"
-	required_players = 15
+	required_players = 9999 // пока войд режим не допилит
 	required_enemies = 1
 	end_on_antag_death = 1
 	var/nuke_off_station = 0 //Used for tracking if the syndies actually haul the nuke to the station
