@@ -125,6 +125,17 @@
 	icon_state = "syringe"
 	startswith = list(/obj/item/weapon/syringe_cartridge = 7)
 
+/obj/item/weapon/storage/box/ifak
+	name = "first-aid kit"
+	desc = "A box decorated in warning colors that contains a limited supply of survival tools. The panel and orange stripe indicate this one as the security variant."
+	icon_state = "survivaleng"
+	startswith = list(/obj/item/weapon/storage/pill_bottle/tramadol = 1,
+					/obj/item/weapon/reagent_containers/pill/amnestics/classa = 1,
+					/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain = 1,
+					/obj/item/stack/medical/bruise_pack = 1,
+					/obj/item/stack/medical/ointment = 1,
+					/obj/item/stack/medical/splint/ghetto = 1)
+
 
 /obj/item/weapon/storage/box/beakers
 	name = "box of beakers"
