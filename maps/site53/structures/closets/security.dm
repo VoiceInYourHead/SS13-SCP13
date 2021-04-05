@@ -114,6 +114,7 @@
 		/obj/item/ammo_magazine/scp/p90_mag/rubber = 4,
 		/obj/item/weapon/melee/telebaton,
 		/obj/item/weapon/handcuffs,
+		/obj/item/weapon/storage/box/ifak,
 		/obj/item/clothing/gloves/tactical/scp,
 		/obj/item/device/flash,
 		/obj/item/device/flashlight/maglight,
