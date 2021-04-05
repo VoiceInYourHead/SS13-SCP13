@@ -389,7 +389,7 @@
 
 
 /datum/reagent/amnestics/classa/on_mob_life(mob/living/M)
-	to_chat(M, "<span class='notice'>Вы чувствуете, что ваша память отдаляется...")
+	to_chat(M, "<span class='notice'>Вы чувствуете, что ваши воспоминания ускользают от вас...")
 	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память до начала последнего эксперимента (если есть).  Вы должны соответственно отыгрывать.</span>")
 	M.visible_message("<span class='warning'>[M] looks confused for a moment.")
 	playsound(src,'sound/misc/nymphchirp.ogg',3,3)
@@ -402,7 +402,7 @@
 
 /datum/reagent/amnestics/classb/on_mob_life(mob/living/M)
 	to_chat(M, "<span class='notice'>Ваш мозг чувствует себя немного... пустым...")
-	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память до точки, когда начался раунд и вы проснулись.  Вы должны соответственно отыгрывать.</span>")
+	to_chat(M, "<span class='boldannounce'>Вы ничего не можете вспомнить... Только вы находились в вагоне служебного поезда, а теперь?...</span>")
 	M.visible_message("<span class='warning'>[M] looks a little dumber.")
 	playsound(src,'sound/misc/nymphchirp.ogg',3,3)
 	holder.remove_reagent(/datum/reagent/amnestics/classb, volume)
@@ -413,23 +413,23 @@
 	taste_description = "что-то, о чем ты уже забыл"
 
 /datum/reagent/amnestics/classc/on_mob_life(mob/living/M)
-	to_chat(M, "<span class='notice'>Воспоминания вырваны из головы!")
-	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память до точки, когда вы прибыли в Фонд, и понятия не имеете, как вы сюда попали.  Вы должны соответственно отыгрывать.</span>")
+	to_chat(M, "<span class='notice'>Воспоминания вырваны из вашей головы!")
+	to_chat(M, "<span class='boldannounce'>Кажется, единственное что вы помните - это то как подписывали какие-то бумаги в кабинете с человеком в белом медицинском халате. Как вы тут вообще оказались?</span>")
 	M.visible_message("<span class='warning'>[M] looks like they've suddenly gotten lost.")
 	playsound(src,'sound/misc/nymphchirp.ogg',3,3)
 	holder.remove_reagent(/datum/reagent/amnestics/classc, volume)
 
-/datum/reagent/amnestics/classc
+/datum/reagent/amnestics/classd
 	name = "Class-D Amnestics"
 	color = "#708238"
 	taste_description = "что-то, о чем ты уже забыл"
 
 /datum/reagent/amnestics/classc/on_mob_life(mob/living/M)
 	to_chat(M, "<span class='notice'>Воспоминания вырваны из головы!")
-	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память до точки, когда вы прибыли в Фонд, а так же еще 2 две недели своей жизни, и понятия не имеете, как вы сюда попали.  Вы должны соответственно отыгрывать.</span>")
+	to_chat(M, "<span class='boldannounce'>Кажется, единственное что вы помните - это то как подписывали какие-то бумаги в кабинете с человеком в белом медицинском халате, а так же забыли еще несколько последних недель. Как вы тут вообще оказались?</span>")
 	M.visible_message("<span class='warning'>[M] looks like they've suddenly gotten lost.")
 	playsound(src,'sound/misc/nymphchirp.ogg',3,3)
-	holder.remove_reagent(/datum/reagent/amnestics/classc, volume)
+	holder.remove_reagent(/datum/reagent/amnestics/classd, volume)
 
 /datum/reagent/amnestics/classe
 	name = "Class-E Amnestics"
@@ -437,8 +437,8 @@
 	taste_description = "что-то, о чем ты уже забыл"
 
 /datum/reagent/amnestics/classe/on_mob_life(mob/living/M)
-	to_chat(M, "<span class='notice'>Кто... Я...?")
-	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память, которую вы удерживаете, дорогой, и каждый аспект вашей личности был разорван, чтобы быть повторно слепленным, как глина.  Вы должны соответственно отыгрывать.</span>")
+	to_chat(M, "<span class='notice'>Кто... Я?...")
+	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память, которую вы удерживаете, дорогой, и каждый аспект вашей личности был разорван, чтобы быть повторно слепленным, как глина.</span>")
 	M.visible_message("<span class='warning'>[M] falls completely still for a moment, before raising their head with a cold, dull look in their eyes.")
 	playsound(src,'sound/misc/nymphchirp.ogg',3,3)
 	holder.remove_reagent(/datum/reagent/amnestics/classe, volume)
