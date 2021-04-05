@@ -280,6 +280,14 @@
 	item_state = "tacwebvest"
 	armor = list(melee = 40, bullet = 40, laser = 60, energy = 35, bomb = 30, bio = 0, rad = 0)
 
+/obj/item/clothing/suit/storage/vest/scp/medarmorchaos
+	name = "armored vest"
+	desc = "A synthetic armor vest."
+	icon_state = "chaos-armor"
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	armor = list(melee = 40, bullet = 50, laser = 40, energy = 25, bomb = 30, bio = 15, rad = 10)
+
 /obj/item/clothing/suit/storage/vest/merc
 	name = "heavy combat armor"
 	desc = "A high-quality armored vest made from a hard synthetic material. It is surprisingly flexible and light, despite formidable armor plating."

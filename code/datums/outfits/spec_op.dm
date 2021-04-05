@@ -53,13 +53,13 @@
 
 /decl/hierarchy/outfit/mercenary
 	name = "Spec Ops - Chaos Insurgency"
-	gloves = /obj/item/clothing/gloves/thick/combat
-	suit = /obj/item/clothing/suit/armor/chaos
-	uniform = /obj/item/clothing/under/ci
-	shoes = /obj/item/clothing/shoes/ci
-	head = /obj/item/clothing/head/helmet/chaos
-	l_ear = /obj/item/device/radio/headset/syndicate
-	belt = /obj/item/weapon/storage/belt/security
+	gloves = null
+	suit = null
+	uniform = /obj/item/clothing/under/scp/utility/chaos
+	shoes = null
+	head = null
+	l_ear = null
+	belt = null
 
 //	l_pocket = /obj/item/weapon/reagent_containers/pill/cyanide
 
@@ -67,7 +67,7 @@
 	id_type = /obj/item/weapon/card/id/syndicate
 	id_pda_assignment = "Operative"
 
-	flags = OUTFIT_HAS_BACKPACK|OUTFIT_RESET_EQUIPMENT
+	flags = OUTFIT_RESET_EQUIPMENT
 
 /decl/hierarchy/outfit/mercenary/syndicate
 	name = "Spec Ops - Syndicate"
