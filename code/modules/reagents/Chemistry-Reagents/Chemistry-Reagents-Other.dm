@@ -389,8 +389,8 @@
 
 
 /datum/reagent/amnestics/classa/on_mob_life(mob/living/M)
-	to_chat(M, "<span class='notice'>Вы чувствуете, что ваши воспоминания ускользают от вас...")
-	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память до начала последнего эксперимента (если есть).  Вы должны соответственно отыгрывать.</span>")
+	to_chat(M, "<span class='notice'>Кажется, вы забыли о всём, что происходило последние минут 10...")
+	to_chat(M, "<span class='boldannounce'>Вы потеряли всю память до начала последнего эксперимента (если есть).</span>")
 	M.visible_message("<span class='warning'>[M] looks confused for a moment.")
 	playsound(src,'sound/misc/nymphchirp.ogg',3,3)
 	holder.remove_reagent(/datum/reagent/amnestics/classa, volume)
