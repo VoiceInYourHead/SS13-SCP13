@@ -115,6 +115,20 @@
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/site53/tram/car1
+	name = "Chaos Car"
+	icon_state = "Sleep"
+	requires_power = 0
+	dynamic_lighting = 1
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/site53/tram/car2
+	name = "Chaos Car"
+	icon_state = "Sleep"
+	requires_power = 0
+	dynamic_lighting = 1
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 /area/site53/tram/hcz
 	name = "Heavy Containment Tram"
 	icon_state = "Sleep"

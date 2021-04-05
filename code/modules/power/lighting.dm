@@ -178,6 +178,13 @@
 	desc = "A more robust socket for light tubes that demand more power."
 	light_type = /obj/item/weapon/light/tube/large
 
+/obj/machinery/light/invisible
+	icon_state = "bulb1"
+	base_state = "bulb"
+	desc = "A small lighting fixture."
+	light_type = /obj/item/weapon/light/tube/large
+	invisibility = 101 // nope cant see this shit
+
 // create a new lighting fixture
 /obj/machinery/light/New(atom/newloc, obj/machinery/light_construct/construct = null)
 	..(newloc)

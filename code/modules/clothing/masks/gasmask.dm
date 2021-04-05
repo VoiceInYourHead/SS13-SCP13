@@ -131,3 +131,8 @@
 	name = "open gas mask"
 	icon_state = "gasmask_alt"
 	item_state = "gasmask_alt"
+
+/obj/item/clothing/mask/gas/gasmask_chaos
+	name = "open gas mask"
+	icon_state = "chaos-gasmask"
+	item_state = "chaos-gasmask"

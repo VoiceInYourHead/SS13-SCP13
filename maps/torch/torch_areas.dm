@@ -467,9 +467,15 @@
 	name = "\improper Mercenary Base"
 	icon_state = "syndie-ship"
 	requires_power = 0
-	dynamic_lighting = 0
+	dynamic_lighting = 1
 
 /area/syndicate_station/start
+	name = "\improper Mercenary Forward Operating Base"
+	icon_state = "yellow"
+	requires_power = 0
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/syndicate_station/start2
 	name = "\improper Mercenary Forward Operating Base"
 	icon_state = "yellow"
 	requires_power = 0

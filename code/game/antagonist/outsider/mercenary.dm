@@ -2,7 +2,7 @@ var/datum/antagonist/mercenary/mercs
 
 /datum/antagonist/mercenary
 	id = MODE_MERCENARY
-	role_text = "Operative"
+	role_text = "Chaos Operative"
 	antag_indicator = "hudsyndicate"
 	role_text_plural = "Operatives"
 	landmark_id = "Syndicate-Spawn"
@@ -13,8 +13,8 @@ var/datum/antagonist/mercenary/mercs
 
 	hard_cap = 4
 	hard_cap_round = 8
-	initial_spawn_req = 10
-	initial_spawn_target = 12
+	initial_spawn_req = 6
+	initial_spawn_target = 8
 	min_player_age = 7
 
 	faction = "mercenary"

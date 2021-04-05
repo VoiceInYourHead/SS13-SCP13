@@ -210,3 +210,11 @@
 		src.icon_state = initial(icon_state)
 		to_chat(user, "You lower the visor on the [src].")
 	update_clothing_icon()
+
+/obj/item/clothing/head/helmet/scp/chaos
+	name = "\improper chaos helmet"
+	desc = "A helmet with 'CHAOS INSURGENCY' symbol printed on the back lettering."
+	icon_state = "chaos-helm"
+	body_parts_covered = HEAD //face shield
+	armor = list(melee = 50, bullet = 70, laser = 50,energy = 25, bomb = 40, bio = 10, rad = 10)
+	flags_inv = HIDEEARS
