@@ -10,14 +10,3 @@
 	w_class = ITEM_SIZE_HUGE
 	max_w_class = ITEM_SIZE_NORMAL
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
-
-/obj/item/weapon/scp1102ru
-	name = "SCP-1102-RU"
-	desc = "Very old plastic case. Looks a bit...Stranger than regular ones?"
-	icon = 'icons/obj/storage.dmi'
-	icon_state = "briefcase"
-	item_state = "briefcase"
-	force = 8.0
-	throw_speed = 1
-	throw_range = 4
-	w_class = ITEM_SIZE_HUGE
