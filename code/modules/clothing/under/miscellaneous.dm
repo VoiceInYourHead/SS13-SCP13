@@ -597,7 +597,7 @@
 
 /obj/item/clothing/under/frontier
 	name = "frontier clothes"
-	desc = "A rugged flannel shirt and denim overalls. A popular style among frontier colonists."
+	desc = "A rugged flannel shirt and denim overalls. A popular style among frontier citizens."
 	icon_state = "frontier"
 	worn_state = "frontier"
 
