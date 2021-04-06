@@ -23,7 +23,7 @@
 
 	// Should this all be in Touch()?
 	if(istype(H))
-		if(H != src && check_shields(0, null, H, H.zone_sel.selecting, H.name))
+		if(H != src && check_shields(0, null, H, H.zone_sel.selecting, H.name) && !(istype(H.martial_art) && H.martial_art.ignor_psishields)) //INF, was (H != src && check_shields(0, null, H, H.zone_sel.selecting, H.name))
 			H.do_attack_animation(src)
 			return 0
 
@@ -63,6 +63,13 @@
 
 	switch(M.a_intent)
 		if(I_HELP)
+
+			if(istype(H.martial_art))
+				H.martial_art.add_to_streak(H, "H", src)
+				if(H.martial_art.handle_help(H, src))
+					return
+
+
 			if(istype(H) && (is_asystole() || (status_flags & FAKEDEATH)))
 				if (!cpr_time)
 					return 0
@@ -114,10 +121,21 @@
 			return 1
 
 		if(I_GRAB)
+
+			if(istype(H.martial_art))
+				H.martial_art.add_to_streak(H, "G", src)
+				if(H.martial_art.handle_grab(H, src))
+					return
+
 			visible_message("<span class='danger'>[M] attempted to grab \the [src]!</span>")
 			return H.make_grab(H, src)
 
 		if(I_HURT)
+
+			if(istype(H.martial_art))
+				H.martial_art.add_to_streak(H, "A", src)
+				if(H.martial_art.handle_harm(H, src))
+					return
 
 			if(!istype(H))
 				attack_generic(H,rand(1,3),"punched")
@@ -149,8 +167,14 @@
 					rand_damage = 5
 					accurate = 1
 				if(I_HURT, I_GRAB)
+
+					var/block_chance = 20
+
+					if(istype(H.martial_art))
+						block_chance *= H.martial_art.block_modifier
+
 					// We're in a fighting stance, there's a chance we block
-					if(src.canmove && src!=H && prob(20))
+					if(src.canmove && src!=H && prob(block_chance)) // was prob(20)
 						block = 1
 
 			if (M.grabbed_by.len)
@@ -236,7 +260,17 @@
 			// Finally, apply damage to target
 			apply_damage(real_damage, (attack.deal_halloss ? PAIN : BRUTE), hit_zone, armour, damage_flags=attack.damage_flags())
 
+			if(istype(H.martial_art) && H.martial_art.additional_hit_damage && (istype(attack, /datum/unarmed_attack/punch) || istype(attack, /datum/unarmed_attack/light_strike)))
+				apply_damage(H.martial_art.additional_hit_damage, H.martial_art.additional_hit_type, hit_zone)
+
 		if(I_DISARM)
+
+
+			if(istype(H.martial_art))
+				H.martial_art.add_to_streak(H, "D", src)
+				if(H.martial_art.handle_disarm(H, src))
+					return
+
 			if(attempt_dodge())//Trying to dodge it before they even have the chance to miss us.
 				return
 			if(H.species)
