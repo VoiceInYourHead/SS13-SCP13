@@ -364,3 +364,43 @@
 	l_pocket = /obj/item/device/radio
 	l_ear = null
 	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon1
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Beta")
+	uniform = /obj/item/clothing/under/frontier
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/night
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/p90
+	r_hand = /obj/item/weapon/scp1102ru
+	l_hand = /obj/item/weapon/material/hatchet/tacknife
+	l_pocket = /obj/item/weapon/grenade/flashbang
+	r_pocket = /obj/item/weapon/grenade/flashbang
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/silenced
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/plastique = 2,/obj/item/weapon/grenade/frag = 1,/obj/item/weapon/crowbar/red = 1,/obj/item/ammo_magazine/scp/p90_mag/ap = 5,/obj/item/ammo_magazine/c45m = 2)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon2
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Gamma")
+	uniform = /obj/item/clothing/under/det/grey
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/night
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = null
+	r_hand = /obj/item/weapon/gun/projectile/shotgun/pump/combat
+	l_hand = /obj/item/weapon/material/hatchet
+	l_pocket = /obj/item/weapon/grenade/flashbang
+	r_pocket = /obj/item/weapon/grenade/flashbang
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/silenced
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/grenade/frag = 1,/obj/item/weapon/crowbar/red = 1,/obj/item/weapon/storage/box/shotgunammo = 3,/obj/item/ammo_magazine/c45m = 2, /obj/item/clothing/accessory/storage/bandolier = 1)

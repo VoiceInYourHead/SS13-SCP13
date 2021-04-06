@@ -328,6 +328,14 @@
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/solgov-head.dmi')
 	starting_accessories = null
 
+/obj/item/clothing/head/helmet/site53/guard/mtf_epsilon
+	name = "MTF Epsilon-6 helmet"
+	desc = "A helmet with 'MTF Epsilon-6' printed on the back in red lettering."
+	icon_state = "helmet_command"
+	icon = 'maps/torch/icons/obj/solgov-head.dmi'
+	item_icons = list(slot_head_str = 'maps/torch/icons/mob/solgov-head.dmi')
+	starting_accessories = list(/obj/item/clothing/accessory/armor/helmcover/green)
+
 /obj/item/clothing/head/helmet/site53/guardcomm
 	name = "guard commander's helmet"
 	desc = "A helmet with 'GUARD COMMANDER' printed on the back in gold lettering."
