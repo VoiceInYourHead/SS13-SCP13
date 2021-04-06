@@ -335,7 +335,7 @@
 	caliber = "10mm"
 	matter = list(DEFAULT_WALL_MATERIAL = 1500)
 	ammo_type = /obj/item/ammo_casing/a10mm
-	max_ammo = 20
+	max_ammo = 50
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/scp/p90_mag/empty
@@ -349,7 +349,7 @@
 	caliber = "10mm"
 	matter = list(DEFAULT_WALL_MATERIAL = 1500)
 	ammo_type = /obj/item/ammo_casing/ap10mm
-	max_ammo = 20
+	max_ammo = 50
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/scp/p90_mag/rubber
@@ -360,7 +360,7 @@
 	caliber = "10mm"
 	matter = list(DEFAULT_WALL_MATERIAL = 1500)
 	ammo_type = /obj/item/ammo_casing/rub10mm
-	max_ammo = 20
+	max_ammo = 50
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/scp/m16_mag

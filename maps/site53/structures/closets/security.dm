@@ -83,7 +83,7 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/clothing/gloves/tactical/scp,
 		/obj/item/device/flash,
-		/obj/item/clothing/accessory/storage/webbing_large,
+		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/clothing/accessory/holster/thigh,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/clothing/accessory/solgov/department/security/marine,
