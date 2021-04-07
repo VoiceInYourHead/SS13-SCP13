@@ -124,7 +124,7 @@
 	icon_state = "work"
 	item_state = "wgloves"
 	siemens_coefficient = 0.50
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 30, laser = 30,energy = 20, bomb = 25, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/duty/modified
 	item_flags = ITEM_FLAG_PREMODIFIED
@@ -137,7 +137,7 @@
 	force = 5
 	siemens_coefficient = 0.50
 	permeability_coefficient = 0.05
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 30, laser = 30,energy = 20, bomb = 25, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/tactical/scp
 	desc = "These grey tactical gloves are made from a durable synthetic, and have hardened knuckles."
@@ -147,7 +147,7 @@
 	force = 5
 	siemens_coefficient = 0.50
 	permeability_coefficient = 0.05
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 30, laser = 30,energy = 20, bomb = 25, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/guards
 	desc = "A pair of synthetic gloves and arm pads reinforced with armor plating."
@@ -158,7 +158,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.03
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 30, laser = 30,energy = 20, bomb = 25, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/rubber
 	desc = "Heavy black gloves designed to protect the wearer from hazards."
