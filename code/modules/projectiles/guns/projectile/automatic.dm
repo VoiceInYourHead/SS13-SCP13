@@ -355,8 +355,8 @@
 	w_class = ITEM_SIZE_HUGE
 	force = 12
 	caliber = "10mm"
+	slot_flags = SLOT_BELT|SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
-	slot_flags = 0 //no sprites
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/scp/p90_mag
 	allowed_magazines = /obj/item/ammo_magazine/scp/p90_mag
@@ -391,9 +391,9 @@
 	item_state = "m16"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
+	slot_flags = SLOT_BACK
 	caliber = "a556"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
-	slot_flags = 0 //no sprites
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/scp/m16_mag
 	allowed_magazines = /obj/item/ammo_magazine/scp/m16_mag

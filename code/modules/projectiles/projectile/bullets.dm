@@ -238,7 +238,7 @@
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 50
+	damage = 35
 	armor_penetration = 40
 	agony = 23
 

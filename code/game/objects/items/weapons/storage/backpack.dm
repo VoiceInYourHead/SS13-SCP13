@@ -354,6 +354,7 @@
 	name = "messenger bag"
 	desc = "A sturdy backpack worn over one shoulder."
 	icon_state = "courierbag"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE + 4
 
 /obj/item/weapon/storage/backpack/messenger/chem
 	name = "chemistry messenger bag"

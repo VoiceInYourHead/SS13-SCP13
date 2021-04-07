@@ -372,18 +372,18 @@
 	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
-	gloves = null
+	gloves = /obj/item/clothing/gloves/tactical/scp
 	shoes = /obj/item/clothing/shoes/jackboots
 	id_type = /obj/item/weapon/card/id/adminlvl5
 	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/p90
-	r_hand = /obj/item/weapon/scp1102ru
+	r_hand = /obj/item/weapon/crowbar/red
 	l_hand = /obj/item/weapon/material/hatchet/tacknife
 	l_pocket = /obj/item/weapon/grenade/flashbang
 	r_pocket = /obj/item/weapon/grenade/flashbang
 	l_ear = /obj/item/device/radio/headset/ert
 	belt = /obj/item/weapon/gun/projectile/silenced
 	back = /obj/item/weapon/storage/backpack/satchel
-	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/plastique = 2,/obj/item/weapon/grenade/frag = 1,/obj/item/weapon/crowbar/red = 1,/obj/item/ammo_magazine/scp/p90_mag/ap = 5,/obj/item/ammo_magazine/c45m = 2)
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/plastique = 2,/obj/item/weapon/grenade/frag = 1,/obj/item/ammo_magazine/scp/p90_mag/ap = 5,/obj/item/ammo_magazine/c45m = 2,/obj/item/clothing/mask/gas = 1)
 
 /decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon2
 	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Gamma")
@@ -392,15 +392,55 @@
 	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon
 	mask = /obj/item/clothing/mask/balaclava/tactical
 	glasses = /obj/item/clothing/glasses/night
-	gloves = null
+	gloves = /obj/item/clothing/gloves/tactical/scp
 	shoes = /obj/item/clothing/shoes/jackboots
 	id_type = /obj/item/weapon/card/id/adminlvl5
-	suit_store = null
-	r_hand = /obj/item/weapon/gun/projectile/shotgun/pump/combat
+	suit_store = /obj/item/weapon/gun/projectile/shotgun/pump/combat
+	r_hand = /obj/item/weapon/crowbar/red
 	l_hand = /obj/item/weapon/material/hatchet
 	l_pocket = /obj/item/weapon/grenade/flashbang
 	r_pocket = /obj/item/weapon/grenade/flashbang
 	l_ear = /obj/item/device/radio/headset/ert
 	belt = /obj/item/weapon/gun/projectile/silenced
 	back = /obj/item/weapon/storage/backpack/satchel
-	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/grenade/frag = 1,/obj/item/weapon/crowbar/red = 1,/obj/item/weapon/storage/box/shotgunammo = 3,/obj/item/ammo_magazine/c45m = 2, /obj/item/clothing/accessory/storage/bandolier = 1)
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/grenade/frag = 2,/obj/item/weapon/storage/box/shotgunammo = 3,/obj/item/ammo_magazine/c45m = 2,/obj/item/clothing/accessory/storage/bandolier = 1,/obj/item/clothing/mask/gas = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon3
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Alpha")
+	uniform = /obj/item/clothing/under/syndicate/combat
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon/leader
+	mask = /obj/item/clothing/mask/balaclava
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/m16
+	r_hand = /obj/item/weapon/storage/box/syndie_kit/spy
+	l_hand = null
+	l_pocket = /obj/item/weapon/grenade/smokebomb
+	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/revolver/webley/captain
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/grenade/frag = 1,/obj/item/weapon/crowbar/red = 1,/obj/item/ammo_magazine/scp/m16_mag = 3,/obj/item/ammo_magazine/c44 = 4,/obj/item/clothing/mask/gas = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon4
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Bravo")
+	uniform = /obj/item/clothing/under/rank/psych/turtleneck/sweater
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon/medic
+	mask = /obj/item/clothing/mask/balaclava
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/p90
+	r_hand = /obj/item/weapon/storage/firstaid/surgery
+	l_hand = /obj/item/weapon/crowbar/red
+	l_pocket = /obj/item/weapon/grenade/smokebomb
+	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/defibrillator/compact/combat/loaded
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/ammo_magazine/scp/p90_mag/ap = 3,/obj/item/clothing/mask/gas = 1,/obj/item/weapon/storage/firstaid/combat/mtf = 1,/obj/item/weapon/reagent_containers/ivbag/blood/OMinus = 2,/obj/item/weapon/storage/pill_bottle/zoom = 1)
