@@ -94,7 +94,7 @@
 		)
 
 /datum/hud_data/scp049
-	has_a_intent = 0
+	has_a_intent = 1
 	has_m_intent = 0
 	has_warnings = 0
 	has_pressure = 0
