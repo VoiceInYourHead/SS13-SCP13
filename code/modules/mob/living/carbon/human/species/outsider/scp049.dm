@@ -34,6 +34,8 @@
 	radiation_mod =  0.0                    // No radiation damage
 	flash_mod =      0.0                    // Unflashable
 
+	hud_type = /datum/hud_data/scp049
+
 // #define 049AI
 /datum/species/scp049/handle_npc(var/mob/living/carbon/human/scp049/H)
 	// sanity check, apparently its needed

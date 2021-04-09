@@ -92,3 +92,17 @@
 		"mask" =         list("loc" = ui_shoes,     "name" = "Mask", "slot" = slot_wear_mask, "state" = "mask",  "toggle" = 1),
 		"back" =         list("loc" = ui_sstore1,   "name" = "Back", "slot" = slot_back,      "state" = "back"),
 		)
+
+/datum/hud_data/scp049
+	has_a_intent = 0
+	has_m_intent = 0
+	has_warnings = 0
+	has_pressure = 0
+	has_nutrition = 0
+	has_bodytemp = 0
+	has_hands = 1
+	has_drop = 1
+	has_throw = 1
+	has_resist = 1
+	has_internals = 0
+	gear = list()
