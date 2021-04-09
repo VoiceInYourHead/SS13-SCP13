@@ -166,6 +166,9 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	return TRUE
 
 /mob/living/carbon/human/attack_hand(mob/living/carbon/M)
+	if(M.a_intent == I_HELP)
+		to_chat(M, "<span class='warning'>You cannot heal on help intent!</span>")
+		return
 	if (!isscp049(M) || isscp049_1(src) || src == M)
 		return ..(M)
 	var/mob/living/carbon/human/scp049/H = M

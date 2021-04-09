@@ -122,7 +122,8 @@
 		to_chat(M, "<span class='danger'>Your fingers are much too large for the trigger guard!</span>")
 		return 0
 
-
+	if(isscp049(user))
+		return 0
 
 	var/mob/living/carbon/human/H = M
 	if(istype(H))
