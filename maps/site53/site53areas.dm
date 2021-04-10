@@ -939,3 +939,8 @@
 	name = "\improper SCP-1102-RU Containment Chamber"
 	icon_state = "research"
 	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/site53/lhcz/scp035room
+	name = "\improper SCP-035 Containment Chamber"
+	icon_state = "research"
+	area_flags = AREA_FLAG_RAD_SHIELDED
