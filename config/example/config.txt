@@ -89,7 +89,7 @@ MOD_TEMPBAN_MAX 1440
 MOD_JOB_TEMPBAN_MAX 1440
 
 ## Player limit count
-PLAYER_LIMIT 20
+PLAYER_LIMIT 70
 
 ## probablities for game modes chosen in "secret" and "random" modes
 ##
