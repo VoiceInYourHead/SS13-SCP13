@@ -12,6 +12,7 @@
 #define SPAN_WARNING(X) "<span class='warning'>[X]</span>"
 //void is trap
 #define SPAN_DANGER(X) "<span class='danger'>[X]</span>"
+#define SPAN_NOTICE(X) "<span class='notice'>[X]</span>"
 
 
 

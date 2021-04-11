@@ -9,7 +9,7 @@
 	blood_color = "#622a37"
 	flesh_color = "#442A37"
 
-	species_flags = SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON
+	species_flags = SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_TANGLE | SPECIES_FLAG_NO_PAIN
 	spawn_flags = SPECIES_IS_RESTRICTED
 
 	genders = list(MALE)

@@ -13,7 +13,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	id_type = /obj/item/weapon/card/id/adminlvl5
 	l_ear = /obj/item/device/radio/headset/heads/captain
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel
 
 /decl/hierarchy/outfit/job/site90/crew/command/headofhr
 	name = OUTFIT_JOB_NAME("Head of Human Resources")
@@ -116,7 +116,7 @@
 	id_type = /obj/item/weapon/card/id/junseclvl1
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/weapon/book/manual/scp/secsop
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel
 
 // SCIENCE OUTFITS
 
@@ -128,7 +128,7 @@
 	id_type = /obj/item/weapon/card/id/sciencelvl1
 	gloves = /obj/item/clothing/gloves/latex
 	l_ear = /obj/item/device/radio/headset/headset_sci
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel
 
 /decl/hierarchy/outfit/job/site90/crew/science/scientist
 	name = OUTFIT_JOB_NAME("Scientist")
@@ -185,8 +185,8 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/sciencelvl1
-	back = null
-	l_ear = null
+	back = /obj/item/weapon/storage/backpack/satchel
+	l_ear = /obj/item/device/radio/headset/headset_service
 
 /decl/hierarchy/outfit/job/site90/crew/civ/chef
 	name = OUTFIT_JOB_NAME("Chef")
@@ -194,8 +194,8 @@
 	shoes = /obj/item/clothing/shoes/white
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/chef
-	back = null
-	l_ear = null
+	back = /obj/item/weapon/storage/backpack/satchel
+	l_ear = /obj/item/device/radio/headset/headset_service
 
 /decl/hierarchy/outfit/job/site90/crew/civ/bartender
 	name = OUTFIT_JOB_NAME("Bartender")
@@ -203,7 +203,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/bartender
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_service
 	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/site90/crew/civ/archivist
@@ -212,8 +212,8 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/archivist
-	back = null
-	l_ear = null
+	back = /obj/item/weapon/storage/backpack/satchel
+	l_ear = /obj/item/device/radio/headset/headset_com
 
 /decl/hierarchy/outfit/job/site90/crew/civ/o5rep
 	name = OUTFIT_JOB_NAME("O5 Representative")
@@ -233,7 +233,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl2
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_eng
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/eng
 	name = OUTFIT_JOB_NAME("Engineer")
@@ -242,7 +242,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl3
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_eng
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/seneng
 	name = OUTFIT_JOB_NAME("Senior Engineer")
@@ -251,7 +251,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl4
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/ce
 	back = /obj/item/weapon/storage/backpack/industrial
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/conteng
@@ -261,7 +261,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl4
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/ce
 	back = /obj/item/weapon/storage/backpack/industrial
 
 // BRIG OFFICER
@@ -270,8 +270,8 @@
 	uniform = /obj/item/clothing/under/scp/whiteuniform
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/seclvl2
-	l_ear = null
-	back = null
+	l_ear = /obj/item/device/radio/headset/headset_com
+	back = /obj/item/weapon/storage/backpack/satchel/
 
 // MEDICAL OUTFITS
 
@@ -282,7 +282,7 @@
 	shoes = /obj/item/clothing/shoes/white
 	id_type = /obj/item/weapon/card/id/chiefmedicalofficer
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/cmo
 	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/psychiatrist
@@ -292,7 +292,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/psychiatrist
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 
 /decl/hierarchy/outfit/job/ds90/medical/chemist
 	name = OUTFIT_JOB_NAME("Chemist")
@@ -301,8 +301,8 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/chemist
 	l_pocket = /obj/item/device/radio
-	l_ear = null
-	back = null
+	l_ear = /obj/item/device/radio/headset/headset_med
+	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/medicaldoctor
 	name = OUTFIT_JOB_NAME("Medical Doctor")
@@ -311,7 +311,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/doctor
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/virologist
@@ -321,8 +321,8 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/virologist
 	l_pocket = /obj/item/device/radio
-	l_ear = null
-	back = null
+	l_ear = /obj/item/device/radio/headset/headset_med
+	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/surgeon
 	name = OUTFIT_JOB_NAME("Surgeon")
@@ -331,7 +331,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/doctor
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/ds90/medical/emt
@@ -340,7 +340,7 @@
 	shoes = /obj/item/clothing/shoes/white
 	id_type = /obj/item/weapon/card/id/emt
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 	back = /obj/item/weapon/storage/backpack/medic
 
 
@@ -362,7 +362,7 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/logspec
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_cargo
 	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon1
