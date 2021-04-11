@@ -88,6 +88,8 @@ MOD_TEMPBAN_MAX 1440
 ## Maximum mod job tempban duration (in minutes)
 MOD_JOB_TEMPBAN_MAX 1440
 
+## Player limit count
+PLAYER_LIMIT 20
 
 ## probablities for game modes chosen in "secret" and "random" modes
 ##
