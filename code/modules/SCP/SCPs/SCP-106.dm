@@ -9,6 +9,8 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 	var/last_y = -1
 	var/last_z = -1
 	var/confusing = FALSE
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
 
 /mob/living/carbon/human/scp106/examine(mob/user)
 	user << "<b><span class = 'keter'><big>SCP-106</big></span></b> - [desc]"
@@ -97,7 +99,7 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 	return 1
 
 /mob/living/carbon/human/scp106/movement_delay()
-	return -1.5
+	return 2.0
 
 /mob/living/carbon/human/scp106/say(var/message, var/datum/language/speaking = null, whispering)
 	src << "<span class = 'notice'>You cannot speak.</span>"
@@ -250,6 +252,12 @@ GLOBAL_LIST_EMPTY(scp106_spawnpoints)
 	for (var/obj/O in get_step(src, dir))
 
 		if (!isstructure(O) && !ismachinery(O))
+			continue
+
+		if (istype(O, /obj/machinery/door/airlock/vault))
+			continue
+
+		if (istype(O, /obj/machinery/camera))
 			continue
 
 		if (istype(O, /obj/machinery/shieldwall) || istype(O, /obj/machinery/shieldwallgen))

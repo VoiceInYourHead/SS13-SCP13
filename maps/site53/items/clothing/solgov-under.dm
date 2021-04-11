@@ -45,7 +45,7 @@
 /obj/item/clothing/under/scp/utility/security
 	desc = "A dark black uniform. This one seems to be of the Security department. This uniform is issued to ranked personnel lower than Lieutenant. On the back, in silver lettering, are the words 'SCP FOUNDATION'."
 	name = "security uniform"
-	icon_state = "scpuniform"
+	icon_state = "scpuniform2"
 	worn_state = "uniform_s"
 
 /obj/item/clothing/under/scp/utility/security/zc
@@ -63,7 +63,7 @@
 /obj/item/clothing/under/scp/utility/medical
 	desc = "A dark black uniform. This one seems to be of the Medical department. This uniform is issued regardless of rank. On the back, in silver lettering, are the words 'SCP FOUNDATION'."
 	name = "medical uniform"
-	icon_state = "scpuniform"
+	icon_state = "scpuniform2"
 	worn_state = "uniform_m"
 
 /obj/item/clothing/under/scp/utility/engineering
@@ -434,3 +434,9 @@
 	species_restricted = list("Monkey")
 	sprite_sheets = list("Monkey" = 'icons/mob/species/monkey/uniform.dmi')
 //	starting_accessories = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/wo1_monkey)
+
+/obj/item/clothing/under/scp/utility/chaos
+	desc = "A dark black uniform. On the back, in silver lettering, are the words 'CHAOS INSURGENCY'."
+	name = "chaos uniform"
+	icon_state = "scpuniform3"
+	worn_state = "chaos"

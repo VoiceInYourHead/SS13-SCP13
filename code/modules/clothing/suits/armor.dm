@@ -230,6 +230,22 @@
 	desc = "A synthetic armor vest. This one is blue and has patches with the word 'PRESS' on the back and front."
 	icon_state = "pvest"
 
+/obj/item/clothing/suit/armor/vest/scp/medarmor
+	name = "armored vest"
+	desc = "A synthetic armor vest."
+	icon_state = "guard-armor"
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	armor = list(melee = 40, bullet = 50, laser = 40, energy = 25, bomb = 30, bio = 15, rad = 10)
+
+/obj/item/clothing/suit/armor/vest/scp/pizdeckakoyarmor
+	name = "Commander armor vest"
+	desc = "A synthetic armor vest. This one is for Commander."
+	icon_state = "heavy-guard-armor"
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	armor = list(melee = 40, bullet = 70, laser = 40, energy = 40, bomb = 40, bio = 15, rad = 10)
+
 /obj/item/clothing/suit/storage/vest
 	name = "webbed armor vest"
 	desc = "A synthetic armor vest. This one has added webbing and ballistic plates."
@@ -271,6 +287,14 @@
 	icon_state = "tacwebvest"
 	item_state = "tacwebvest"
 	armor = list(melee = 40, bullet = 40, laser = 60, energy = 35, bomb = 30, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/storage/vest/scp/medarmorchaos
+	name = "armored vest"
+	desc = "A synthetic armor vest."
+	icon_state = "chaos-armor"
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	armor = list(melee = 40, bullet = 50, laser = 40, energy = 25, bomb = 30, bio = 15, rad = 10)
 
 /obj/item/clothing/suit/storage/vest/merc
 	name = "heavy combat armor"
@@ -320,6 +344,9 @@
 	name = "green plate carrier"
 	desc = "A lightweight green plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_green"
+
+/obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/green, /obj/item/clothing/accessory/legguards/green)
 
 /obj/item/clothing/suit/armor/pcarrier/navy
 	name = "navy plate carrier"

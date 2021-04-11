@@ -9,6 +9,8 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	var/mob/living/target = null
 	var/zombies = 0
 	var/next_emote = -1
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	see_in_dark = 7
 
 /mob/living/carbon/human/scp049/examine(mob/user)
 	user << "<b><span class = 'euclid'><big>SCP-049</big></span></b> - [desc]"
@@ -40,6 +42,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	GLOB.scp049s += src
 
 	verbs += /mob/living/carbon/human/proc/SCP_049_talk
+	verbs += /mob/living/carbon/human/proc/door_049
 
 	// emotes
 	verbs += list(
@@ -75,7 +78,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 /mob/living/carbon/human/scp049/proc/update_stuff()
 	// stand_icon tends to come back after movement
 	fix_icons()
-	
+
 /mob/living/carbon/human/scp049/proc/fix_icons()
 	icon = null
 	icon_state = null
@@ -91,7 +94,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 
 	if (lying || resting)
 		SH.icon = turn(icon('icons/mob/scp049.dmi'), 90)
-	else 
+	else
 		SH.icon = 'icons/mob/scp049.dmi'
 
 	SH.dir = dir
@@ -103,7 +106,7 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	return 1
 
 /mob/living/carbon/human/scp049/movement_delay()
-	return -1.5
+	return 3.0
 
 // NPC stuff
 /mob/living/carbon/human/scp049/proc/getTarget()
@@ -255,6 +258,43 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 					else
 						target.visible_message("<span class = 'notice'>The surgery seems to have been unsucessful.</span>")
 			qdel(G)
+
+/mob/living/carbon/human/proc/door_049(obj/machinery/door/A in filter_list(oview(1), /obj/machinery/door))
+	set name = "Pry Open Airlock"
+	set category = "SCP-049"
+
+
+	if (istype(A, /obj/machinery/door/airlock/highsecurity))
+		to_chat(src, "<span class='warning'>\ You cannot open highsecurity doors.</span>")
+		return
+
+	if (istype(A, /obj/machinery/door/blast/regular))
+		to_chat(src, "<span class='warning'>\ You cannot open blast doors.</span>")
+		return
+
+	if(!istype(A) || incapacitated())
+		return
+
+	if(!A.Adjacent(src))
+		to_chat(src, "<span class='warning'>\The [A] is too far away.</span>")
+		return
+
+	if(!A.density)
+		return
+
+	src.visible_message("\The [src] begins to pry open \the [A]!")
+
+	if(!do_after(src,120,A))
+		return
+
+	if(!A.density)
+		return
+
+	A.do_animate("spark")
+	sleep(9)
+	A.stat |= BROKEN
+	var/check = A.open(1)
+	src.visible_message("\The [src] slices \the [A]'s controls[check ? ", ripping it open!" : ", breaking it!"]")
 
 // special channel that lets SCP-049 and SCP-049-1 communicate
 /mob/living/carbon/human/proc/SCP_049_talk()

@@ -64,7 +64,7 @@
 	name = "\improper SWAT Gloves"
 	item_state = "swat_gl"
 	force = 5
-	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/thick/combat //Combined effect of SWAT gloves and insulated gloves
 	desc = "These tactical gloves are somewhat fire and impact resistant."
@@ -74,7 +74,7 @@
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
 	force = 5
-	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = HANDS
@@ -86,7 +86,7 @@
 	icon_state = "wear-gloves"
 	item_state = "bg_gloves"
 	force = 5
-	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/thick/botany
 	desc = "These leather work gloves protect against thorns, barbs, prickles, spikes and other harmful objects of floral origin."
@@ -124,7 +124,7 @@
 	icon_state = "work"
 	item_state = "wgloves"
 	siemens_coefficient = 0.50
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 5, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/duty/modified
 	item_flags = ITEM_FLAG_PREMODIFIED
@@ -137,17 +137,17 @@
 	force = 5
 	siemens_coefficient = 0.50
 	permeability_coefficient = 0.05
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/tactical/scp
 	desc = "These grey tactical gloves are made from a durable synthetic, and have hardened knuckles."
 	name = "tactical gloves"
-	icon_state = "G_Gloves_IH"
-	item_state = "G_Gloves_OM"
+	icon_state = "scpgloves"
+	item_state = "scpgloves"
 	force = 5
 	siemens_coefficient = 0.50
 	permeability_coefficient = 0.05
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/guards
 	desc = "A pair of synthetic gloves and arm pads reinforced with armor plating."
@@ -158,7 +158,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.03
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/rubber
 	desc = "Heavy black gloves designed to protect the wearer from hazards."

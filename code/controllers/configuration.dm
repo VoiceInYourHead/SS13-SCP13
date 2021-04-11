@@ -158,7 +158,7 @@ var/list/gamemode_cache = list()
 	var/login_export_addr = null
 
 	var/enter_allowed = 1
-	var/player_limit = 0
+	var/player_limit = null
 
 	var/use_irc_bot = 0
 	var/irc_bot_host = ""

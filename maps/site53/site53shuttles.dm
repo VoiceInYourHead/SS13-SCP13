@@ -132,6 +132,42 @@
 	landmark_tag = "nav_lcz_out"
 	base_turf = /turf/simulated/floor/reinforced
 	base_area = /area/site53/ulcz/tram
+
+/datum/shuttle/autodock/ferry/chaos1
+	name = "Chaos Car 1"
+	warmup_time = 20
+	shuttle_area = list(/area/site53/tram/car1)
+	waypoint_station = "car1_start"
+	waypoint_offsite = "car1_out"
+
+
+/obj/effect/shuttle_landmark/chaos1/start
+	name = "Chaos Base"
+	landmark_tag = "car1_start"
+	base_turf = /turf/simulated/floor/exoplanet/snow
+
+/obj/effect/shuttle_landmark/chaos1/out
+	name = "Site 53"
+	landmark_tag = "car1_out"
+	base_turf = /turf/simulated/floor/exoplanet/snow
+
+/datum/shuttle/autodock/ferry/chaos2
+	name = "Chaos Car 2"
+	warmup_time = 20
+	shuttle_area = list(/area/site53/tram/car2)
+	waypoint_station = "car2_start"
+	waypoint_offsite = "car2_out"
+
+
+/obj/effect/shuttle_landmark/chaos2/start
+	name = "Chaos Base"
+	landmark_tag = "car2_start"
+	base_turf = /turf/simulated/floor/exoplanet/snow
+
+/obj/effect/shuttle_landmark/chaos2/out
+	name = "Site 53"
+	landmark_tag = "car2_out"
+	base_turf = /turf/simulated/floor/exoplanet/snow
 /*
 /datum/shuttle/autodock/multi/antag/rescue
 	name = "Rescue"

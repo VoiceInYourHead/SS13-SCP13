@@ -5,6 +5,18 @@
 
 #define get_turf(A) get_step(A,0)
 
+
+
+
+
+#define SPAN_WARNING(X) "<span class='warning'>[X]</span>"
+//void is trap
+#define SPAN_DANGER(X) "<span class='danger'>[X]</span>"
+
+
+
+
+
 #define isAI(A) istype(A, /mob/living/silicon/ai)
 
 #define isalien(A) istype(A, /mob/living/carbon/alien)
