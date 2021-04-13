@@ -59,4 +59,4 @@
 		playsound(src, 'sound/machines/pump.ogg', 25)
 		var/obj/item/organ/internal/heart/heart = H.internal_organs_by_name[BP_HEART]
 		if(heart)
-			heart.external_pump = list(world.time, 0.6)
+			heart.external_pump = list(world.time, 0.5)
