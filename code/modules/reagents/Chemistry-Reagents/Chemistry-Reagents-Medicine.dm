@@ -473,7 +473,8 @@
 	touch_met = 5
 
 /datum/reagent/sterilizine/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
-	M.germ_level -= min(removed*20, M.germ_level)
+	if(M.germ_level < INFECTION_LEVEL_TWO) // rest and antibiotics is required to cure serious infections
+		M.germ_level -= min(removed*20, M.germ_level)
 	for(var/obj/item/I in M.contents)
 		I.was_bloodied = null
 	M.was_bloodied = null
@@ -732,11 +733,19 @@
 	if(alien == IS_DIONA)
 		return
 
+	if(M.chem_doses[type] < 0.2)	//not that effective after initial rush
+		M.add_chemical_effect(CE_PAINKILLER, min(30*volume, 80))
+		M.add_chemical_effect(CE_PULSE, 1)
+	else if(M.chem_doses[type] < 1)
+		M.add_chemical_effect(CE_PAINKILLER, min(10*volume, 20))
+	M.add_chemical_effect(CE_PULSE, 2)
 	if(M.chem_doses[type] > 10)
 		M.make_jittery(5)
 	if(volume >= 5 && M.is_asystole())
 		remove_self(5)
-		M.resuscitate()
+		if(M.resuscitate())
+			var/obj/item/organ/internal/heart = M.internal_organs_by_name[BP_HEART]
+			heart.take_damage(heart.max_damage * 0.15)
 
 /datum/reagent/nanoblood
 	name = "Nanoblood"
