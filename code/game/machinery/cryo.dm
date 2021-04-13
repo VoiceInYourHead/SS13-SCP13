@@ -40,8 +40,8 @@
 /obj/machinery/atmospherics/unary/cryo_cell/Process()
 	..()
 
-	air_contents.temperature = 60
-	
+	air_contents.temperature = 120
+
 	if(!on)
 		return
 
@@ -131,7 +131,7 @@
 	if(user == occupant)
 		return STATUS_CLOSE
 	return ..()
-	    
+
 /obj/machinery/atmospherics/unary/cryo_cell/OnTopic(user, href_list)
 	if(href_list["switchOn"])
 		on = 1

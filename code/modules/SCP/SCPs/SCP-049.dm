@@ -169,6 +169,9 @@ GLOBAL_LIST_EMPTY(scp049_1s)
 	if (!isscp049(M) || isscp049_1(src) || src == M)
 		return ..(M)
 	var/mob/living/carbon/human/scp049/H = M
+	if (H.a_intent == I_HELP)
+		to_chat(H, "<span class='warning'>You refrain from curing as your intent is set to help.</span>")
+		return
 	if (H.client && !pestilence)
 		H << "<span class = 'danger'>They are not infected with the Pestilence.</span>"
 		return

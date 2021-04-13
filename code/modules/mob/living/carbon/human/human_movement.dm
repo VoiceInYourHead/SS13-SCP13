@@ -11,6 +11,9 @@
 	if(embedded_flag || (stomach_contents && stomach_contents.len))
 		handle_embedded_and_stomach_objects() //Moving with objects stuck in you can cause bad times.
 
+	if(istype(martial_art))
+		tally -= martial_art.speedboost
+
 	if(CE_SPEEDBOOST in chem_effects)
 		return -1
 

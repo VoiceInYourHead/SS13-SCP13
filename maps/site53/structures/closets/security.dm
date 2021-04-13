@@ -70,7 +70,7 @@
 	return list(
 		/obj/item/clothing/under/scp/utility/security/gc,
 		/obj/item/clothing/head/helmet/scp/security,
-		/obj/item/clothing/suit/armor/vest/scp/medarmor,
+		/obj/item/clothing/suit/armor/vest/scp/pizdeckakoyarmor,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
 		/obj/item/weapon/storage/belt/security/tactical,
 		/obj/item/weapon/gun/projectile/sec/sec,
@@ -139,7 +139,7 @@
 	return list(
 		/obj/item/clothing/under/scp/utility/security/zc,
 		/obj/item/clothing/head/helmet/scp/security,
-		/obj/item/clothing/suit/armor/vest/scp/medarmor,
+		/obj/item/clothing/suit/armor/vest/scp/pizdeckakoyarmor,
 		/obj/item/weapon/storage/belt/security/tactical,
 		/obj/item/weapon/gun/projectile/automatic/scp/m16,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,

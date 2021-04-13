@@ -12,6 +12,8 @@
 	max_damage = 45
 	scp106_vulnerable = FALSE
 	var/open
+	var/list/external_pump
+
 
 /obj/item/organ/internal/heart/die()
 	if(dead_icon)
