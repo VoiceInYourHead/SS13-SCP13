@@ -30,7 +30,11 @@ GLOBAL_LIST_EMPTY(scp999s)
 /mob/living/simple_animal/scp_999/New()
 	..()
 	GLOB.scp999s += src
-	
+//временно
+/mob/living/simple_animal/scp_999/say(var/message, var/datum/language/speaking = null, whispering)
+	src << "<span class = 'notice'>You cannot speak.</span>"
+	return 0
+
 /mob/living/simple_animal/scp_999/Destroy()
 	GLOB.scp999s -= src
 	..()
