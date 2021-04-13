@@ -441,6 +441,12 @@
 	required_reagents = list(/datum/reagent/tramadol/oxycodone = 1, /datum/reagent/dylovene = 1)
 	result_amount = 2
 
+/datum/chemical_reaction/adrenaline
+	name = "Adrenaline"
+	result = /datum/reagent/adrenaline
+	required_reagents = list(/datum/reagent/inaprovaline = 1, /datum/reagent/hyperzine = 1, /datum/reagent/dexalinp = 1)
+	result_amount = 3
+
 /* Solidification */
 
 /datum/chemical_reaction/phoronsolidification
@@ -1940,25 +1946,25 @@
 	result = /datum/reagent/nanoblood
 	required_reagents = list(/datum/reagent/dexalinp = 1, /datum/reagent/iron = 1, /datum/reagent/blood = 1)
 	result_amount = 3
-	
+
 /datum/chemical_reaction/amnestics/classa
 	name = "Amnestics-A"
 	result = /datum/reagent/amnestics/classa
 	required_reagents = list(/datum/reagent/ethanol = 20, /datum/reagent/mindbreaker = 10, /datum/reagent/sugar = 10)
 	result_amount = 1
-	
+
 /datum/chemical_reaction/amnestics/classb
 	name = "Amnestics-B"
 	result = /datum/reagent/amnestics/classb
 	required_reagents = list(/datum/reagent/mercury = 40, /datum/reagent/mindbreaker = 10, /datum/reagent/amnestics/classa = 1)
 	result_amount = 1
-	
+
 /datum/chemical_reaction/amnestics/classc
 	name = "Amnestics-C"
 	result = /datum/reagent/amnestics/classc
 	required_reagents = list(/datum/reagent/mercury = 60, /datum/reagent/mindbreaker = 10, /datum/reagent/amnestics/classb = 1)
 	result_amount = 1
-	
+
 /datum/chemical_reaction/amnestics/classe
 	name = "Amnestics-E"
 	result = /datum/reagent/amnestics/classe
