@@ -31,3 +31,11 @@
 		/obj/item/ammo_magazine/a127,
 		/obj/item/ammo_magazine/a127
 	)
+
+/obj/item/weapon/storage/briefcase/donator/kikita
+	startswith = list(
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74,
+		/obj/item/ammo_magazine/scp/donor_mag,
+		/obj/item/ammo_magazine/scp/donor_mag,
+		/obj/item/ammo_magazine/box/a762
+	)
