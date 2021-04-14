@@ -414,7 +414,7 @@
 
 /obj/item/weapon/gun/projectile/automatic/scp/donor/ak74
 	name = "AK-100"
-	desc = "Автомат Калашникова сотой серии под патрон 7,62х39. оснащен тритиевым целиком"
+	desc = "Автомат Калашникова сотой серии под патрон 7,62х39."
 	icon_state = "ak74"
 	item_state = "ak74"
 	w_class = ITEM_SIZE_HUGE
