@@ -41,6 +41,10 @@
 			new /mob/living/simple_animal/scp_999 (loc)
 			delete_me = 1
 			return
+		if ("scp343")
+			new /mob/living/carbon/human/scp343 (loc)
+			delete_me = 1
+			return
 		if("scp420j")
 			GLOB.possible_420j += loc
 			delete_me = 1
