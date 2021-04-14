@@ -753,9 +753,6 @@ Note that amputating the affected organ does in fact remove the infection from t
 	if(isscp106(owner))
 		return
 
-	if(isscp343(owner))
-		return
-
 	if(cannot_amputate || !owner)
 		return
 
@@ -943,8 +940,6 @@ Note that amputating the affected organ does in fact remove the infection from t
 	if(isscp106(owner))
 		return
 	if(isscp049(owner))
-		return
-	if(isscp343(owner))
 		return
 	if(!config.bones_can_break)
 		return
