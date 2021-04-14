@@ -45,6 +45,15 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a50
 
+/obj/item/weapon/gun/projectile/revolver/donor
+	name = "SHR-12 Zveroboy"
+	desc = "Револьвер с цельной металлической рамкой и барабаном на 5 патронов калибра 12.7. Один только вид этого оружия внушает страх. На правой стороне утяжелённого кожуха стола выгравировано: 'Управление 'А' ОТГ 'Егеря' Пронин Т.'"
+	icon_state = "donator"
+	caliber = "12,7x50"
+	max_shells = 5
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	ammo_type = /obj/item/ammo_casing/a127
+
 /obj/item/weapon/gun/projectile/revolver/tactical
 	name = "tactical revolver"
 	desc = "A semi automatic revolver chambered in .500 Magnum, useful if you want to tear an arm off by dislocating yours. This one has an orange stripe."

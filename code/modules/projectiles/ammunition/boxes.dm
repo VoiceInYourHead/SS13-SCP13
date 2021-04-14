@@ -11,6 +11,19 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/a127
+	//name = "ammo box (.357)"
+	//desc = "A box of .357 ammo"
+	//icon_state = "357"
+	name = "speed loader (12,7x50mm)"
+	desc = "A speed loader for revolvers."
+	icon_state = "127"
+	caliber = "12,7x50"
+	ammo_type = /obj/item/ammo_casing/a127
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 5
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/c50
 	name = "speed loader (.50)"
 	desc = "A speed loader for revolvers."
@@ -167,6 +180,24 @@
 /obj/item/ammo_magazine/mc9mmt/practice
 	name = "top mounted magazine (9mm, practice)"
 	ammo_type = /obj/item/ammo_casing/c9mm/practice
+
+/obj/item/ammo_magazine/box/a762
+	name = "ammunition box (7.62)"
+	icon_state = "csla_box"
+	origin_tech = list(TECH_COMBAT = 2)
+	caliber = "a762"
+	matter = list(DEFAULT_WALL_MATERIAL = 2250)
+	ammo_type = /obj/item/ammo_casing/a762
+	max_ammo = 40
+
+/obj/item/ammo_magazine/box/a556alt
+	name = "ammunition box (5.56)"
+	icon_state = "usmc_box"
+	origin_tech = list(TECH_COMBAT = 2)
+	caliber = "a556"
+	matter = list(DEFAULT_WALL_MATERIAL = 2250)
+	ammo_type = /obj/item/ammo_casing/a556
+	max_ammo = 40
 
 /obj/item/ammo_magazine/box/c45
 	name = "ammunition box (.45)"
@@ -376,3 +407,14 @@
 
 /obj/item/ammo_magazine/scp/m16_mag/empty
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/scp/donor_mag
+	name = "magazine (7.62)"
+	icon_state = "7.62x39mm"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "a762"
+	matter = list(DEFAULT_WALL_MATERIAL = 1500)
+	ammo_type = /obj/item/ammo_casing/a762
+	max_ammo = 30
+	multiple_sprites = 1

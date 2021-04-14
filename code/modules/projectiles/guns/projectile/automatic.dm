@@ -412,9 +412,30 @@
 		icon_state = "m16-empty"
 	return
 
-/obj/item/weapon/gun/projectile/automatic/scp/m16/verb/scope()
-	set category = "Object"
-	set name = "Use Scope"
-	set popup_menu = 1
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74
+	name = "AK-100"
+	desc = "Автомат Калашникова сотой серии под патрон 7,62х39."
+	icon_state = "ak74"
+	item_state = "ak74"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	caliber = "a762"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/scp/donor_mag
+	allowed_magazines = /obj/item/ammo_magazine/scp/donor_mag
 
-	toggle_scope(usr, 0.5)
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ak74"
+	else
+		icon_state = "ak74-empty"
+	return
