@@ -32,7 +32,8 @@
 
 /obj/item/weapon/dice/d20/cursed/attack_self(mob/living/user)
 	..()
-	if(icon_state == "[name][sides]")
-		user.adjustBruteLoss(-30)
+	var/damage = rand(5, 7)
+	if(icon_state == "[name]20")
+		user.adjustBruteLoss(-60)
 	else if(icon_state == "[name]1")
-		user.adjustBruteLoss(30)
+		user.apply_damage(10 * damage, BRUTE, BP_HEAD)
