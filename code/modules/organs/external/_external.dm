@@ -747,12 +747,6 @@ Note that amputating the affected organ does in fact remove the infection from t
 //Handles dismemberment
 /obj/item/organ/external/proc/droplimb(var/clean, var/disintegrate = DROPLIMB_EDGE, var/ignore_children, var/silent)
 
-	if(isscp049(owner))
-		return
-
-	if(isscp106(owner))
-		return
-
 	if(cannot_amputate || !owner)
 		return
 
@@ -937,10 +931,6 @@ Note that amputating the affected organ does in fact remove the infection from t
 			return 1
 
 /obj/item/organ/external/proc/fracture()
-	if(isscp106(owner))
-		return
-	if(isscp049(owner))
-		return
 	if(!config.bones_can_break)
 		return
 	if(robotic >= ORGAN_ROBOT)
