@@ -36,31 +36,31 @@
 
 //Standard biosuit, orange stripe
 /obj/item/clothing/head/bio_hood/general
-	icon_state = "hazmat_white_head"
+	icon_state = "bio_general"
 	body_parts_covered = HEAD|FACE|EYES
 
 /obj/item/clothing/suit/bio_suit/general
-	icon_state = "hazmat_white"
+	icon_state = "bio_general"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES
 
 //Virology biosuit, green stripe
 /obj/item/clothing/head/bio_hood/virology
-	icon_state = "hazmat_cyan_head"
+	icon_state = "bio_virology"
 
 /obj/item/clothing/suit/bio_suit/virology
-	icon_state = "hazmat_cyan"
+	icon_state = "bio_virology"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES
 
 //Security biosuit, grey with red stripe across the chest
 /obj/item/clothing/head/bio_hood/security
-	icon_state = "hazmat_sec_head"
+	icon_state = "bio_security"
 
 /obj/item/clothing/suit/bio_suit/security
-	icon_state = "hazmat_sec"
+	icon_state = "bio_security"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES
 
 //Janitor's biosuit, grey with purple arms
 /obj/item/clothing/head/bio_hood/janitor
@@ -83,12 +83,12 @@
 
 //CMO's biosuit, blue stripe
 /obj/item/clothing/suit/bio_suit/cmo
-	icon_state = "hazmat_cmo"
+	icon_state = "bio_cmo"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES
 
 /obj/item/clothing/head/bio_hood/cmo
-	icon_state = "hazmat_cmo_head"
+	icon_state = "bio_cmo"
 
 
 //Plague Dr mask can be found in clothing/masks/gasmask.dm

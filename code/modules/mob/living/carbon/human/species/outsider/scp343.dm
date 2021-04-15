@@ -24,6 +24,7 @@
 	// damage icon overrides
 	damage_overlays = 'icons/mob/human_races/masks/dam_human.dmi'
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
+	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 
 	// damage overrides
 	brute_mod =      0.0                    // 50% physical damage

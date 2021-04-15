@@ -291,7 +291,7 @@
 "fE" = (/obj/machinery/light/small{icon_state = "bulb1"; dir = 1},/obj/structure/closet/crate/freezer,/turf/simulated/floor/tiled/monotile/white,/area/site53/medical/surgery/storage)
 "fF" = (/obj/structure/closet/crate/freezer,/turf/simulated/floor/tiled/monotile/white,/area/site53/medical/surgery/storage)
 "fG" = (/obj/machinery/organ_printer/flesh/mapped{max_stored_matter = 9000; stored_matter = 9000},/turf/simulated/floor/tiled/monotile/white,/area/site53/medical/surgery/storage)
-"fH" = (/obj/item/weapon/storage/box/freezer,/obj/structure/table/rack,/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = list(201)},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/item/roller,/obj/item/clothing/suit/bio_suit/general,/obj/item/clothing/suit/bio_suit/general,/turf/simulated/floor/tiled/monotile/white,/area/site53/medical/surgery/storage)
+"fH" = (/obj/item/weapon/storage/box/freezer,/obj/structure/table/rack,/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 24; req_access = list(201)},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/item/roller,/turf/simulated/floor/tiled/monotile/white,/area/site53/medical/surgery/storage)
 "fI" = (/obj/structure/closet/secure_closet/medical3{anchored = 1},/obj/item/weapon/storage/backpack/satchel_med,/obj/item/clothing/accessory/storage/white_vest,/turf/simulated/floor/tiled/monotile/white,/area/site53/medical/surgery/storage)
 "fJ" = (/obj/structure/railing/mapped{icon_state = "railing0"; dir = 4},/turf/simulated/floor/exoplanet/grass,/area/site53/surface/surface)
 "fK" = (/obj/structure/railing/mapped{icon_state = "railing0"; dir = 8},/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface)

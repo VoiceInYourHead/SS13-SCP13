@@ -1,6 +1,6 @@
 GLOBAL_LIST_EMPTY(scp529s)
 
-/mob/living/simple_animal/cat/fluff/scp_529
+/mob/living/simple_animal/cat/fluff/SCP529
 	SCP = /datum/scp/SCP_529
 	name = "SCP-529"
 	desc = "A friendly tabby cat that seems to be missing half of her body."
@@ -22,7 +22,7 @@ GLOBAL_LIST_EMPTY(scp529s)
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	see_in_dark = 7
 
-/mob/living/simple_animal/cat/fluff/scp_529/examine(mob/user)
+/mob/living/simple_animal/cat/fluff/SCP529/examine(mob/user)
 	user << "<b><span class = 'safe'><big>SCP-529</big></span></b> - [desc]"
 
 
