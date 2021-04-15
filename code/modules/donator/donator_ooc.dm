@@ -1,5 +1,5 @@
 /client/proc/dooc(msg as text)
-	set category = "OOC"
+	set category = "Donator"
 	set name = "DOOC"
 	set desc = "Donator OOC"
 

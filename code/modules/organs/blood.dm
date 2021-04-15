@@ -281,7 +281,7 @@ proc/blood_splatter(var/target,var/datum/reagent/blood/source,var/large,var/spra
 				if(recent_pump)
 					pulse_mod = LAZYACCESS(heart.external_pump, 2)
 				else
-					pulse_mod *= 0.25
+					pulse_mod *= 0.40
 			if(PULSE_SLOW)
 				pulse_mod *= 0.9
 			if(PULSE_FAST)
