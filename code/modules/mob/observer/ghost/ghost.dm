@@ -523,20 +523,16 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		var/mob/M = scp131
 		if (!M.client)
 			scps += M
-	for (var/scp529 in GLOB.scp529s)
-		var/mob/M = scp529
-		if (!M.client)
-			scps += M
 	for (var/scp999 in GLOB.scp999s)
 		var/mob/M = scp999
 		if (!M.client)
 			scps += M
-	for (var/scp529 in GLOB.scp529s)
-		var/mob/M = scp529
-		if (!M.client)
-			scps += M
 	for (var/scp343 in GLOB.scp343s)
 		var/mob/M = scp343
+		if (!M.client)
+			scps += M
+	for (var/scp529 in GLOB.scp529s)
+		var/mob/M = scp529
 		if (!M.client)
 			scps += M
 	if (scps.len)
@@ -545,9 +541,9 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			to_chat(src, "You cannot join as this SCP for [((5 MINUTES) - world.time)/600] more minutes.")
 		else if (isscp131(scp) && world.time < 5 MINUTES)
 			to_chat(src, "You cannot join as this SCP for [((5 MINUTES) - world.time)/600] more minutes.")
-		else if (isscp529(scp) && world.time < 5 MINUTES)
-			to_chat(src, "You cannot join as this SCP for [((5 MINUTES) - world.time)/600] more minutes.")
 		else if (isscp343(scp) && world.time < 5 MINUTES)
+			to_chat(src, "You cannot join as this SCP for [((5 MINUTES) - world.time)/600] more minutes.")
+		else if (isscp529(scp) && world.time < 5 MINUTES)
 			to_chat(src, "You cannot join as this SCP for [((5 MINUTES) - world.time)/600] more minutes.")
 		else if (scp && !scp.client)
 			scp.do_possession(src)
