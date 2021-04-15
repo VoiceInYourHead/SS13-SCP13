@@ -42,7 +42,7 @@
 /obj/item/clothing/suit/bio_suit/general
 	icon_state = "hazmat_white"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|BLOCKHAIR
 
 //Virology biosuit, green stripe
 /obj/item/clothing/head/bio_hood/virology
@@ -51,7 +51,7 @@
 /obj/item/clothing/suit/bio_suit/virology
 	icon_state = "hazmat_cyan"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|BLOCKHAIR
 
 //Security biosuit, grey with red stripe across the chest
 /obj/item/clothing/head/bio_hood/security
@@ -60,7 +60,7 @@
 /obj/item/clothing/suit/bio_suit/security
 	icon_state = "hazmat_sec"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|BLOCKHAIR
 
 //Janitor's biosuit, grey with purple arms
 /obj/item/clothing/head/bio_hood/janitor
@@ -85,7 +85,7 @@
 /obj/item/clothing/suit/bio_suit/cmo
 	icon_state = "hazmat_cmo"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES|BLOCKHAIR
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|BLOCKHAIR
 
 /obj/item/clothing/head/bio_hood/cmo
 	icon_state = "hazmat_cmo_head"
