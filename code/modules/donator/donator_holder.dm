@@ -9,9 +9,11 @@
 	proc/add_flags(var/flgs)
 		if(flgs & D_DOOC)
 			client.verbs += /client/proc/dooc
+			client.verbs += /client/proc/dcolorooc
 		flags |= flgs
 
 	proc/remove_flags(var/flgs)
 		if(flgs & D_DOOC)
+			client.verbs -= /client/proc/dcolorooc
 			client.verbs -= /client/proc/dooc
 		flags &= ~flgs

@@ -19,7 +19,7 @@ GLOBAL_LIST_EMPTY(scp131s)
 	// language = LANGUAGE_EYEPOD
 	species_language = LANGUAGE_EYEPOD
 	only_species_language = 1
-	density = 0	
+	density = 0
 	universal_speak = 0
 	universal_understand = 1
 	mob_size = MOB_MEDIUM
@@ -40,6 +40,11 @@ GLOBAL_LIST_EMPTY(scp131s)
 	var/befriend_job = null
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	see_in_dark = 7
+
+//временно
+/mob/living/simple_animal/scp_131/say(var/message, var/datum/language/speaking = null, whispering)
+	src << "<span class = 'notice'>You cannot speak.</span>"
+	return 0
 
 /mob/living/simple_animal/scp_131/a
 	name = "SCP-131-A"
@@ -151,7 +156,7 @@ GLOBAL_LIST_EMPTY(scp131s)
 		if(study_target)
 			if (get_dist(src, study_target) < 5)
 				set_dir(get_dir(src, study_target))
-				if(prob(25)) 
+				if(prob(25))
 					visible_emote(pick("looks inquisitively at [study_target].","studies [study_target].","observes [study_target]."))
 					if(prob(50)) study_target = null
 

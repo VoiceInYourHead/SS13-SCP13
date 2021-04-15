@@ -92,6 +92,8 @@
 
 #define isscp049(A) istype(A, /mob/living/carbon/human/scp049)
 
+#define isscp343(A) istype(A, /mob/living/carbon/human/scp343)
+
 #define isscp049_1(A) (istype(A, /mob/living/carbon/human) && istype(A:species, /datum/species/scp049_1))
 
 #define isscp999(A) istype(A, /mob/living/simple_animal/scp_999)
