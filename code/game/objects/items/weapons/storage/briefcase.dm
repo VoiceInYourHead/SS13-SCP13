@@ -29,13 +29,59 @@
 		/obj/item/weapon/gun/projectile/revolver/donor,
 		/obj/item/ammo_magazine/a127,
 		/obj/item/ammo_magazine/a127,
-		/obj/item/ammo_magazine/a127
+		/obj/item/ammo_magazine/a127,
+		/obj/item/clothing/gloves/tactical/donor,
+		/obj/item/clothing/head/helmet/scp/donor,
+		/obj/item/clothing/shoes/donor,
+		/obj/item/clothing/suit/armor/vest/scp/donor,
+		/obj/item/clothing/under/scp/donor
+	)
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/revolver/donor,
+		/obj/item/ammo_magazine/a127,
+		/obj/item/ammo_magazine/a127,
+		/obj/item/ammo_magazine/a127,
+		/obj/item/clothing/gloves/tactical/donor,
+		/obj/item/clothing/head/helmet/scp/donor,
+		/obj/item/clothing/shoes/donor,
+		/obj/item/clothing/suit/armor/vest/scp/donor,
+		/obj/item/clothing/under/scp/donor
 	)
 
 /obj/item/weapon/storage/briefcase/donator/kikita
 	startswith = list(
 		/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74,
-		/obj/item/ammo_magazine/scp/donor_mag,
-		/obj/item/ammo_magazine/scp/donor_mag,
+		/obj/item/ammo_magazine/scp/ak,
+		/obj/item/ammo_magazine/scp/ak,
 		/obj/item/ammo_magazine/box/a762
+	)
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74,
+		/obj/item/ammo_magazine/scp/ak,
+		/obj/item/ammo_magazine/scp/ak,
+		/obj/item/ammo_magazine/box/a762
+	)
+
+/obj/item/weapon/storage/briefcase/donator/corporal
+	startswith = list(
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon,
+		/obj/item/ammo_magazine/scp/ierichon,
+		/obj/item/ammo_magazine/scp/ierichon,
+		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/box/c45donor,
+		/obj/item/ammo_magazine/box/c45donor/rubber,
+		/obj/item/clothing/accessory/holster/donor
+	)
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon,
+		/obj/item/ammo_magazine/scp/ierichon,
+		/obj/item/ammo_magazine/scp/ierichon,
+		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/box/c45donor,
+		/obj/item/ammo_magazine/box/c45donor/rubber,
+		/obj/item/clothing/accessory/holster/donor
 	)

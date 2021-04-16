@@ -40,11 +40,11 @@
 	..()
 
 //Pods
-/*
+
 /datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod7
 	warmup_time = 10
 	shuttle_area = /area/shuttle/escape_pod7/station
-	number = 7*/
+	number = 7
 /obj/effect/shuttle_landmark/escape_pod/start/pod7
 	number = 7
 /obj/effect/shuttle_landmark/escape_pod/out/pod7

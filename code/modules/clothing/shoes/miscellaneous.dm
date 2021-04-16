@@ -80,6 +80,14 @@
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
+/obj/item/clothing/shoes/donor
+	name = "duty boots"
+	desc = "A pair of steel-toed synthleather boots with a mirror shine."
+	icon_state = "donor_sec"
+	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
+	siemens_coefficient = 0.7
+	can_hold_knife = 1
+
 /obj/item/clothing/shoes/tactical
 	name = "tactical boots"
 	desc = "Tan boots with extra padding and armor."
