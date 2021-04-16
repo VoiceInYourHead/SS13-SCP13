@@ -213,21 +213,3 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 
 	feedback_add_details("admin_verb","AH") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	return
-
-client/verb/bugreport()
-	set category = "Admin"
-	set name ="Submit Bug Report/Suggestions"
-	var url = "https://scp13.site/index.php?/forums/forum/8-bugs-and-suggestions/"
-	if(url)
-		if(alert("This will open the SCP13 Bug Report and Suggestions Forum Page in your Browser. Are you sure?",,"Yes","No")=="No")
-			return
-		src << link(url)
-
-client/verb/reportplayer()
-	set category = "Admin"
-	set name ="Report Player / Staff"
-	var url = "https://scp13.site/index.php?/forums/"
-	if(url)
-		if(alert("This will open the SCP13 Reports Forum Page in your Browser. This hasn't been made yet due to our Alpha stage. Are you sure?",,"Yes","No")=="No")
-			return
-		src << link(url)
