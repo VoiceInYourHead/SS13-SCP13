@@ -423,8 +423,8 @@
 	caliber = "a762"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/scp/donor_mag
-	allowed_magazines = /obj/item/ammo_magazine/scp/donor_mag
+	magazine_type = /obj/item/ammo_magazine/scp/ak
+	allowed_magazines = /obj/item/ammo_magazine/scp/ak
 
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
@@ -439,3 +439,29 @@
 	else
 		icon_state = "ak74-empty"
 	return
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon
+	name = "Jericho-114 Pistol "
+	desc = "Специальная разработка фонда для борьбы с бронированными целями, выдающаяся за особые заслуги старшему составу сотрудников безопастности."
+	icon_state = "ierichon"
+	item_state = "ierichon"
+	w_class = ITEM_SIZE_NORMAL
+	load_method = MAGAZINE
+	caliber = ".45"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 3)
+	slot_flags = SLOT_BELT
+	ammo_type = /obj/item/ammo_casing/c45
+	magazine_type = /obj/item/ammo_magazine/scp/ierichon
+	allowed_magazines = /obj/item/ammo_magazine/scp/ierichon //more damage compared to the wt550, smaller mag size
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ierichon"
+	else
+		icon_state = "ierichon-empty"

@@ -218,3 +218,11 @@
 	body_parts_covered = HEAD //face shield
 	armor = list(melee = 50, bullet = 70, laser = 50,energy = 25, bomb = 40, bio = 10, rad = 10)
 	flags_inv = HIDEEARS
+
+/obj/item/clothing/head/helmet/scp/donor
+	name = "\improper corporate security helmet"
+	desc = "A helmet with 'CORPORATE SECURITY' printed on the white lettering."
+	icon_state = "donor_sec"
+	body_parts_covered = HEAD|FACE|EYES //face shield
+	armor = list(melee = 50, bullet = 60, laser = 50,energy = 25, bomb = 30, bio = 10, rad = 10)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR

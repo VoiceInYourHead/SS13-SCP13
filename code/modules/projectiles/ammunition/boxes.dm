@@ -112,6 +112,26 @@
 /obj/item/ammo_magazine/c45uzi/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/scp/ierichon
+	name = "Jericho-114 magazine (.45)"
+	icon_state = "9mmds"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/c45
+	matter = list(DEFAULT_WALL_MATERIAL = 1200)
+	caliber = ".45"
+	max_ammo = 20
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/ierichon/rubber
+	name = "Jericho-114 rubber magazine (.45)"
+	icon_state = "R9mmds"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/c45/rubber
+	matter = list(DEFAULT_WALL_MATERIAL = 1200)
+	caliber = ".45"
+	max_ammo = 20
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/mc9mm
 	name = "magazine (9mm)"
 	icon_state = "9x19p"
@@ -189,6 +209,27 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 2250)
 	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 40
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/box/c45donor
+	name = "ammunition box (.45)"
+	icon_state = "ammobox"
+	origin_tech = list(TECH_COMBAT = 2)
+	caliber = ".45"
+	matter = list(DEFAULT_WALL_MATERIAL = 2250)
+	ammo_type = /obj/item/ammo_casing/c45
+	max_ammo = 50
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/box/c45donor/rubber
+	name = "rubber ammunition box (.45)"
+	icon_state = "ammoboxr"
+	origin_tech = list(TECH_COMBAT = 2)
+	caliber = ".45"
+	matter = list(DEFAULT_WALL_MATERIAL = 2250)
+	ammo_type = /obj/item/ammo_casing/c45/rubber
+	max_ammo = 50
+	multiple_sprites = 1
 
 /obj/item/ammo_magazine/box/a556alt
 	name = "ammunition box (5.56)"
@@ -198,6 +239,7 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 2250)
 	ammo_type = /obj/item/ammo_casing/a556
 	max_ammo = 40
+	multiple_sprites = 1
 
 /obj/item/ammo_magazine/box/c45
 	name = "ammunition box (.45)"
@@ -408,7 +450,7 @@
 /obj/item/ammo_magazine/scp/m16_mag/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/scp/donor_mag
+/obj/item/ammo_magazine/scp/ak
 	name = "magazine (7.62)"
 	icon_state = "7.62x39mm"
 	origin_tech = list(TECH_COMBAT = 2)
