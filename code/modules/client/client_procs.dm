@@ -171,22 +171,22 @@ GLOBAL_LIST_EMPTY(client2mob)
 			// even though we may not have been garbage-collected yet
 			// so append us to all relevant lists
 			// I think this only occurs with new_players but you never know
-			GLOB.mob_list |= mob 
-			GLOB.player_list |= mob 
+			GLOB.mob_list |= mob
+			GLOB.player_list |= mob
 
 			if (isliving(mob))
 				GLOB.living_mob_list_ |= mob
-				var/mob/living/L = mob 
+				var/mob/living/L = mob
 				if (L.stat == DEAD)
 					GLOB.dead_mob_list_ |= mob
 			if (ishuman(mob))
-				GLOB.human_mob_list |= mob 
+				GLOB.human_mob_list |= mob
 			if (issilicon(mob))
-				GLOB.silicon_mob_list |= mob 
+				GLOB.silicon_mob_list |= mob
 			if (isghost(mob))
 				GLOB.ghost_mob_list |= mob
 
-		else 
+		else
 
 			GLOB.client2mob -= ckey
 
@@ -245,7 +245,7 @@ GLOBAL_LIST_EMPTY(client2mob)
 		GLOB.donators += src
 	else
 		donator_holder = new/datum/donator(src, 0) // Adding a Donator Holder anyway is worth while.
-				
+
 	return TRUE
 
 	//////////////
@@ -256,7 +256,7 @@ GLOBAL_LIST_EMPTY(client2mob)
 
 // made this remove a lot more references so clients properly GC
 /client/Destroy()
-	
+
 	if (mob)
 		GLOB.client2mob[ckey] = mob
 		mob.Logout()
@@ -266,12 +266,12 @@ GLOBAL_LIST_EMPTY(client2mob)
 	if (eye && ismob(eye) && eye:client == src)
 		eye:client = null
 	if (statobj && ismob(statobj) && statobj:client == src)
-		statobj:client = null 
+		statobj:client = null
 	if (virtual_eye && ismob(virtual_eye) && virtual_eye:client == src)
 		virtual_eye:client = null
 	if (prefs && prefs.client == src)
 		prefs.client = null
-	key = null 
+	key = null
 	ticket_panels -= src
 	if(holder)
 		holder.owner = null
@@ -423,6 +423,7 @@ GLOBAL_LIST_EMPTY(client2mob)
 		'html/images/ecd.png',
 		'html/images/int.png',
 		'html/images/mtf.png',
+		'html/images/trib.png',
 		'html/images/scplogo.png'
 		)
 
