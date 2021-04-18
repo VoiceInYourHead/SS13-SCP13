@@ -104,6 +104,7 @@
 	#include "../../code/modules/lobby_music/foundation.dm"
 	#include "../../code/modules/lobby_music/humanity.dm"
 	#include "../../code/modules/lobby_music/days.dm"
+	#include "../../code/modules/lobby_music/lithium.dm"
 
 
 	#define using_map_DATUM /datum/map/site53

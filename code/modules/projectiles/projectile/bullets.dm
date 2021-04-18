@@ -176,9 +176,9 @@
 
 /obj/item/projectile/bullet/pistol/strong //matebas
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 60 //.50AE
+	damage = 50 //.50AE
 	armor_penetration = 30
-	agony = 40
+	agony = 15
 
 /obj/item/projectile/bullet/pistol/vstrong //tacrevolver
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
@@ -238,7 +238,7 @@
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 50
+	damage = 35
 	armor_penetration = 40
 	agony = 23
 

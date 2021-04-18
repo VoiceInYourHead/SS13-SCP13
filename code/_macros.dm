@@ -5,6 +5,19 @@
 
 #define get_turf(A) get_step(A,0)
 
+
+
+
+
+#define SPAN_WARNING(X) "<span class='warning'>[X]</span>"
+//void is trap
+#define SPAN_DANGER(X) "<span class='danger'>[X]</span>"
+#define SPAN_NOTICE(X) "<span class='notice'>[X]</span>"
+
+
+
+
+
 #define isAI(A) istype(A, /mob/living/silicon/ai)
 
 #define isalien(A) istype(A, /mob/living/carbon/alien)
@@ -79,13 +92,15 @@
 
 #define isscp049(A) istype(A, /mob/living/carbon/human/scp049)
 
+#define isscp343(A) istype(A, /mob/living/carbon/human/scp343)
+
 #define isscp049_1(A) (istype(A, /mob/living/carbon/human) && istype(A:species, /datum/species/scp049_1))
 
 #define isscp999(A) istype(A, /mob/living/simple_animal/scp_999)
 
 #define isscp131(A) istype(A, /mob/living/simple_animal/scp_131)
 
-#define isscp529(A) istype(A, /mob/living/simple_animal/cat/fluff/SCP529)
+#define isscp529(A) istype(A, /mob/living/simple_animal/cat/fluff/scp_529)
 
 #define isscp173(A) istype(A, /mob/living/scp_173)
 

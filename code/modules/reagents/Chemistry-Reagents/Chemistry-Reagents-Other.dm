@@ -424,7 +424,7 @@
 	color = "#708238"
 	taste_description = "что-то, о чем ты уже забыл"
 
-/datum/reagent/amnestics/classc/on_mob_life(mob/living/M)
+/datum/reagent/amnestics/classd/on_mob_life(mob/living/M)
 	to_chat(M, "<span class='notice'>Воспоминания вырваны из головы!")
 	to_chat(M, "<span class='boldannounce'>Кажется, единственное что вы помните - это то как подписывали какие-то бумаги в кабинете с человеком в белом медицинском халате, а так же забыли еще несколько последних недель. Как вы тут вообще оказались?</span>")
 	M.visible_message("<span class='warning'>[M] looks like they've suddenly gotten lost.")

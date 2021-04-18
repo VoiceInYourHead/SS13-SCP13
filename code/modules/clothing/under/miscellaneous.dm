@@ -597,7 +597,7 @@
 
 /obj/item/clothing/under/frontier
 	name = "frontier clothes"
-	desc = "A rugged flannel shirt and denim overalls. A popular style among frontier colonists."
+	desc = "A rugged flannel shirt and denim overalls. A popular style among frontier citizens."
 	icon_state = "frontier"
 	worn_state = "frontier"
 
@@ -686,6 +686,11 @@
 	name = "white uniform"
 	desc = "A sterile white uniform."
 	icon_state = "white"
+
+/obj/item/clothing/under/scp/donor
+	name = "grey uniform"
+	desc = "A grey uniform."
+	icon_state = "donor_sec"
 
 /obj/item/clothing/under/scp/greyuniform
 	name = "grey uniform"

@@ -355,8 +355,8 @@
 	w_class = ITEM_SIZE_HUGE
 	force = 12
 	caliber = "10mm"
+	slot_flags = SLOT_BELT|SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
-	slot_flags = 0 //no sprites
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/scp/p90_mag
 	allowed_magazines = /obj/item/ammo_magazine/scp/p90_mag
@@ -391,9 +391,9 @@
 	item_state = "m16"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
+	slot_flags = SLOT_BACK
 	caliber = "a556"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
-	slot_flags = 0 //no sprites
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/scp/m16_mag
 	allowed_magazines = /obj/item/ammo_magazine/scp/m16_mag
@@ -412,9 +412,56 @@
 		icon_state = "m16-empty"
 	return
 
-/obj/item/weapon/gun/projectile/automatic/scp/m16/verb/scope()
-	set category = "Object"
-	set name = "Use Scope"
-	set popup_menu = 1
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74
+	name = "AK-103"
+	desc = "Автомат Калашникова сотой серии под патрон 7,62х39."
+	icon_state = "ak74"
+	item_state = "ak74"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	caliber = "a762"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/scp/ak
+	allowed_magazines = /obj/item/ammo_magazine/scp/ak
 
-	toggle_scope(usr, 0.5)
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ak74"
+	else
+		icon_state = "ak74-empty"
+	return
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon
+	name = "Jericho-114 Pistol "
+	desc = "Специальная разработка фонда для борьбы с бронированными целями, выдающаяся за особые заслуги старшему составу сотрудников безопастности."
+	icon_state = "ierichon"
+	item_state = "ierichon"
+	w_class = ITEM_SIZE_NORMAL
+	load_method = MAGAZINE
+	caliber = ".45"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 3)
+	slot_flags = SLOT_BELT
+	ammo_type = /obj/item/ammo_casing/c45
+	magazine_type = /obj/item/ammo_magazine/scp/ierichon
+	allowed_magazines = /obj/item/ammo_magazine/scp/ierichon //more damage compared to the wt550, smaller mag size
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ierichon"
+	else
+		icon_state = "ierichon-empty"

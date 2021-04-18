@@ -108,6 +108,21 @@
 		/obj/item/stack/medical/splint,
 		)
 
+/obj/item/weapon/storage/firstaid/combat/mtf
+	name = "combat medical kit"
+	desc = "Contains advanced medical treatments."
+	icon_state = "bezerk"
+	item_state = "firstaid-advanced"
+
+	startswith = list(
+		/obj/item/weapon/storage/pill_bottle/bicaridine,
+		/obj/item/stack/medical/advanced/bruise_pack = 1,
+		/obj/item/stack/medical/advanced/ointment = 1,
+		/obj/item/weapon/storage/pill_bottle/tramadol,
+		/obj/item/weapon/storage/pill_bottle/spaceacillin,
+		/obj/item/stack/medical/splint,
+		)
+
 /obj/item/weapon/storage/firstaid/surgery
 	name = "surgery kit"
 	desc = "Contains tools for surgery. Has precise foam fitting for safe transport and automatically sterilizes the content between uses."

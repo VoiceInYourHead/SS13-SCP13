@@ -13,6 +13,16 @@ meteor_act
 	if(!has_organ(def_zone))
 		return PROJECTILE_FORCE_MISS //if they don't have the organ in question then the projectile just passes by.
 
+	if(istype(martial_art) && martial_art.reflect_prob && !incapacitated())
+		if(prob(martial_art.reflect_prob))
+			if(martial_art.reflect_prob <= 25)
+				visible_message("[src] dodges [P]!")
+			else if(martial_art.reflect_prob <= 75)
+				visible_message("[src] dodges [P] with inhuman speed!")
+			else
+				visible_message("[src] deflects [P] with his own arm!")
+			return PROJECTILE_FORCE_MISS
+
 	//Shields
 	var/shield_check = check_shields(P.damage, P, null, def_zone, "the [P.name]")
 	if(shield_check)
@@ -70,7 +80,7 @@ meteor_act
 	..(stun_amount, agony_amount, def_zone)
 
 /mob/living/carbon/human/getarmor(var/def_zone, var/type)
-		
+
 	var/armorval = 0
 	var/total = 0
 

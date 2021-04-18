@@ -31,6 +31,7 @@
 		/obj/item/weapon/reagent_containers/glass/bottle/antitoxin = 2,
 		/obj/random/firstaid,
 		/obj/item/weapon/storage/box/masks,
+		/obj/item/weapon/reagent_containers/spray/cleaner,
 		/obj/item/weapon/storage/box/gloves
 	)
 
@@ -67,6 +68,7 @@
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/accessory/stethoscope,
 		/obj/item/device/radio,
+		/obj/item/weapon/reagent_containers/spray/cleaner,
 		/obj/item/weapon/storage/belt/medical/emt
 	)
 /*

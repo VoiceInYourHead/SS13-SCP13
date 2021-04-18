@@ -98,7 +98,7 @@
  */
 /obj/item/clothing/head/radiation
 	name = "Radiation Hood"
-	icon_state = "rad"
+	icon_state = "hazmat_yellow_head"
 	desc = "A hood with radiation protective properties. Label: Made with lead, do not eat insulation."
 	flags_inv = BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
@@ -108,7 +108,7 @@
 /obj/item/clothing/suit/radiation
 	name = "Radiation suit"
 	desc = "A suit that protects against radiation. Label: Made with lead, do not eat insulation."
-	icon_state = "rad"
+	icon_state = "hazmat_yellow"
 	item_state_slots = list(
 		slot_l_hand_str = "rad_suit",
 		slot_r_hand_str = "rad_suit",
@@ -119,7 +119,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank/emergency,/obj/item/clothing/head/radiation,/obj/item/clothing/mask/gas)
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 100)
-	flags_inv = HIDEJUMPSUIT|HIDETAIL|HIDEGLOVES|HIDESHOES
+	flags_inv = HIDEJUMPSUIT|HIDETAIL|BLOCKHAIR
 
 /obj/item/clothing/suit/radiation/New()
 	..()

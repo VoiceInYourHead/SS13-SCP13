@@ -9,7 +9,7 @@
 	blood_color = "#622a37"
 	flesh_color = "#442A37"
 
-	species_flags = SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON
+	species_flags = SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_TANGLE | SPECIES_FLAG_NO_PAIN
 	spawn_flags = SPECIES_IS_RESTRICTED
 
 	genders = list(MALE)
@@ -33,6 +33,8 @@
 	toxins_mod =     0.0                    // No toxin damage
 	radiation_mod =  0.0                    // No radiation damage
 	flash_mod =      0.0                    // Unflashable
+
+	hud_type = /datum/hud_data/scp049
 
 // #define 049AI
 /datum/species/scp049/handle_npc(var/mob/living/carbon/human/scp049/H)

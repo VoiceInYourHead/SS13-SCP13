@@ -13,7 +13,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	id_type = /obj/item/weapon/card/id/adminlvl5
 	l_ear = /obj/item/device/radio/headset/heads/captain
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel
 
 /decl/hierarchy/outfit/job/site90/crew/command/headofhr
 	name = OUTFIT_JOB_NAME("Head of Human Resources")
@@ -78,7 +78,7 @@
 // SECURITY OUTFITS
 /decl/hierarchy/outfit/job/site90/crew/command/cos
 	name = OUTFIT_JOB_NAME("Guard Commander")
-	uniform = /obj/item/clothing/under/scp/utility/security/gc
+	uniform = /obj/item/clothing/under/scp/whiteuniform
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/gcseclvl5
 	r_pocket = /obj/item/weapon/book/manual/scp/secsop
@@ -90,7 +90,7 @@
 
 /decl/hierarchy/outfit/job/site90/crew/security/ltofficerhcz
 	name = OUTFIT_JOB_NAME("HCZ Zone Commander")
-	uniform = /obj/item/clothing/under/scp/utility/security/zc
+	uniform = /obj/item/clothing/under/scp/whiteuniform
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/zcseclvl4hcz
 	l_ear = /obj/item/device/radio/headset/headset_com
@@ -101,7 +101,7 @@
 
 /decl/hierarchy/outfit/job/site90/crew/security/ncoofficerhcz
 	name = OUTFIT_JOB_NAME("HCZ Guard")
-	uniform = /obj/item/clothing/under/scp/utility/security
+	uniform = /obj/item/clothing/under/scp/whiteuniform
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/seclvl3hcz
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -111,12 +111,12 @@
 // JUNIOR GUARD OUTFITS
 /decl/hierarchy/outfit/job/site90/crew/security/enlistedofficerlcz
 	name = OUTFIT_JOB_NAME("LCZ Junior Guard")
-	uniform = /obj/item/clothing/under/scp/utility/security
+	uniform = /obj/item/clothing/under/scp/whiteuniform
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/junseclvl1
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/weapon/book/manual/scp/secsop
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel
 
 // SCIENCE OUTFITS
 
@@ -128,7 +128,7 @@
 	id_type = /obj/item/weapon/card/id/sciencelvl1
 	gloves = /obj/item/clothing/gloves/latex
 	l_ear = /obj/item/device/radio/headset/headset_sci
-	back = null
+	back = /obj/item/weapon/storage/backpack/satchel
 
 /decl/hierarchy/outfit/job/site90/crew/science/scientist
 	name = OUTFIT_JOB_NAME("Scientist")
@@ -185,8 +185,8 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/sciencelvl1
-	back = null
-	l_ear = null
+	back = /obj/item/weapon/storage/backpack/satchel
+	l_ear = /obj/item/device/radio/headset/headset_service
 
 /decl/hierarchy/outfit/job/site90/crew/civ/chef
 	name = OUTFIT_JOB_NAME("Chef")
@@ -194,8 +194,8 @@
 	shoes = /obj/item/clothing/shoes/white
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/chef
-	back = null
-	l_ear = null
+	back = /obj/item/weapon/storage/backpack/satchel
+	l_ear = /obj/item/device/radio/headset/headset_service
 
 /decl/hierarchy/outfit/job/site90/crew/civ/bartender
 	name = OUTFIT_JOB_NAME("Bartender")
@@ -203,7 +203,7 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/bartender
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_service
 	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/site90/crew/civ/archivist
@@ -212,8 +212,8 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/device/radio
 	id_type = /obj/item/weapon/card/id/archivist
-	back = null
-	l_ear = null
+	back = /obj/item/weapon/storage/backpack/satchel
+	l_ear = /obj/item/device/radio/headset/headset_com
 
 /decl/hierarchy/outfit/job/site90/crew/civ/o5rep
 	name = OUTFIT_JOB_NAME("O5 Representative")
@@ -233,7 +233,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl2
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_eng
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/eng
 	name = OUTFIT_JOB_NAME("Engineer")
@@ -242,7 +242,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl3
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_eng
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/seneng
 	name = OUTFIT_JOB_NAME("Senior Engineer")
@@ -251,7 +251,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl4
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/ce
 	back = /obj/item/weapon/storage/backpack/industrial
 
 /decl/hierarchy/outfit/job/ds90/crew/engineering/conteng
@@ -261,7 +261,7 @@
 	id_type = /obj/item/weapon/card/id/seclvl4
 	belt = /obj/item/weapon/storage/belt/utility/full
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/ce
 	back = /obj/item/weapon/storage/backpack/industrial
 
 // BRIG OFFICER
@@ -270,8 +270,8 @@
 	uniform = /obj/item/clothing/under/scp/whiteuniform
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/seclvl2
-	l_ear = null
-	back = null
+	l_ear = /obj/item/device/radio/headset/headset_com
+	back = /obj/item/weapon/storage/backpack/satchel/
 
 // MEDICAL OUTFITS
 
@@ -282,7 +282,7 @@
 	shoes = /obj/item/clothing/shoes/white
 	id_type = /obj/item/weapon/card/id/chiefmedicalofficer
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/heads/cmo
 	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/psychiatrist
@@ -292,7 +292,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/psychiatrist
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 
 /decl/hierarchy/outfit/job/ds90/medical/chemist
 	name = OUTFIT_JOB_NAME("Chemist")
@@ -301,8 +301,8 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/chemist
 	l_pocket = /obj/item/device/radio
-	l_ear = null
-	back = null
+	l_ear = /obj/item/device/radio/headset/headset_med
+	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/medicaldoctor
 	name = OUTFIT_JOB_NAME("Medical Doctor")
@@ -311,7 +311,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/doctor
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/virologist
@@ -321,8 +321,8 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/virologist
 	l_pocket = /obj/item/device/radio
-	l_ear = null
-	back = null
+	l_ear = /obj/item/device/radio/headset/headset_med
+	back = /obj/item/weapon/storage/backpack/medic
 
 /decl/hierarchy/outfit/job/ds90/medical/surgeon
 	name = OUTFIT_JOB_NAME("Surgeon")
@@ -331,7 +331,7 @@
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	id_type = /obj/item/weapon/card/id/doctor
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
 
 /decl/hierarchy/outfit/job/ds90/medical/emt
@@ -340,7 +340,7 @@
 	shoes = /obj/item/clothing/shoes/white
 	id_type = /obj/item/weapon/card/id/emt
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_med
 	back = /obj/item/weapon/storage/backpack/medic
 
 
@@ -362,5 +362,85 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/logspec
 	l_pocket = /obj/item/device/radio
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/headset_cargo
 	back = /obj/item/weapon/storage/backpack/satchel/pocketbook
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon1
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Beta")
+	uniform = /obj/item/clothing/under/frontier
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/p90
+	r_hand = /obj/item/weapon/crowbar/red
+	l_hand = /obj/item/weapon/material/hatchet/tacknife
+	l_pocket = /obj/item/weapon/grenade/flashbang
+	r_pocket = /obj/item/weapon/grenade/flashbang
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/silenced
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/plastique = 2,/obj/item/weapon/grenade/frag = 1,/obj/item/ammo_magazine/scp/p90_mag/ap = 5,/obj/item/ammo_magazine/c45m = 2,/obj/item/clothing/mask/gas = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon2
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Gamma")
+	uniform = /obj/item/clothing/under/det/grey
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = /obj/item/weapon/gun/projectile/shotgun/pump/combat
+	r_hand = /obj/item/weapon/crowbar/red
+	l_hand = /obj/item/weapon/material/hatchet
+	l_pocket = /obj/item/weapon/grenade/flashbang
+	r_pocket = /obj/item/weapon/grenade/flashbang
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/silenced
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/grenade/frag = 2,/obj/item/weapon/storage/box/shotgunammo = 3,/obj/item/ammo_magazine/c45m = 2,/obj/item/clothing/accessory/storage/bandolier = 1,/obj/item/clothing/mask/gas = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon3
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Alpha")
+	uniform = /obj/item/clothing/under/syndicate/combat
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon/leader
+	mask = /obj/item/clothing/mask/balaclava
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/m16
+	r_hand = /obj/item/weapon/storage/box/syndie_kit/spy
+	l_hand = null
+	l_pocket = /obj/item/weapon/grenade/smokebomb
+	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/revolver/webley/captain
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/weapon/grenade/frag = 1,/obj/item/weapon/crowbar/red = 1,/obj/item/ammo_magazine/scp/m16_mag = 3,/obj/item/ammo_magazine/c44 = 4,/obj/item/clothing/mask/gas = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/mtf_epsilon4
+	name = OUTFIT_JOB_NAME("MTF Epsilon-6 Agent Bravo")
+	uniform = /obj/item/clothing/under/rank/psych/turtleneck/sweater
+	suit = /obj/item/clothing/suit/armor/pcarrier/green/scp/mtf_epsilon
+	head = /obj/item/clothing/head/helmet/site53/guard/mtf_epsilon/medic
+	mask = /obj/item/clothing/mask/balaclava
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/jackboots
+	id_type = /obj/item/weapon/card/id/adminlvl5
+	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/p90
+	r_hand = /obj/item/weapon/storage/firstaid/surgery
+	l_hand = /obj/item/weapon/crowbar/red
+	l_pocket = /obj/item/weapon/grenade/smokebomb
+	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/defibrillator/compact/combat/loaded
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/ammo_magazine/scp/p90_mag/ap = 3,/obj/item/clothing/mask/gas = 1,/obj/item/weapon/storage/firstaid/combat/mtf = 1,/obj/item/weapon/reagent_containers/ivbag/blood/OMinus = 2,/obj/item/weapon/storage/pill_bottle/zoom = 1)

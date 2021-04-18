@@ -70,7 +70,7 @@
 	return list(
 		/obj/item/clothing/under/scp/utility/security/gc,
 		/obj/item/clothing/head/helmet/scp/security,
-		/obj/item/clothing/suit/armor/vest/scp/medarmor,
+		/obj/item/clothing/suit/armor/vest/scp/pizdeckakoyarmor,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
 		/obj/item/weapon/storage/belt/security/tactical,
 		/obj/item/weapon/gun/projectile/sec/sec,
@@ -83,7 +83,7 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/clothing/gloves/tactical/scp,
 		/obj/item/device/flash,
-		/obj/item/clothing/accessory/storage/webbing_large,
+		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/clothing/accessory/holster/thigh,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/clothing/accessory/solgov/department/security/marine,
@@ -139,7 +139,7 @@
 	return list(
 		/obj/item/clothing/under/scp/utility/security/zc,
 		/obj/item/clothing/head/helmet/scp/security,
-		/obj/item/clothing/suit/armor/vest/scp/medarmor,
+		/obj/item/clothing/suit/armor/vest/scp/pizdeckakoyarmor,
 		/obj/item/weapon/storage/belt/security/tactical,
 		/obj/item/weapon/gun/projectile/automatic/scp/m16,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
