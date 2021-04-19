@@ -278,3 +278,9 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Security biohazard gear crate"
 	access = access_mtflvl3
+
+/decl/hierarchy/supply_pack/security/cagescp173
+	name = "Misc - SCP-173 cage"
+	contains = list(/obj/structure/scp173_cage)
+	cost = 80
+	containername = "\improper SCP-173 cage"

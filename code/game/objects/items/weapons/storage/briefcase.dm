@@ -67,9 +67,9 @@
 		/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon,
 		/obj/item/ammo_magazine/scp/ierichon,
 		/obj/item/ammo_magazine/scp/ierichon,
-		/obj/item/ammo_magazine/ierichon/rubber,
-		/obj/item/ammo_magazine/ierichon/rubber,
-		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/scp/ierichon/rubber,
+		/obj/item/ammo_magazine/scp/ierichon/rubber,
+		/obj/item/ammo_magazine/scp/ierichon/rubber,
 		/obj/item/ammo_magazine/box/c45donor,
 		/obj/item/ammo_magazine/box/c45donor/rubber,
 		/obj/item/clothing/accessory/holster/donor
@@ -78,10 +78,24 @@
 		/obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon,
 		/obj/item/ammo_magazine/scp/ierichon,
 		/obj/item/ammo_magazine/scp/ierichon,
-		/obj/item/ammo_magazine/ierichon/rubber,
-		/obj/item/ammo_magazine/ierichon/rubber,
-		/obj/item/ammo_magazine/ierichon/rubber,
+		/obj/item/ammo_magazine/scp/ierichon/rubber,
+		/obj/item/ammo_magazine/scp/ierichon/rubber,
+		/obj/item/ammo_magazine/scp/ierichon/rubber,
 		/obj/item/ammo_magazine/box/c45donor,
 		/obj/item/ammo_magazine/box/c45donor/rubber,
 		/obj/item/clothing/accessory/holster/donor
+	)
+
+/obj/item/weapon/storage/briefcase/donator/kojima
+	startswith = list(
+		/obj/item/clothing/gloves/insulated/donor,
+		/obj/item/clothing/head/beret/donor,
+		/obj/item/clothing/suit/storage/hazardvest/donor,
+		/obj/item/clothing/under/scp/donor2
+	)
+	can_hold = list(
+		/obj/item/clothing/gloves/insulated/donor,
+		/obj/item/clothing/head/beret/donor,
+		/obj/item/clothing/suit/storage/hazardvest/donor,
+		/obj/item/clothing/under/scp/donor2
 	)

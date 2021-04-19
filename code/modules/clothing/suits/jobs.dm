@@ -150,6 +150,11 @@
 	desc = "A high-visibility vest used in work zones. This one is green!"
 	icon_state = "hazard_g"
 
+/obj/item/clothing/suit/storage/hazardvest/donor
+	name = "orange hazard vest"
+	desc = "A high-visibility vest used in work zones. This one is orange!"
+	icon_state = "donor_eng"
+
 //Lawyer
 /obj/item/clothing/suit/storage/toggle/suit
 	name = "suit jacket"

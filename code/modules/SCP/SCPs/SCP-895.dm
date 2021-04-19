@@ -36,14 +36,14 @@
 					if((time >= 5) && ((time % 51) == 0))
 						H << sound('sound/effects/Heart Beat.ogg', channel = 895, volume = 70)
 					H.hallucination_duration = max(H.hallucination_duration, 15)
-					H.hallucination_power = max(H.hallucination_power, 45)
+					H.hallucination_power = max(H.hallucination_power, 70)
 					if (!cooldown[H] || (world.time >= (cooldown[H] + MESSAGE_COOLDOWN)))
 						cooldown[H] = world.time
 						to_chat(H, "<span class='danger'><B>You see unimaginable horrors within \the [src]...</B></span>")
 					if((time >= 10) && ((time % 2) == 0))
 						var/obj/item/organ/internal/brain = H.internal_organs_by_name[BP_BRAIN]
 						if(brain)
-							brain.take_damage(2)
+							brain.take_damage(15)
 				break
 
 	for(var/mob/living/carbon/human/H in users)
