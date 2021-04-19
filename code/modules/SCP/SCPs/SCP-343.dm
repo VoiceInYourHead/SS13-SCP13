@@ -88,8 +88,11 @@ GLOBAL_LIST_EMPTY(scp343s)
 		return ..(M)
 	var/mob/living/carbon/human/scp343/H = M
 	if (H.a_intent == I_HELP)
-		to_chat(H, "<span class='warning'>You refrain from curing as your intent is set to help.</span>")
-		return
+		to_chat(H, "<span class='warning'>You start to heal [src] wounds</span>")
+		visible_message("<span class='notice'>\The [H] starts to heal [src] wounds</span>")
+		if( do_after(H, 120) )
+			src.revive()
+			visible_message("<span class='notice'>\The [H] fully healed [src]!</span>")
 	switch (stat)
 		if (CONSCIOUS, UNCONSCIOUS)
 			visible_message("<span class = 'danger'><big>[H] strikes [src], sent it flying away!</big></span>")

@@ -122,7 +122,7 @@
 	max_ammo = 20
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/ierichon/rubber
+/obj/item/ammo_magazine/scp/ierichon/rubber
 	name = "Jericho-114 rubber magazine (.45)"
 	icon_state = "R9mmds"
 	mag_type = MAGAZINE

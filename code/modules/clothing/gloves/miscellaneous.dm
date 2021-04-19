@@ -30,6 +30,14 @@
 	//average of 0.4, better than regular gloves' 0.75
 	siemens_coefficient = pick(0, 0.1, 0.2, 0.3, 0.4, 0.6, 1.3)
 
+/obj/item/clothing/gloves/insulated/donor
+	desc = "These gloves will protect the wearer from electric shocks."
+	name = "insulated gloves"
+	color = null
+	icon_state = "donoreng"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+
 /obj/item/clothing/gloves/forensic
 	desc = "Specially made gloves for forensic technicians. The luminescent threads woven into the material stand out under scrutiny."
 	name = "forensic gloves"
