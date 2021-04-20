@@ -33,7 +33,7 @@
 /obj/item/clothing/gloves/insulated/donor
 	desc = "These gloves will protect the wearer from electric shocks."
 	name = "insulated gloves"
-	color = null
+	color = COLOR_YELLOW
 	icon_state = "donoreng"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
