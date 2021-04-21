@@ -1962,7 +1962,7 @@
 /datum/chemical_reaction/amnestics/classc
 	name = "Amnestics-C"
 	result = /datum/reagent/amnestics/classc
-	required_reagents = list(/datum/reagent/mercury = 60, /datum/reagent/mindbreaker = 10, /datum/reagent/amnestics/classb = 1)
+	required_reagents = list(/datum/reagent/mercury = 60, /datum/reagent/psilocybin = 20, /datum/reagent/amnestics/classb = 1)
 	result_amount = 1
 
 /datum/chemical_reaction/amnestics/classe

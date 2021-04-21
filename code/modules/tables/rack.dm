@@ -64,6 +64,15 @@
 	can_reinforce = 0
 	flipped = -1
 
+/obj/structure/table/rack/special
+	name = "shelf"
+	desc = "Just a small shelf-like rack."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "shelf"
+	can_plate = 0
+	can_reinforce = 0
+	flipped = -1
+
 /obj/structure/table/rack/lockerroomtableeast
 	name = "locker room table"
 	desc = "A nice table that you could tie your shoes on or put your towels on."

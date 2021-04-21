@@ -81,8 +81,8 @@
 	can_hold_knife = 1
 
 /obj/item/clothing/shoes/donor
-	name = "duty boots"
-	desc = "A pair of steel-toed synthleather boots with a mirror shine."
+	name = "combat boots"
+	desc = "Берцы из синтетической кожи внутри и композитного сплава снаружи, с противоосколочным подбоем вдоль голени. В таких и по минному полю ходить нестрашно."
 	icon_state = "donor_sec"
 	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 	siemens_coefficient = 0.7

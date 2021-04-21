@@ -215,7 +215,15 @@
 	base_icon = "wooden_chair_wings"
 	icon_state = "wooden_chair_wings_preview"
 
+/obj/structure/bed/chair/wood/old
+	base_icon = "wooden_chair_old"
+	icon_state = "wooden_chair_old_preview"
+
 /obj/structure/bed/chair/bogani
 	desc = "A strange chair, not from around here."
 	base_icon = "bogchair"
 	icon_state = "bogchair_preview"
+
+/obj/structure/bed/chair/modern
+	base_icon = "chair_modern"
+	icon_state = "chair_modern_preview"

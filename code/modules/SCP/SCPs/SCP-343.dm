@@ -93,6 +93,7 @@ GLOBAL_LIST_EMPTY(scp343s)
 		if( do_after(H, 120) )
 			src.revive()
 			visible_message("<span class='notice'>\The [H] fully healed [src]!</span>")
+		return
 	switch (stat)
 		if (CONSCIOUS, UNCONSCIOUS)
 			visible_message("<span class = 'danger'><big>[H] strikes [src], sent it flying away!</big></span>")

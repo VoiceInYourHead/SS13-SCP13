@@ -1219,3 +1219,45 @@
 	set_trait(TRAIT_YIELD,-1)
 	set_trait(TRAIT_SPREAD,2)
 	set_trait(TRAIT_POTENCY,50)
+
+/datum/seed/amnestic
+	name = "amnestic"
+	seed_name = "amnestic"
+	display_name = "strange plants"
+	force_layer = OBJ_LAYER
+	chems = list(/datum/reagent/mindbreaker = list(4,8))
+	kitchen_tag = "amnestic"
+
+/datum/seed/amnestic/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,1)
+	set_trait(TRAIT_MATURATION,5)
+	set_trait(TRAIT_PRODUCTION,5)
+	set_trait(TRAIT_YIELD,6)
+	set_trait(TRAIT_POTENCY,20)
+	set_trait(TRAIT_PRODUCT_ICON,"amnestic")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#ed3300")
+	set_trait(TRAIT_PLANT_ICON,"bush2")
+	set_trait(TRAIT_IDEAL_HEAT, 298)
+	set_trait(TRAIT_IDEAL_LIGHT, 7)
+
+/datum/seed/amnestic2
+	name = "amnestic2"
+	seed_name = "amnestic2"
+	display_name = "strange plants"
+	force_layer = OBJ_LAYER
+	chems = list(/datum/reagent/psilocybin = list(5,12))
+	kitchen_tag = "amnestic2"
+
+/datum/seed/amnestic2/New()
+	..()
+	set_trait(TRAIT_HARVEST_REPEAT,1)
+	set_trait(TRAIT_MATURATION,5)
+	set_trait(TRAIT_PRODUCTION,5)
+	set_trait(TRAIT_YIELD,6)
+	set_trait(TRAIT_POTENCY,20)
+	set_trait(TRAIT_PRODUCT_ICON,"amnestic2")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#1c225c")
+	set_trait(TRAIT_PLANT_ICON,"bush2")
+	set_trait(TRAIT_IDEAL_HEAT, 298)
+	set_trait(TRAIT_IDEAL_LIGHT, 7)

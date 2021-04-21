@@ -158,8 +158,8 @@
 	armor = list(melee = 80, bullet = 80, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
 
 /obj/item/clothing/gloves/tactical/donor
-	desc = "These grey tactical gloves are made from a durable synthetic, and have hardened knuckles."
-	name = "tactical gloves"
+	desc = "Перчатки из синтетической кожи, вставки из сплавов на костяшках и запястьях."
+	name = "combat gloves"
 	icon_state = "donorsec"
 	item_state = "donorsec"
 	force = 5

@@ -1,9 +1,9 @@
 /obj/structure/flora/New()
 	..()
-	global.flora_list += src 
-	
+	global.flora_list += src
+
 /obj/structure/flora/Destroy()
-	global.flora_list -= src 
+	global.flora_list -= src
 	return ..()
 
 //trees
@@ -40,6 +40,11 @@
 /obj/structure/flora/tree/dead/New()
 	..()
 	icon_state = "tree_[rand(1, 6)]"
+
+/obj/structure/flora/tree/big
+	name = "dead tree"
+	icon = 'icons/unsorted/128tree.dmi'
+	icon_state = "tree_winter_64x128_1"
 
 
 //grass
@@ -184,6 +189,30 @@
 /obj/structure/flora/ausbushes/brflowers/New()
 	..()
 	icon_state = "brflowers_[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/amnestic
+	icon_state = "r"
+
+/obj/structure/flora/ausbushes/amnestic/New()
+	return
+
+/obj/structure/flora/ausbushes/amnestic/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/material/hatchet))
+		if( do_after(user, 50) )
+			new /obj/item/seeds/amnestic(src.loc, 2)
+			qdel (src)
+
+/obj/structure/flora/ausbushes/amnestic2
+	icon_state = "b"
+
+/obj/structure/flora/ausbushes/amnestic2/New()
+	return
+
+/obj/structure/flora/ausbushes/amnestic2/attackby(obj/item/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/weapon/material/hatchet))
+		if( do_after(user, 50) )
+			new /obj/item/seeds/amnestic2(src.loc, 2)
+			qdel (src)
 
 /obj/structure/flora/ausbushes/ppflowers
 	icon_state = "ppflowers_1"

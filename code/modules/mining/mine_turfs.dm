@@ -361,10 +361,10 @@ var/list/mining_floors = list()
 
 	//Give a random amount of loot from 1 to 3 or 5, varying on severity.
 	for(var/j in 1 to rand(1, 3 + max(min(severity, 1), 0) * 2))
-		switch(rand(1,7))
+		switch(rand(1,8))
 			if(1)
-				var/obj/item/stack/rods/R = new(src)
-				R.amount = rand(5,25)
+				var/obj/item/stack/material/diamond/R = new(src)
+				R.amount = rand(5,10)
 
 			if(2)
 				var/obj/item/stack/material/plasteel/R = new(src)
@@ -379,18 +379,24 @@ var/list/mining_floors = list()
 				R.amount = rand(5,25)
 
 			if(5)
-				var/quantity = rand(1,3)
-				for(var/i=0, i<quantity, i++)
-					new /obj/item/weapon/material/shard(src)
+				var/obj/item/stack/material/silver/R = new(src)
+				R.amount = rand(5,25)
 
 			if(6)
-				var/quantity = rand(1,3)
-				for(var/i=0, i<quantity, i++)
-					new /obj/item/weapon/material/shard/phoron(src)
+				var/obj/item/stack/material/phoron/R = new(src)
+				R.amount = rand(5,10)
 
 			if(7)
 				var/obj/item/stack/material/uranium/R = new(src)
 				R.amount = rand(5,25)
+
+			if(8)
+				var/obj/item/stack/material/gold/R = new(src)
+				R.amount = rand(5,25)
+
+			if(8)
+				var/obj/item/stack/material/glass/R = new(src)
+				R.amount = rand(10,30)
 
 /turf/simulated/mineral/random
 	name = "Mineral deposit"

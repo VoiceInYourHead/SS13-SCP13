@@ -440,6 +440,41 @@
 		icon_state = "ak74-empty"
 	return
 
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ak74/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 1.0)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ak742
+	name = "AK-19"
+	desc = "Модификация АК-12. На нижней планке установлена вертикальная рукоять."
+	icon_state = "ak742"
+	item_state = "ak742"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	caliber = "a762"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/scp/ak
+	allowed_magazines = /obj/item/ammo_magazine/scp/ak
+
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/ak742/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ak742"
+	else
+		icon_state = "ak742-empty"
+	return
+
 /obj/item/weapon/gun/projectile/automatic/scp/donor/ierichon
 	name = "Jericho-114 Pistol "
 	desc = "Специальная разработка фонда для борьбы с бронированными целями, выдающаяся за особые заслуги старшему составу сотрудников безопастности."

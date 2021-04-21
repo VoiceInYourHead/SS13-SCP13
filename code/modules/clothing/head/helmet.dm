@@ -220,8 +220,8 @@
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/helmet/scp/donor
-	name = "\improper corporate security helmet"
-	desc = "A helmet with 'CORPORATE SECURITY' printed on the white lettering."
+	name = "\improper tactical helmet"
+	desc = "Тактический шлем из композитных сплавов, оснащённый тепловизором, встроенной радиостанцией и устройством GPS, с выводом данных на интерфейс шлема. К сожалению из-за отсутствия питания единственная функция этого шлема - защищать голову владельца."
 	icon_state = "donor_sec"
 	body_parts_covered = HEAD|FACE|EYES //face shield
 	armor = list(melee = 50, bullet = 60, laser = 50,energy = 25, bomb = 30, bio = 10, rad = 10)

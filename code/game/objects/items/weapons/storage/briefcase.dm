@@ -34,7 +34,11 @@
 		/obj/item/clothing/head/helmet/scp/donor,
 		/obj/item/clothing/shoes/donor,
 		/obj/item/clothing/suit/armor/vest/scp/donor,
-		/obj/item/clothing/under/scp/donor
+		/obj/item/clothing/under/scp/donor,
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/ak742,
+		/obj/item/ammo_magazine/scp/ak,
+		/obj/item/ammo_magazine/scp/ak,
+		/obj/item/ammo_magazine/box/a762
 	)
 	can_hold = list(
 		/obj/item/weapon/gun/projectile/revolver/donor,
@@ -45,7 +49,11 @@
 		/obj/item/clothing/head/helmet/scp/donor,
 		/obj/item/clothing/shoes/donor,
 		/obj/item/clothing/suit/armor/vest/scp/donor,
-		/obj/item/clothing/under/scp/donor
+		/obj/item/clothing/under/scp/donor,
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/ak742,
+		/obj/item/ammo_magazine/scp/ak,
+		/obj/item/ammo_magazine/scp/ak,
+		/obj/item/ammo_magazine/box/a762
 	)
 
 /obj/item/weapon/storage/briefcase/donator/kikita
