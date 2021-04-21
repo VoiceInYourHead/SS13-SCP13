@@ -478,7 +478,7 @@ var/world_topic_spam_protect_time = world.timeofday
 
 /world/Reboot(reason, ping)
 	if(ping)
-		send2chat("GAME: <@&833703580514254869>", "game") //Don't forget change id channel and id role for you server!!!!!
+		send2chat("GAME: @here", "game") //Don't forget change id channel and id role for you server!!!!!
 		var/list/msg = list()
 
 		msg += "Next Map: Site 53"
