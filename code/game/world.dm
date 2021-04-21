@@ -481,7 +481,7 @@ var/world_topic_spam_protect_time = world.timeofday
 		send2chat("GAME: <@&833703580514254869>", "game") //Don't forget change id channel and id role for you server!!!!!
 		var/list/msg = list()
 
-		msg += "Next Map: USG Ishumura"
+		msg += "Next Map: Site 53"
 
 		if(ticker.mode)
 			msg += "Game Mode: [ticker.mode.name]"
