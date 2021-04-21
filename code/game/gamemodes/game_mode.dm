@@ -35,6 +35,8 @@ var/global/list/additional_antag_types = list()
 	var/event_delay_mod_moderate             // Modifies the timing of random events.
 	var/event_delay_mod_major                // As above.
 
+	var/round_finished
+
 	var/waittime_l = 60 SECONDS				 // Lower bound on time before start of shift report
 	var/waittime_h = 180 SECONDS		     // Upper bounds on time before start of shift report
 
@@ -342,9 +344,11 @@ var/global/list/additional_antag_types = list()
 
 	var/text = ""
 	if(surviving_total > 0)
+		round_finished = "There [surviving_total>1 ? "were [surviving_total] survivors" : "was one survivor"]"
 		text += "<br>There [surviving_total>1 ? "were <b>[surviving_total] survivors</b>" : "was <b>one survivor</b>"]"
 		text += " (<b>[escaped_total>0 ? escaped_total : "none"] [evacuation_controller.emergency_evacuation ? "escaped" : "transferred"]</b>) and <b>[ghosts] ghosts</b>.<br>"
 	else
+		round_finished = "There were no survivors"
 		text += "There were <b>no survivors</b> (<b>[ghosts] ghosts</b>)."
 	to_world(text)
 
