@@ -77,6 +77,8 @@
 	rustg_log_write(diary, "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]")
 	changelog_hash = md5('html/changelog.html')					//used for telling if the changelog has changed recently
 
+	TgsNew(minimum_required_security_level = TGS_SECURITY_TRUSTED)
+
 	if(byond_version < RECOMMENDED_VERSION)
 		WRITE_LOG(world.log, "Your server's byond version does not meet the recommended requirements for this server. Please update BYOND")
 
@@ -96,8 +98,6 @@
 
 	. = ..()
 
-	TgsNew()
-	TgsInitializationComplete()
 
 
 #ifdef UNIT_TEST
@@ -120,10 +120,14 @@
 
 	Master.Initialize(10, FALSE)
 
+	TgsInitializationComplete()
+
 #ifdef UNIT_TEST
 	spawn(1)
 		initialize_unit_tests()
 #endif
+
+	GLOB.timezoneOffset = text2num(time2text(0,"hh")) * 36000
 
 #undef RECOMMENDED_VERSION
 
@@ -472,7 +476,22 @@ var/world_topic_spam_protect_time = world.timeofday
 		return GLOB.prometheus_metrics.collect()
 
 
-/world/Reboot(var/reason)
+/world/Reboot(reason, ping)
+	if(ping)
+		send2chat("GAME: <@&833703580514254869>", "game") //Don't forget change id channel and id role for you server!!!!!
+		var/list/msg = list()
+
+		msg += "Next Map: Site 53"
+
+		if(ticker.mode)
+			msg += "Game Mode: [ticker.mode.name]"
+			msg += "Round End State: [ticker.mode.round_finished]"
+
+		if(length(GLOB.clients))
+			msg += "Players: [length(GLOB.clients)]"
+
+		if(length(msg))
+			send2chat("GAME: " + msg.Join(" | "), "game") //TOO!
 	/*spawn(0)
 		sound_to(world, sound(pick('sound/AI/newroundsexy.ogg','sound/misc/apcdestroyed.ogg','sound/misc/bangindonk.ogg')))// random end sounds!! - LastyBatsy
 
