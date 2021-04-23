@@ -275,3 +275,21 @@
 	landmark_tag = "nav_cargo_station"
 	base_area = /area/site53/logistics/logistics
 	base_turf = /turf/simulated/floor/tiled/monotile
+
+/datum/shuttle/autodock/ferry/exploring
+	name = "Car 1"
+	warmup_time = 20
+	shuttle_area = list(/area/site53/tram/scpcar)
+	waypoint_station = "scpcar1_start"
+	waypoint_offsite = "scpcar1_out"
+
+
+/obj/effect/shuttle_landmark/site/start
+	name = "Site 53"
+	landmark_tag = "scpcar1_start"
+	base_turf = /turf/simulated/floor/reinforced
+
+/obj/effect/shuttle_landmark/site/out
+	name = "Village Checkpoint"
+	landmark_tag = "scpcar1_out"
+	base_turf = /turf/simulated/floor/exoplanet/concrete

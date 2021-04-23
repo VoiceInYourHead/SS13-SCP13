@@ -75,6 +75,7 @@
 //	#include "site53-7.dmm"
 	#include "site53-8.dmm"
 	#include "site53-9.dmm"
+	#include "away_mission-1.dmm"
 //	#include "torch-3.dmm"
 //	#include "torch-4.dmm"
 //	#include "torch-5.dmm"

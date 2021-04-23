@@ -444,3 +444,63 @@
 	belt = /obj/item/weapon/defibrillator/compact/combat/loaded
 	back = /obj/item/weapon/storage/backpack/satchel
 	backpack_contents = list(/obj/item/ammo_magazine/scp/p90_mag/ap = 3,/obj/item/clothing/mask/gas = 1,/obj/item/weapon/storage/firstaid/combat/mtf = 1,/obj/item/weapon/reagent_containers/ivbag/blood/OMinus = 2,/obj/item/weapon/storage/pill_bottle/zoom = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/chaos_soldier
+	name = OUTFIT_JOB_NAME("Chaos Insurgency Soldier")
+	uniform = /obj/item/clothing/under/scp/utility/chaos
+	suit = /obj/item/clothing/suit/storage/vest/scp/medarmorchaos
+	head = /obj/item/clothing/head/helmet/scp/chaos
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = null
+	suit_store = /obj/item/weapon/gun/projectile/automatic/scp/p90
+	r_hand = null
+	l_hand = /obj/item/weapon/material/hatchet/tacknife
+	l_pocket = /obj/item/weapon/grenade/frag
+	r_pocket = /obj/item/weapon/grenade/flashbang
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/automatic/machine_pistol
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/clothing/mask/gas = 1,/obj/item/ammo_magazine/scp/p90_mag/ap = 4,/obj/item/ammo_magazine/c45uzi = 2,/obj/item/weapon/grenade/smokebomb = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/chaos_soldier_alt
+	name = OUTFIT_JOB_NAME("Chaos Insurgency Heavy Soldier")
+	uniform = /obj/item/clothing/under/scp/utility/chaos
+	suit = /obj/item/clothing/suit/storage/vest/scp/medarmorchaos
+	head = /obj/item/clothing/head/helmet/scp/chaos
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = null
+	suit_store = /obj/item/weapon/gun/projectile/automatic/l6_saw
+	r_hand = /obj/item/ammo_magazine/box/a556
+	l_hand = /obj/item/ammo_magazine/box/a556
+	l_pocket = /obj/item/weapon/grenade/frag
+	r_pocket = /obj/item/weapon/grenade/frag
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/clothing/mask/gas = 1,/obj/item/weapon/storage/box/shotgunammo = 2,/obj/item/weapon/storage/firstaid/combat/mtf = 1,/obj/item/weapon/grenade/frag = 1)
+
+/decl/hierarchy/outfit/job/site90/crew/command/event/chaos_leader
+	name = OUTFIT_JOB_NAME("Chaos Insurgency Squad Leader")
+	uniform = /obj/item/clothing/under/scp/utility/chaos
+	suit = /obj/item/clothing/suit/storage/vest/scp/medarmorchaos
+	head = /obj/item/clothing/head/beret/solgov/fleet/security
+	mask = /obj/item/clothing/mask/balaclava/tactical
+	glasses = /obj/item/clothing/glasses/night
+	gloves = /obj/item/clothing/gloves/tactical/scp
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type = null
+	suit_store = /obj/item/weapon/gun/projectile/revolver/donor
+	r_hand = null
+	l_hand = /obj/item/weapon/material/hatchet/tacknife
+	l_pocket = /obj/item/weapon/grenade/frag
+	r_pocket = /obj/item/weapon/grenade/flashbang
+	l_ear = /obj/item/device/radio/headset/ert
+	belt = /obj/item/weapon/material/sword/katana
+	back = /obj/item/weapon/storage/backpack/satchel
+	backpack_contents = list(/obj/item/weapon/storage/box/ifak = 1,/obj/item/clothing/mask/gas = 1,/obj/item/ammo_magazine/a127 = 8,/obj/item/weapon/grenade/smokebomb = 3)

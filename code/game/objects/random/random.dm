@@ -1154,3 +1154,29 @@ var/list/random_useful_
 	// 1% chance that we reach here
 	var/lunches = lunchables_lunches()
 	return lunches[pick(lunches)]
+
+/obj/random/tree
+	name = "random tree"
+	desc = "This is a random tree"
+	icon = 'icons/misc/mark.dmi'
+	icon_state = "x4"
+	spawn_nothing_percentage = 45
+
+/obj/random/tree/spawn_choices()
+		return list(/obj/structure/flora/ausbushes/ppflowers = 3,
+					/obj/structure/flora/ausbushes/sparsegrass = 3,
+					/obj/structure/flora/ausbushes/pointybush = 3,
+					/obj/structure/flora/ausbushes/fullgrass = 3,
+					/obj/structure/flora/ausbushes/genericbush = 3,
+					/obj/structure/flora/ausbushes/palebush = 3,
+					/obj/structure/flora/ausbushes/brflowers = 3,
+					/obj/structure/flora/bush = 4,
+					/obj/structure/flora/grass/green = 4,
+					/obj/structure/flora/ausbushes/leafybush = 5,
+					/obj/structure/flora/tree/big,
+					/obj/structure/flora/tree/dead,
+					/obj/structure/flora/tree/pine,
+					/obj/structure/flora/ausbushes/amnestic,
+					/obj/structure/flora/ausbushes/amnestic2,
+					/obj/structure/flora/ausbushes/grassybush = 4
+					)

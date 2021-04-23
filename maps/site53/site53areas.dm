@@ -136,6 +136,13 @@
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/site53/tram/scpcar
+	name = "Car"
+	icon_state = "Sleep"
+	requires_power = 0
+	dynamic_lighting = 1
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 
 /area/site53/tram/mtf
 	name = "MTF Heli"
@@ -150,6 +157,30 @@
 	name = "Surface"
 	requires_power = 0
 	dynamic_lighting = 0
+
+/area/site53/surface/surface/away/bar
+	name = "Away Bar"
+
+/area/site53/surface/surface/away/hall
+	name = "Away Village Hall"
+
+/area/site53/surface/surface/away/check
+	name = "Away Checkpoint"
+
+/area/site53/surface/surface/away/storage
+	name = "Away Storage"
+
+/area/site53/surface/surface/away/hotel
+	name = "Away Hotel"
+
+/area/site53/surface/surface/away/house1
+	name = "Away House 1"
+
+/area/site53/surface/surface/away/house2
+	name = "Away House 2"
+
+/area/site53/surface/surface/away/house3
+	name = "Away House 3"
 
 /area/site53/surface/cryogenicsprimary
 	name = "\improper Primary Cryogenic Storage"

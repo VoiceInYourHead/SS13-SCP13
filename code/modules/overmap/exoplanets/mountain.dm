@@ -37,3 +37,8 @@
 /datum/random_map/automata/cave_system/mountains/get_additional_spawns(var/value, var/turf/T)
 	..()
 	T.color = color_rotation(colorshift)
+
+/turf/simulated/floor/exoplanet/dirt
+	name = "dirt"
+	icon = 'icons/turf/flooring/asteroid.dmi'
+	icon_state = "asteroid"
