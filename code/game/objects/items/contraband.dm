@@ -31,6 +31,7 @@
 
 /obj/item/weapon/storage/pill_bottle/amnesticsa
 	name = "bottle of pills"
+	icon_state = "pill_canister_a"
 	desc = "Class A Amnestics."
 
 /obj/item/weapon/storage/pill_bottle/amnesticsa/New()
@@ -45,6 +46,7 @@
 
 /obj/item/weapon/storage/pill_bottle/amnesticsb
 	name = "bottle of pills"
+	icon_state = "pill_canister_b"
 	desc = "Class B Amnestics."
 
 /obj/item/weapon/storage/pill_bottle/amnesticsb/New()
@@ -59,6 +61,7 @@
 
 /obj/item/weapon/storage/pill_bottle/amnesticsc
 	name = "bottle of pills"
+	icon_state = "pill_canister_c"
 	desc = "Class C Amnestics."
 
 /obj/item/weapon/storage/pill_bottle/amnesticsc/New()

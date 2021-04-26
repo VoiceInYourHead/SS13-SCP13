@@ -18,7 +18,7 @@
 "ar" = (/obj/structure/barricade,/turf/simulated/floor/exoplanet/dirt,/area/site53/surface/surface/away)
 "as" = (/obj/structure/stasis_cage,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 "at" = (/obj/structure/bed/chair/wood/old{icon_state = "wooden_chair_old_preview"; dir = 8},/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
-"au" = (/obj/structure/table/rack/special,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
+"au" = (/obj/structure/table/woodentable,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/obj/item/stack/material/steel/fifty,/obj/item/stack/material/steel/fifty,/obj/item/stack/material/steel/ten,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 "av" = (/obj/machinery/mining/brace{icon_state = "mining_brace"; dir = 1},/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 "aw" = (/obj/structure/bed/chair/wood/old{icon_state = "wooden_chair_old_preview"; dir = 1},/turf/simulated/floor/exoplanet/grass,/area/site53/surface/surface/away)
 "ax" = (/turf/simulated/floor/exoplanet/ice,/area/site53/surface/surface/away)
@@ -45,7 +45,7 @@
 "aS" = (/obj/structure/safe,/turf/simulated/floor/wood,/area/site53/surface/surface/away/house1)
 "aT" = (/obj/structure/fitness/punchingbag,/turf/simulated/floor/lino,/area/site53/surface/surface/away/house1)
 "aU" = (/obj/structure/coatrack,/turf/simulated/floor/lino,/area/site53/surface/surface/away/house1)
-"aV" = (/obj/structure/table/woodentable,/obj/item/weapon/plastique,/obj/item/weapon/plastique,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
+"aV" = (/obj/structure/table/woodentable,/obj/item/weapon/pickaxe/brush,/obj/item/stack/material/phoron/fifty,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 "aW" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/site53/surface/surface/away/house1)
 "aX" = (/obj/structure/bed/chair/wood/old{icon_state = "wooden_chair_old_preview"; dir = 8},/turf/simulated/floor/wood,/area/site53/surface/surface/away/house1)
 "aY" = (/obj/structure/fitness/weightlifter,/turf/simulated/floor/lino,/area/site53/surface/surface/away/house1)
@@ -158,7 +158,7 @@
 "db" = (/obj/structure/bed/chair/modern{icon_state = "chair_modern_preview"; dir = 8},/obj/effect/decal/cleanable/blood/gibs/core,/obj/effect/decal/cleanable/blood/gibs/core,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 "dc" = (/obj/structure/bed/chair/modern{icon_state = "chair_modern_preview"; dir = 8},/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 "dd" = (/obj/machinery/photocopier,/turf/simulated/floor/tiled/old_tile,/area/site53/surface/surface/away/hotel)
-"de" = (/obj/structure/table/woodentable,/obj/item/weapon/pickaxe/brush,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
+"de" = (/obj/structure/table/rack/special,/obj/item/stack/material/silver/ten,/obj/item/stack/material/silver/ten,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 "df" = (/obj/structure/bed/chair/office/light{icon_state = "officechair_white_preview"; dir = 8},/turf/simulated/floor/tiled/old_tile,/area/site53/surface/surface/away/hotel)
 "dg" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/site53/surface/surface/away/hotel)
 "dh" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/r_wall,/area/site53/surface/surface/away/hotel)
@@ -489,6 +489,7 @@
 "ju" = (/obj/structure/table/rack/special,/obj/item/ammo_magazine/box/a556alt,/obj/item/ammo_magazine/box/a556alt,/turf/simulated/floor/tiled/techfloor/grid,/area/site53/surface/surface/away/check)
 "jv" = (/obj/structure/closet/secure_closet/mtf/enlisted,/obj/item/ammo_magazine/box/c45donor/rubber,/obj/item/ammo_magazine/box/c45donor/rubber,/turf/simulated/floor/lino,/area/site53/surface/surface/away/check)
 "jw" = (/obj/structure/table/rack/special,/obj/item/device/flashlight/upgraded,/obj/item/roller,/obj/item/roller,/obj/item/ammo_magazine/box/a762,/turf/simulated/floor/tiled/techfloor/grid,/area/site53/surface/surface/away/check)
+"jx" = (/obj/structure/table/woodentable,/obj/item/stack/material/uranium/ten,/turf/simulated/floor/exoplanet/snow,/area/site53/surface/surface/away)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -499,13 +500,13 @@ aaababababababababababababababababababababababababababababababababababababababab
 aaababababababababababababababababababababababababababababababababababababababababababababababababacababababababababababababababadadadezeFeFeFeFezezeFeFezeFeFeFeFeFezeFezezeFeFezeFeFeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFezezadabababababababababababababaeacacacacaeaeacaeacacacaiabababababababababababababaa
 aaabababababababababababababababababababababababababababababababababababababababababababababacababacababababababababababababababadezeFeFezeFezezezeFezeFeFeFeFeFeFeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezadababababababababababababacaeacacacacababacacacajaeacacababababababababababababaa
 aaabababababababababababababababababababababababababababababababababababababababababababadacacacacacababababababababababababacacaceFeFeFeFeFezezezeFezeFeFeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFadacababababababababababacacacacacakabababababaebEalaeacababababababababababababaa
-aaababababababababababababababababababababababababababababababababababababababadababezezacacaceFezadacacababababababababababaceFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezacababababababababababacabacaeaeaeakababamamanalaVacacababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababadababezezacacaceFezadacacababababababababababaceFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezacababababababababababacabacaeaeaeakababamamanalauacacababababababababababababaa
 aaababababababababababababababababababababababababababababababababababababababadabezacacacacaceFezadacacababababababababacacaceFeFeFezezeFeFeFeFeFeFeFeFezezeFeFezeFeFeFeFeFeFezeFeFeFeFeFeFeFeFezezeFeFeFeFeFeFeFeFeFeFezezacacabababababababababacacacacaeaeacaeaeaeacaeaeacacaeacabababababababababababaa
 aaababababababababababababababababababababababababababababababababababababababadadacacaceFeFeFezezacacacabababababababababaceFeFeFeFezezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezeFeFeFeFeFeFeFezezacabababababababapapaiacacaeacaeaeaeaeaeaeaeacacacacaeacabababababababababababaa
-aaababababababababababababababababababababababababababababababababababababababacezeFeFeFeFeFeFezezeFadacacabababababacababaceFeFeFeFezezeFeFeFeFeFeFeFeFeFeFezezeFeFeFeFeFeFeFeFeFeFeFezeFeFezeFeFeFeFezeFeFeFeFeFeFeFacacacadababababababaeacaeaeaeacababacacaodeaeaeaeacaeaeaeaeaeacababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababacezeFeFeFeFeFeFezezeFadacacabababababacababaceFeFeFeFezezeFeFeFeFeFeFeFeFeFeFezezeFeFeFeFeFeFeFeFeFeFeFezeFeFezeFeFeFeFezeFeFeFeFeFeFeFacacacadababababababaeacaeaeaeacababacacaoaVaeaeaeacaeaeaeaeaeacababababababababababaa
 aaababababababababababababababababababababababababababababababababababababababaceFeFeFeFeFeFeFezezeFezezadadacacacabacacacaceFeFeFezeFeFeFeFeFezezezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezeFeFeFeFacaceFeFeFacacacacacacabababababaeaeaeaeacakababacacaoaeaeaeaeabaeabababaeaqacabababababababababaa
-aaababababababababababababababababababababababababababababababababababababababadezezeFeFeFeFeFezezeFeFezadadacacacacacaceFeFeFeFeFezeFeFeFeFeFeFezezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezeFeFeFeFeFacacacacacacadacacacababarabasaeaeabababababababaeaZataeaeacauababababaeagacabababababababababaa
-aaababababababababababababababababababababababababababababababababababababababadeFeFeFeFeFeFeFeFeFeFeFeFacacacacadacaceFeFeFezeFeFeFeFeFezeFeFeFezezezeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFacacacacadadacacacacaoaoaeaeaeaeacababababababababacacaeaeacabababababacavacabababababababababaa
+aaababababababababababababababababababababababababababababababababababababababadezezeFeFeFeFeFezezeFeFezadadacacacacacaceFeFeFeFeFezeFeFeFeFeFeFezezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezeFeFeFeFeFacacacacacacadacacacababarabasaeaeabababababababaeaZataeaeacdeababababaeagacabababababababababaa
+aaababababababababababababababababababababababababababababababababababababababadeFeFeFeFeFeFeFeFeFeFeFeFacacacacadacaceFeFeFezeFeFeFeFeFezeFeFeFezezezeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFacacacacadadacacacacjxaoaeaeaeaeacababababababababacacaeaeacabababababacavacabababababababababaa
 aaababababababababababababababababababababababababababababababababababababadacaceFeFeFezezezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezeFeFeFeFeFeFezeFeFeFezezeFeFeFeFeFeFeFezeFeFeFeFeFezezeFeFeFeFeFeFeFeFeFeFeFeFacacacadacaeaeaeaeadadawacacaeaeababababababababababacaeacacaeaeabaeaeaeaeacabababababababababaa
 aaabababababababababababababababababababababababababababababababababababacaceFeFeFeFeFeFezezeFeFeFeFeFeFeFeFeFeFeFeFeFezezezezeFeFeFeFeFeFezeFeFeFeFeFeFeFeFezezeFeFezeFeFezeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFacacadadaeacaxaxaxaeaeaeaeaedRababababababababacaeacacacacacaeaeaeacaeaeababababababababababaa
 aaabababababababababababababababababababababababababababababababababababaceFeFeFeFezezeFezeFeFeFeFeFeFeFeFeFeFezeFeFeFeFeFeFezeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFezezacadadaceFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFeFacadadacadadaxaxaxaxaxaxaxaeaeacaoababababababababapaeacacakacabababapababacababababababababababaa
