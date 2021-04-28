@@ -697,6 +697,11 @@
 	desc = "A blue engineer's uniform."
 	icon_state = "donor_eng"
 
+/obj/item/clothing/under/scp/donor3
+	name = "green uniform"
+	desc = "A green uniform."
+	icon_state = "donate_sec"
+
 /obj/item/clothing/under/scp/greyuniform
 	name = "grey uniform"
 	desc = "A dull grey uniform."

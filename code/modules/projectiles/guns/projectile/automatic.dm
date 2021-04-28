@@ -500,3 +500,30 @@
 		icon_state = "ierichon"
 	else
 		icon_state = "ierichon-empty"
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/rpk
+	name = "RPK-74"
+	desc = "Стандартный армейский Ручный Пулемёт Калашникова с установленными сошками и увеличенным магазином. Деревянные компоненты были заменены на пластиковые."
+	icon_state = "rpk"
+	item_state = "rpk"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	caliber = "a762"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/scp/ak
+	allowed_magazines = /obj/item/ammo_magazine/scp/ak
+
+	firemodes = list(
+		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/rpk/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "rpk"
+	else
+		icon_state = "rpk-empty"
+	return

@@ -242,3 +242,63 @@
 			src.registered_name = null
 			src.SetName(initial(name))
 			src.desc = initial(desc)
+
+/obj/structure/closet/secure_closet/mtf/exp
+	name = "Scout's Locker"
+	req_access = list(access_mtflvl3)
+	icon_state = "nlocked"
+	icon_closed = "nunlocked"
+	icon_locked = "nlocked"
+	icon_opened = "nopen"
+	icon_off = "noff"
+
+/obj/structure/closet/secure_closet/mtf/exp/WillContain()
+	return list(
+		/obj/item/clothing/suit/bio_suit/security,
+		/obj/item/clothing/head/bio_hood/security,
+		/obj/item/weapon/storage/belt/security/tactical,
+		/obj/item/weapon/storage/backpack/satchel,
+		/obj/item/weapon/storage/backpack/dufflebag,
+		/obj/item/weapon/grenade/frag = 2,
+		/obj/item/weapon/crowbar/prybar,
+		/obj/item/taperoll/research,
+		/obj/item/device/tape/random = 4,
+		/obj/item/device/radio,
+		/obj/item/device/taperecorder,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/weapon/gun/projectile/colt/officer,
+		/obj/item/weapon/gun/projectile/automatic/tactical,
+		/obj/item/ammo_magazine/tac9mm = 6,
+		/obj/item/weapon/storage/pill_bottle/amnesticsb,
+		/obj/item/weapon/storage/box/freezer
+	)
+
+/obj/structure/closet/secure_closet/mtf/expl
+	name = "Scout's Leader Locker"
+	req_access = list(access_mtflvl5)
+	icon_state = "cmlocked"
+	icon_closed = "cmunlocked"
+	icon_locked = "cmlocked"
+	icon_opened = "cmopen"
+	icon_off = "cmoff"
+
+/obj/structure/closet/secure_closet/mtf/expl/WillContain()
+	return list(
+		/obj/item/clothing/suit/bio_suit/security,
+		/obj/item/clothing/head/bio_hood/security,
+		/obj/item/weapon/storage/belt/security/tactical,
+		/obj/item/weapon/material/hatchet/machete = 5,
+		/obj/item/weapon/storage/pill_bottle/amnesticsb,
+		/obj/item/weapon/storage/backpack/satchel,
+		/obj/item/weapon/storage/backpack/dufflebag,
+		/obj/item/weapon/grenade/frag = 2,
+		/obj/item/device/tape/random = 4,
+		/obj/item/device/radio,
+		/obj/item/device/taperecorder,
+		/obj/item/weapon/crowbar/prybar,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/weapon/gun/projectile/revolver/tactical,
+		/obj/item/weapon/gun/projectile/automatic/hcrifle,
+		/obj/item/ammo_magazine/a762 = 6,
+		/obj/item/weapon/material/hatchet/machete/deluxe
+	)

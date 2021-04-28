@@ -107,3 +107,27 @@
 		/obj/item/clothing/suit/storage/hazardvest/donor,
 		/obj/item/clothing/under/scp/donor2
 	)
+
+/obj/item/weapon/storage/briefcase/donator/avgustloh
+	startswith = list(
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/rpk,
+		/obj/item/clothing/glasses/sunglasses/sechud/donor,
+		/obj/item/clothing/head/helmet/scp/donor2,
+		/obj/item/clothing/suit/armor/vest/scp/donor2,
+		/obj/item/clothing/under/scp/donor3,
+		/obj/item/ammo_magazine/scp/ak/big,
+		/obj/item/ammo_magazine/scp/ak/big,
+		/obj/item/ammo_magazine/scp/ak/big,
+		/obj/item/ammo_magazine/box/a762
+	)
+	can_hold = list(
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/rpk,
+		/obj/item/clothing/glasses/sunglasses/sechud/donor,
+		/obj/item/clothing/head/helmet/scp/donor2,
+		/obj/item/clothing/suit/armor/vest/scp/donor2,
+		/obj/item/clothing/under/scp/donor3,
+		/obj/item/ammo_magazine/scp/ak/big,
+		/obj/item/ammo_magazine/scp/ak/big,
+		/obj/item/ammo_magazine/scp/ak/big,
+		/obj/item/ammo_magazine/box/a762
+	)

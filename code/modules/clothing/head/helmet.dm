@@ -226,3 +226,11 @@
 	body_parts_covered = HEAD|FACE|EYES //face shield
 	armor = list(melee = 50, bullet = 60, laser = 50,energy = 25, bomb = 30, bio = 10, rad = 10)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+
+/obj/item/clothing/head/helmet/scp/donor2
+	name = "\improper security heavy helmet"
+	desc = "Тяжёлый шлем специального назначения Рысь-Т, покрашен в чёрный цвет."
+	icon_state = "donate_sec"
+	body_parts_covered = HEAD|FACE|EYES //face shield
+	armor = list(melee = 50, bullet = 60, laser = 50,energy = 25, bomb = 30, bio = 10, rad = 10)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR

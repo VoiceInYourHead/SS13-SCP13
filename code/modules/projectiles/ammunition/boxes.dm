@@ -460,3 +460,9 @@
 	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 30
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/scp/ak/big
+	name = "big magazine (7.62)"
+	icon_state = "7.62x39mm2"
+	max_ammo = 45
+	multiple_sprites = 1

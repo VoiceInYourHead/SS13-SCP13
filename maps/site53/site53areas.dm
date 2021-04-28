@@ -209,6 +209,12 @@
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
+/area/site53/surface/explorers
+	name = "\improper Scouts Prep-room"
+	icon_state = "centcom"
+	requires_power = 0
+	dynamic_lighting = 1
+	area_flags = AREA_FLAG_RAD_SHIELDED
 
 // Site 53 upper surface area's
 

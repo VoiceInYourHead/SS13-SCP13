@@ -40,18 +40,13 @@
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
 	drawsound = 'sound/items/unholster_knife.ogg'
-
-/obj/item/weapon/material/hatchet/machete/Initialize()
-	icon_state = "machete[pick("","_red","_blue", "_black", "_olive")]"
-	. = ..()
+	icon_state = "machete_black"
 
 /obj/item/weapon/material/hatchet/machete/deluxe
 	name = "deluxe machete"
 	desc = "A fine example of a machete, with a polished blade, wooden handle and a leather cord loop."
-
-/obj/item/weapon/material/hatchet/machete/deluxe/Initialize()
-	. = ..()
 	icon_state = "machetedx"
+
 
 /obj/item/weapon/material/minihoe // -- Numbers
 	name = "mini hoe"

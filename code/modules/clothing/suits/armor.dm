@@ -246,6 +246,14 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	armor = list(melee = 40, bullet = 70, laser = 40, energy = 40, bomb = 40, bio = 15, rad = 10)
 
+/obj/item/clothing/suit/armor/vest/scp/donor2
+	name = "Heavy-plated armor vest"
+	desc = "A synthetic armor vest. This one is for Commander."
+	icon_state = "donate_sec"
+	body_parts_covered = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	armor = list(melee = 40, bullet = 70, laser = 40, energy = 40, bomb = 40, bio = 15, rad = 10)
+
 /obj/item/clothing/suit/armor/vest/scp/donor
 	name = "Combat exosuit"
 	desc = "Закрытый бронежилет с бронепластинами из сплавов, в сочетании с экзоскелетом, а так же усиленной защитой конечностей. Сервоприводы работают в пассивном режиме, а ячейка для батареи на спине пустует, да и похоже, что некоторые бронепластины были сняты."

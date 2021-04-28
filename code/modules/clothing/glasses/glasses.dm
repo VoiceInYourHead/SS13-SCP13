@@ -315,6 +315,12 @@
 	hud = /obj/item/clothing/glasses/hud/security
 	electric = 1
 
+/obj/item/clothing/glasses/sunglasses/sechud/donor //now just a more "military" set of HUDglasses for the Torch
+	name = "HUD goggles"
+	desc = "Flash-resistant goggles with an inbuilt heads-up display."
+	icon_state = "jensenshades"
+	item_state = "swatgoggles"
+
 /obj/item/clothing/glasses/sunglasses/sechud/goggles //now just a more "military" set of HUDglasses for the Torch
 	name = "HUD goggles"
 	desc = "Flash-resistant goggles with an inbuilt heads-up display."
