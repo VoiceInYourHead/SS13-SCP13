@@ -510,7 +510,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 			if("Kidneys")
 				organ = BP_KIDNEYS
 
-		var/list/organ_choices = list("Normal","Assisted","Synthetic")
+		var/list/organ_choices = list("Normal") //list("Normal","Assisted","Synthetic")
 		if(pref.organ_data[BP_CHEST] == "cyborg")
 			organ_choices -= "Normal"
 			organ_choices += "Synthetic"
@@ -521,10 +521,10 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		switch(new_state)
 			if("Normal")
 				pref.organ_data[organ] = null
-			if("Assisted")
-				pref.organ_data[organ] = "assisted"
-			if("Synthetic")
-				pref.organ_data[organ] = "mechanical"
+//			if("Assisted")
+//				pref.organ_data[organ] = "assisted"
+//			if("Synthetic")
+//				pref.organ_data[organ] = "mechanical"
 		return TOPIC_REFRESH
 
 	else if(href_list["disabilities"])

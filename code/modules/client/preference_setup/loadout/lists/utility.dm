@@ -2,6 +2,7 @@
 /datum/gear/utility
 	sort_category = "Utility"
 	category = /datum/gear/utility
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/captain,/datum/job/surgeon,/datum/job/emt,/datum/job/hos,/datum/job/ltofficerhcz,/datum/job/ncoofficerhcz,/datum/job/eng,/datum/job/juneng,/datum/job/conteng,/datum/job/chief_engineer)
 
 /datum/gear/utility/briefcase
 	display_name = "briefcase"

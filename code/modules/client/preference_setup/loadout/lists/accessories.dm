@@ -3,6 +3,7 @@
 	sort_category = "Accessories"
 	category = /datum/gear/accessory
 	slot = slot_tie
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain,/datum/job/surgeon,/datum/job/emt)
 
 /datum/gear/accessory/tie
 	display_name = "tie selection"
@@ -34,14 +35,14 @@
 	ties["striped tie"] = /obj/item/clothing/accessory/long
 	gear_tweaks += new/datum/gear_tweak/path(ties)
 
-/datum/gear/accessory/locket
+/*/datum/gear/accessory/locket
 	display_name = "locket"
 	path = /obj/item/clothing/accessory/locket
 
 /datum/gear/accessory/necklace
 	display_name = "necklace, colour select"
 	path = /obj/item/clothing/accessory/necklace
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/
 
 /datum/gear/accessory/bowtie
 	display_name = "bowtie, horrible"
@@ -52,7 +53,7 @@
 	path = /obj/item/clothing/accessory/bowtie/color
 	flags = GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/accessory/ntaward
+/*/datum/gear/accessory/ntaward
 	display_name = "NanoTrasen award selection"
 	description = "A medal or ribbon awarded to NanoTrasen personnel for significant accomplishments."
 	path = /obj/item/clothing/accessory/medal
@@ -95,4 +96,4 @@
 
 /datum/gear/accessory/armband_nt
 	display_name = "NanoTrasen armband"
-	path = /obj/item/clothing/accessory/armband/whitered
+	path = /obj/item/clothing/accessory/armband/whitered*/

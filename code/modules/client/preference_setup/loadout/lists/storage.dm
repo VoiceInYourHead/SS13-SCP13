@@ -3,7 +3,7 @@
 	category = /datum/gear/storage/
 	slot = slot_tie
 
-/datum/gear/storage/brown_vest
+/*/datum/gear/storage/brown_vest
 	display_name = "webbing, engineering"
 	path = /obj/item/clothing/accessory/storage/brown_vest
 	cost = 3
@@ -66,7 +66,7 @@
 /datum/gear/storage/waistpack/big
 	display_name = "large waist pack"
 	path = /obj/item/weapon/storage/belt/waistpack/big
-	cost = 4
+	cost = 4*/
 
 /datum/gear/accessory/wallet
 	display_name = "wallet, colour select"

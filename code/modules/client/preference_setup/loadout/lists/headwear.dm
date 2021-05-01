@@ -3,15 +3,16 @@
 	slot = slot_head
 	category = /datum/gear/head
 
-/datum/gear/head/beret
+/*/datum/gear/head/beret
 	display_name = "beret, colour select"
 	path = /obj/item/clothing/head/beret/plaincolor
 	flags = GEAR_HAS_COLOR_SELECTION
-	description = "A simple, solid color beret. This one has no emblems or insignia on it."
+	description = "A simple, solid color beret. This one has no emblems or insignia on it."*/
 
 /datum/gear/head/whitentberet
-	display_name = "beret, NanoTrasen security"
+	display_name = "beret, SCP security"
 	path = /obj/item/clothing/head/beret/guard
+	allowed_roles = list(/datum/job/hos,/datum/job/ltofficerhcz,/datum/job/ncoofficerhcz)
 
 /datum/gear/head/bandana
 	display_name = "bandana selection"
@@ -25,10 +26,12 @@
 	display_name = "hair bow, colour select"
 	path = /obj/item/clothing/head/hairflower/bow
 	flags = GEAR_HAS_COLOR_SELECTION
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain,/datum/job/assistant)
 
 /datum/gear/head/cap
 	display_name = "cap selection"
 	path = /obj/item/clothing/head
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain)
 
 /datum/gear/head/cap/New()
 	..()
@@ -38,12 +41,8 @@
 	caps["flat cap"] = /obj/item/clothing/head/flatcap
 	caps["green cap"] = /obj/item/clothing/head/soft/green
 	caps["grey cap"] = /obj/item/clothing/head/soft/grey
-	caps["mailman cap"] = /obj/item/clothing/head/mailman
 	caps["orange cap"] = /obj/item/clothing/head/soft/orange
-	caps["purple cap"] = /obj/item/clothing/head/soft/purple
-	caps["rainbow cap"] = /obj/item/clothing/head/soft/rainbow
 	caps["red cap"] = /obj/item/clothing/head/soft/red
-	caps["white cap"] = /obj/item/clothing/head/soft/mime
 	caps["yellow cap"] = /obj/item/clothing/head/soft/yellow
 	caps["major bill's shipping cap"] = /obj/item/clothing/head/soft/mbill
 	gear_tweaks += new/datum/gear_tweak/path(caps)
@@ -51,6 +50,7 @@
 /datum/gear/head/hairflower
 	display_name = "hair flower pin"
 	path = /obj/item/clothing/head/hairflower
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain,/datum/job/assistant)
 
 /datum/gear/head/hairflower/New()
 	..()
@@ -61,7 +61,7 @@
 	pins["yellow pin"] = /obj/item/clothing/head/hairflower/yellow
 	gear_tweaks += new/datum/gear_tweak/path(pins)
 
-/datum/gear/head/hardhat
+/*/datum/gear/head/hardhat
 	display_name = "hardhat selection"
 	path = /obj/item/clothing/head/hardhat
 	cost = 2
@@ -73,11 +73,12 @@
 	hardhats["orange hardhat"] = /obj/item/clothing/head/hardhat/orange
 	hardhats["red hardhat"] = /obj/item/clothing/head/hardhat/red
 	hardhats["yellow hardhat"] = /obj/item/clothing/head/hardhat
-	gear_tweaks += new/datum/gear_tweak/path(hardhats)
+	gear_tweaks += new/datum/gear_tweak/path(hardhats)*/
 
 /datum/gear/head/formalhat
 	display_name = "formal hat selection"
 	path = /obj/item/clothing/head
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain)
 
 /datum/gear/head/formalhat/New()
 	..()
@@ -95,16 +96,17 @@
 /datum/gear/head/informalhat
 	display_name = "informal hat selection"
 	path = /obj/item/clothing/head
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/bartender,/datum/job/psychiatrist)
 
 /datum/gear/head/informalhat/New()
 	..()
 	var/informalhats = list()
 	informalhats["cowboy hat"] = /obj/item/clothing/head/cowboy_hat
 	informalhats["ushanka"] = /obj/item/clothing/head/ushanka
-	informalhats["TCC ushanka"] = /obj/item/clothing/head/ushanka/tcc
+	informalhats["SPECIAL ushanka, black"] = /obj/item/clothing/head/ushanka/tcc
 	gear_tweaks += new/datum/gear_tweak/path(informalhats)
 
-/datum/gear/head/hijab
+/*/datum/gear/head/hijab
 	display_name = "hijab, colour select"
 	path = /obj/item/clothing/head/hijab
 	flags = GEAR_HAS_COLOR_SELECTION
@@ -131,11 +133,12 @@
 
 /datum/gear/head/surgical/custom
 	display_name = "surgical cap, colour select"
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/
 
 /datum/gear/head/welding
 	display_name = "welding mask selection"
 	path = /obj/item/clothing/head/welding
+	allowed_roles = list(/datum/job/eng,/datum/job/juneng,/datum/job/conteng,/datum/job/chief_engineer)
 
 /datum/gear/head/welding/New()
 	..()

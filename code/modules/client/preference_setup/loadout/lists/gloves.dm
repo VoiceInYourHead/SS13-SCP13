@@ -9,7 +9,7 @@
 	flags = GEAR_HAS_COLOR_SELECTION
 	path = /obj/item/clothing/gloves/color
 
-/datum/gear/gloves/latex
+/*/datum/gear/gloves/latex
 	display_name = "gloves, latex"
 	path = /obj/item/clothing/gloves/latex
 	cost = 3
@@ -21,12 +21,12 @@
 
 /datum/gear/gloves/rainbow
 	display_name = "gloves, rainbow"
-	path = /obj/item/clothing/gloves/rainbow
+	path = /obj/item/clothing/gloves/rainbow*/
 
-/datum/gear/gloves/evening
+/*/datum/gear/gloves/evening
 	display_name = "gloves, evening, colour select"
 	path = /obj/item/clothing/gloves/color/evening
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/
 
 /datum/gear/ring
 	display_name = "ring"
@@ -36,11 +36,6 @@
 /datum/gear/ring/New()
 	..()
 	var/ringtype = list()
-	ringtype["CTI ring"] = /obj/item/clothing/ring/cti
-	ringtype["Mariner University ring"] = /obj/item/clothing/ring/mariner
-	ringtype["engagement ring"] = /obj/item/clothing/ring/engagement
-	ringtype["signet ring"] = /obj/item/clothing/ring/seal/signet
-	ringtype["masonic ring"] = /obj/item/clothing/ring/seal/mason
 	ringtype["ring, steel"] = /obj/item/clothing/ring/material/steel
 	ringtype["ring, bronze"] = /obj/item/clothing/ring/material/bronze
 	ringtype["ring, silver"] = /obj/item/clothing/ring/material/silver

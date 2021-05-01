@@ -2,8 +2,9 @@
 	sort_category = "Uniforms and Casual Dress"
 	slot = slot_w_uniform
 	category = /datum/gear/uniform
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain,/datum/job/surgeon,/datum/job/emt)
 
-/datum/gear/uniform/jumpsuit
+/*/datum/gear/uniform/jumpsuit
 	display_name = "jumpsuit, colour select"
 	path = /obj/item/clothing/under/color
 	flags = GEAR_HAS_COLOR_SELECTION
@@ -20,7 +21,7 @@
 
 /datum/gear/uniform/blackjumpshorts
 	display_name = "black jumpsuit shorts"
-	path = /obj/item/clothing/under/color/blackjumpshorts
+	path = /obj/item/clothing/under/color/blackjumpshorts*/
 
 /datum/gear/uniform/roboticist_skirt
 	display_name = "skirt, roboticist"
@@ -131,7 +132,7 @@
 	path = /obj/item/clothing/under/formal_pants/baggy
 	flags = GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/uniform/shorts
+/*/datum/gear/uniform/shorts
 	display_name = "shorts selection"
 	path = /obj/item/clothing/under/shorts/jeans
 	flags = GEAR_HAS_TYPE_SELECTION
@@ -139,14 +140,14 @@
 /datum/gear/uniform/shorts/custom
 	display_name = "athletic shorts, colour select"
 	path = /obj/item/clothing/under/shorts/
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/
 
 /datum/gear/uniform/turtleneck
 	display_name = "sweater, colour select"
 	path = /obj/item/clothing/under/rank/psych/turtleneck/sweater
 	flags = GEAR_HAS_COLOR_SELECTION
 
-/datum/gear/uniform/corporate
+/*/datum/gear/uniform/corporate
 	display_name = "corporate uniform selection"
 	path = /obj/item/clothing/under
 
@@ -162,15 +163,15 @@
 	corps += /obj/item/clothing/under/grayson
 	corps += /obj/item/clothing/under/focal
 	corps += /obj/item/clothing/under/rank/ntwork
-	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(corps)
+	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(corps)*/
 
 /datum/gear/uniform/sterile
 	display_name = "sterile jumpsuit"
 	path = /obj/item/clothing/under/sterile
 
-/datum/gear/uniform/hazard
+/*/datum/gear/uniform/hazard
 	display_name = "hazard jumpsuit"
-	path = /obj/item/clothing/under/hazard
+	path = /obj/item/clothing/under/hazard*/
 
 /datum/gear/uniform/frontier
 	display_name = "frontier clothes"

@@ -4,18 +4,19 @@
 	category = /datum/gear/clothing/
 	slot = slot_tie
 
-/datum/gear/clothing/flannel
+/*/datum/gear/clothing/flannel
 	display_name = "flannel (colorable)"
 	path = /obj/item/clothing/accessory/toggleable/flannel
 	slot = slot_tie
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/
 
 /datum/gear/clothing/scarf
 	display_name = "scarf"
 	path = /obj/item/clothing/accessory/scarf
 	flags = GEAR_HAS_COLOR_SELECTION
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain,/datum/job/surgeon,/datum/job/emt)
 
-/datum/gear/clothing/hawaii
+/*/datum/gear/clothing/hawaii
 	display_name = "hawaii shirt"
 	path = /obj/item/clothing/accessory/toggleable/hawaii
 
@@ -61,14 +62,15 @@
 /datum/gear/clothing/qipao
 	display_name = "qipao blouse, colour select"
 	path = /obj/item/clothing/accessory/qipao
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/
 
 /datum/gear/clothing/sweater
 	display_name = "turtleneck sweater, colour select"
 	path = /obj/item/clothing/accessory/sweater
 	flags = GEAR_HAS_COLOR_SELECTION
+	allowed_roles = list(/datum/job/seniorscientist,/datum/job/scientist,/datum/job/rd,/datum/job/archivist,/datum/job/o5rep,/datum/job/bartender,/datum/job/psychiatrist,/datum/job/captain,/datum/job/surgeon,/datum/job/emt)
 
-/datum/gear/clothing/tangzhuang
+/*/datum/gear/clothing/tangzhuang
 	display_name = "tangzhuang jacket, colour select"
 	path = /obj/item/clothing/accessory/tangzhuang
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION*/

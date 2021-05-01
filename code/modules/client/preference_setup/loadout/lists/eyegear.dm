@@ -21,10 +21,10 @@
 	glasses["green glasses"] = /obj/item/clothing/glasses/gglasses
 	glasses["hipster glasses"] = /obj/item/clothing/glasses/regular/hipster
 	glasses["monocle"] = /obj/item/clothing/glasses/monocle
-	glasses["scanning goggles"] = /obj/item/clothing/glasses/regular/scanners
+//	glasses["scanning goggles"] = /obj/item/clothing/glasses/regular/scanners
 	gear_tweaks += new/datum/gear_tweak/path(glasses)
 
-/datum/gear/eyes/sciencegoggles
+/*/datum/gear/eyes/sciencegoggles
 	display_name = "Science Goggles"
 	path = /obj/item/clothing/glasses/science
 
@@ -85,6 +85,7 @@
 	display_name = "Material Goggles"
 	path = /obj/item/clothing/glasses/material
 //	allowed_roles = list(/datum/job/chief_engineer, /datum/job/juneng, /datum/job/mining)
+*/
 
 /datum/gear/eyes/shades/
 	display_name = "sunglasses"
@@ -101,6 +102,6 @@
 	path = /obj/item/clothing/glasses/sunglasses/prescription
 	cost = 3
 
-/datum/gear/eyes/hudpatch
+/*/datum/gear/eyes/hudpatch
 	display_name = "iPatch"
-	path = /obj/item/clothing/glasses/eyepatch/hud
+	path = /obj/item/clothing/glasses/eyepatch/hud*/
