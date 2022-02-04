@@ -379,7 +379,7 @@ var/global/datum/controller/gameticker/ticker
 				if(!delay_end)
 					sleep(restart_timeout)
 					if(!delay_end)
-						world.Reboot(ping = TRUE)
+						world.Reboot()
 					else if(!delay_notified)
 						to_world("<span class='notice'><b>An admin has delayed the round end</b></span>")
 				else if(!delay_notified)
@@ -548,10 +548,3 @@ var/global/datum/controller/gameticker/ticker
 					to_world("Attempting to spawn [antag.role_text_plural].")
 
 	return 0
-
-/datum/controller/gameticker/proc/HasRoundStarted()
-	return current_state >= GAME_STATE_PLAYING
-
-
-/datum/controller/gameticker/proc/IsRoundInProgress()
-	return current_state == GAME_STATE_PLAYING

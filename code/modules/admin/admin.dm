@@ -688,7 +688,7 @@ var/global/floorIsLava = 0
 			blackbox.save_all_data_to_sql()
 
 		sleep(50)
-		world.Reboot(ping = TRUE)
+		world.Reboot()
 
 
 /datum/admins/proc/announce()

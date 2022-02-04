@@ -33,27 +33,23 @@
 	var/server_commands_json_path
 	var/reboot_mode = TGS_REBOOT_MODE_NORMAL
 	var/security_level
-
-	var/requesting_new_port = FALSE
-
+	
 	var/list/intercepted_message_queue
-
+	
 	var/list/custom_commands
 
 	var/list/cached_test_merges
 	var/datum/tgs_revision_information/cached_revision
 
+	var/datum/tgs_event_handler/event_handler
+
 	var/export_lock = FALSE
 	var/list/last_interop_response
 
 /datum/tgs_api/v4/ApiVersion()
-	return new /datum/tgs_version("4.0.0.0")
+	return "4.0.0.0"
 
-/datum/tgs_api/v4/OnWorldNew(minimum_required_security_level)
-	if(minimum_required_security_level == TGS_SECURITY_ULTRASAFE)
-		TGS_WARNING_LOG("V4 DMAPI requires safe security!")
-		minimum_required_security_level = TGS_SECURITY_SAFE
-
+/datum/tgs_api/v4/OnWorldNew(datum/tgs_event_handler/event_handler, minimum_required_security_level)
 	json_path = world.params[TGS4_PARAM_INFO_JSON]
 	if(!json_path)
 		TGS_ERROR_LOG("Missing [TGS4_PARAM_INFO_JSON] world parameter!")
@@ -78,6 +74,7 @@
 	security_level = cached_json["securityLevel"]
 	chat_channels_json_path = cached_json["chatChannelsJson"]
 	chat_commands_json_path = cached_json["chatCommandsJson"]
+	src.event_handler = event_handler
 	instance_name = cached_json["instanceName"]
 
 	ListCustomCommands()
@@ -92,7 +89,7 @@
 	var/list/json = cached_json["testMerges"]
 	for(var/entry in json)
 		var/datum/tgs_revision_information/test_merge/tm = new
-		tm.timestamp = text2num(entry["timeMerged"])
+		tm.time_merged = text2num(entry["timeMerged"])
 
 		var/list/revInfo = entry["revision"]
 		if(revInfo)
@@ -104,7 +101,7 @@
 		tm.url = entry["url"]
 		tm.author = entry["author"]
 		tm.number = entry["number"]
-		tm.head_commit = entry["pullRequestRevision"]
+		tm.pull_request_commit = entry["pullRequestRevision"]
 		tm.comment = entry["comment"]
 
 		cached_test_merges += tm
@@ -114,11 +111,18 @@
 /datum/tgs_api/v4/OnInitializationComplete()
 	Export(TGS4_COMM_SERVER_PRIMED)
 
+	var/tgs4_secret_sleep_offline_sauce = 24051994
+	var/old_sleep_offline = world.sleep_offline
+	world.sleep_offline = tgs4_secret_sleep_offline_sauce
+	sleep(1)
+	if(world.sleep_offline == tgs4_secret_sleep_offline_sauce)	//if not someone changed it
+		world.sleep_offline = old_sleep_offline
+
 /datum/tgs_api/v4/OnTopic(T)
 	var/list/params = params2list(T)
 	var/their_sCK = params[TGS4_INTEROP_ACCESS_IDENTIFIER]
 	if(!their_sCK)
-		return FALSE //continue world/Topic
+		return FALSE	//continue world/Topic
 
 	if(their_sCK != access_identifier)
 		return "Invalid comms key!";
@@ -144,8 +148,7 @@
 			if(event_parameters)
 				event_call += event_parameters
 
-			if(event_handler != null)
-				event_handler.HandleEvent(arglist(event_call))
+			event_handler.HandleEvent(arglist(event_call))
 
 			. = json_encode(intercepted_message_queue)
 			intercepted_message_queue = null
@@ -160,45 +163,38 @@
 
 			//the topic still completes, miraculously
 			//I honestly didn't believe byond could do it
-			if(event_handler != null)
-				event_handler.HandleEvent(TGS_EVENT_PORT_SWAP, new_port)
+			event_handler.HandleEvent(TGS_EVENT_PORT_SWAP, new_port)
 			if(!world.OpenPort(new_port))
 				return "Port change failed!"
-			return
 		if(TGS4_TOPIC_CHANGE_REBOOT_MODE)
 			var/new_reboot_mode = text2num(params[TGS4_PARAMETER_DATA])
-			if(event_handler != null)
-				event_handler.HandleEvent(TGS_EVENT_REBOOT_MODE_CHANGE, reboot_mode, new_reboot_mode)
+			event_handler.HandleEvent(TGS_EVENT_REBOOT_MODE_CHANGE, reboot_mode, new_reboot_mode)
 			reboot_mode = new_reboot_mode
 			return
 
 	return "Unknown command: [command]"
 
-/datum/tgs_api/v4/proc/Export(command, list/data, override_requesting_new_port = FALSE)
+/datum/tgs_api/v4/proc/Export(command, list/data)
 	if(!data)
 		data = list()
 	data[TGS4_PARAMETER_COMMAND] = command
 	var/json = json_encode(data)
-
-	while(requesting_new_port && !override_requesting_new_port)
-		sleep(1)
-
+	
 	//we need some port open at this point to facilitate return communication
 	if(!world.port)
-		requesting_new_port = TRUE
 		if(!world.OpenPort(0)) //open any port
 			TGS_ERROR_LOG("Unable to open random port to retrieve new port![TGS4_PORT_CRITFAIL_MESSAGE]")
 			del(world)
 
 		//request a new port
 		export_lock = FALSE
-		var/list/new_port_json = Export(TGS4_COMM_NEW_PORT, list(TGS4_PARAMETER_DATA = "[world.port]"), TRUE) //stringify this on purpose
-
+		var/list/new_port_json = Export(TGS4_COMM_NEW_PORT, list(TGS4_PARAMETER_DATA = "[world.port]"))	//stringify this on purpose
+		
 		if(!new_port_json)
 			TGS_ERROR_LOG("No new port response from server![TGS4_PORT_CRITFAIL_MESSAGE]")
 			del(world)
 
-		var/new_port = new_port_json[TGS4_PARAMETER_DATA]
+		var/new_port = new_port_json["port"]
 		if(!isnum(new_port) || new_port <= 0)
 			TGS_ERROR_LOG("Malformed new port json ([json_encode(new_port_json)])![TGS4_PORT_CRITFAIL_MESSAGE]")
 			del(world)
@@ -206,7 +202,6 @@
 		if(new_port != world.port && !world.OpenPort(new_port))
 			TGS_ERROR_LOG("Unable to open port [new_port]![TGS4_PORT_CRITFAIL_MESSAGE]")
 			del(world)
-		requesting_new_port = FALSE
 
 	while(export_lock)
 		sleep(1)
@@ -230,12 +225,12 @@
 	var/list/result = Export(TGS4_COMM_WORLD_REBOOT)
 	if(!result)
 		return
-
+	
 	//okay so the standard TGS4 proceedure is: right before rebooting change the port to whatever was sent to us in the above json's data parameter
 
 	var/port = result[TGS4_PARAMETER_DATA]
 	if(!isnum(port))
-		return //this is valid, server may just want use to reboot
+		return	//this is valid, server may just want use to reboot
 
 	if(port == 0)
 		//to byond 0 means any port and "none" means close vOv
@@ -248,8 +243,8 @@
 	return instance_name
 
 /datum/tgs_api/v4/TestMerges()
-	return cached_test_merges.Copy()
-
+	return cached_test_merges
+	
 /datum/tgs_api/v4/EndProcess()
 	Export(TGS4_COMM_END_PROCESS)
 
@@ -263,26 +258,21 @@
 		for(var/I in channels)
 			var/datum/tgs_chat_channel/channel = I
 			ids += channel.id
-	message = list("message" = message, "channelIds" = ids)
+	message = list("message" = message, "channels" = ids)
 	if(intercepted_message_queue)
 		intercepted_message_queue += list(message)
 	else
 		Export(TGS4_COMM_CHAT, message)
 
 /datum/tgs_api/v4/ChatTargetedBroadcast(message, admin_only)
-	var/list/channels = list()
-	for(var/I in ChatChannelInfo())
-		var/datum/tgs_chat_channel/channel = I
-		if (!channel.is_private_channel && ((channel.is_admin_channel && admin_only) || (!channel.is_admin_channel && !admin_only)))
-			channels += channel.id
-	message = list("message" = message, "channelIds" = channels)
+	message = list("message" = message, "channels" = admin_only ? "admin" : "game")
 	if(intercepted_message_queue)
 		intercepted_message_queue += list(message)
 	else
 		Export(TGS4_COMM_CHAT, message)
 
 /datum/tgs_api/v4/ChatPrivateMessage(message, datum/tgs_chat_user/user)
-	message = list("message" = message, "channelIds" = list(user.channel.id))
+	message = list("message" = message, "user" = list("id" = user.id, "channel" = user.channel.id))
 	if(intercepted_message_queue)
 		intercepted_message_queue += list(message)
 	else
@@ -307,3 +297,30 @@
 
 /datum/tgs_api/v4/SecurityLevel()
 	return security_level
+
+/*
+The MIT License
+
+Copyright (c) 2017 Jordan Brown
+
+Permission is hereby granted, free of charge,
+to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to
+deal in the Software without restriction, including
+without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom
+the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/

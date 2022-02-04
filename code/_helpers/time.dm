@@ -120,8 +120,3 @@ GLOBAL_VAR_INIT(rollovercheck_last_timeofday, 0)
 	while (world.tick_usage > min(TICK_LIMIT_TO_RUN, Master.current_ticklimit))
 
 #undef DELTA_CALC
-
-/proc/gameTimestamp(format = "hh:mm:ss", wtime = null)
-	if(!wtime)
-		wtime = world.time
-	return time2text(wtime - GLOB.timezoneOffset, format)
