@@ -6,6 +6,7 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 	var/list/surnames = list()
 	var/list/forenames = list()
 	var/list/ckeys = list()
+	var/pure_msg = msg
 
 	//explode the input msg into a list
 	var/list/msglist = splittext(msg, " ")
@@ -58,8 +59,9 @@ var/list/adminhelp_ignored_words = list("unknown","the","a","an","of","monkey","
 								msg += " <A HREF='?_src_=holder;adminchecklaws=\ref[mob]'>(CL)</A>"
 							msg += "</b> "
 							continue
-		msg += "[original_word] "
+			msg += "[original_word] "
 
+	msg = pure_msg
 	return msg
 
 /client/verb/adminhelp()
