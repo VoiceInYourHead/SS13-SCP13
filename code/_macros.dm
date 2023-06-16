@@ -104,6 +104,8 @@
 
 #define isscp173(A) istype(A, /mob/living/scp_173)
 
+#define isscpUNK(A) istype(A, /mob/living/carbon/human/scp_unk)
+
 #define isunderwear(A) istype(A, /obj/item/underwear)
 
 #define isvirtualmob(A) istype(A, /mob/observer/virtual)

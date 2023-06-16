@@ -185,6 +185,11 @@
 			L.adjust_fire_stacks(-(amount / 10))
 			remove_self(amount)
 
+	if(istype(L, /mob/living/scp_457))
+		L.adjustBruteLoss(amount * 2)
+		to_chat(L, "<span class = 'danger'>FUEL LESSENS, MAKE THEM PAY...</span>")
+		remove_self(amount)
+
 /datum/reagent/water/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
 	if(!istype(M, /mob/living/carbon/slime) && alien != IS_SLIME)
 		return

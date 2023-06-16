@@ -977,8 +977,13 @@
 	icon_state = "research"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
-/area/site53/lhcz/scp035room
-	name = "\improper SCP-035 Containment Chamber"
+/area/site53/lhcz/scpXXXroom
+	name = "\improper SCP-XXX Containment Chamber"
+	icon_state = "research"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
+/area/site53/uhcz/scp457containment
+	name = "\improper SCP-457 Containment Chamber"
 	icon_state = "research"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 

@@ -347,6 +347,11 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			if (!M.client)
 				scps += M
 
+		for (var/scp_unk in GLOB.scpUNKNOWNs)
+			var/mob/M = scp_unk
+			if (!M.client)
+				scps += M
+
 		// no whitelist required
 		for (var/scp173 in GLOB.scp173s)
 			var/mob/M = scp173

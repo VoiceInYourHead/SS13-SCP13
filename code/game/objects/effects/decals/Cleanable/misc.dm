@@ -39,6 +39,16 @@
 	icon_state = "dirt"
 	mouse_opacity = 0
 
+/obj/effect/decal/cleanable/black_goo
+	name = "goo"
+	desc = "Someone should clean that up."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "goo"
+	mouse_opacity = 0
+
 /obj/effect/decal/cleanable/flour
 	name = "flour"
 	desc = "It's still good. Four second rule!"

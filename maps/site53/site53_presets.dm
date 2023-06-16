@@ -7,7 +7,8 @@ var/const/NETWORK_049			= "SCP-049 CCTV Network"
 var/const/NETWORK_106			= "SCP-106 CCTV Network"
 var/const/NETWORK_173			= "SCP-173 CCTV Network"
 var/const/NETWORK_012			= "SCP-012 CCTV Network"
-var/const/NETWORK_035			= "SCP-035 CCTV Network"
+var/const/NETWORK_XXX			= "SCP-XXX CCTV Network"
+var/const/NETWORK_457			= "SCP-457 CCTV Network"
 var/const/NETWORK_343			= "SCP-343 CCTV Network"
 var/const/NETWORK_895			= "SCP-895 CCTV Network (CAUTION!)"
 
@@ -29,7 +30,7 @@ var/const/NETWORK_895			= "SCP-895 CCTV Network (CAUTION!)"
 			return access_sciencelvl1
 		if(NETWORK_173)
 			return access_sciencelvl1
-		if(NETWORK_035)
+		if(NETWORK_XXX)
 			return access_sciencelvl1
 		if(NETWORK_343)
 			return access_sciencelvl1
@@ -52,8 +53,10 @@ var/const/NETWORK_895			= "SCP-895 CCTV Network (CAUTION!)"
 		NETWORK_173,
 		NETWORK_012,
 		NETWORK_895,
-		NETWORK_035,
-		NETWORK_343
+		NETWORK_XXX,
+		NETWORK_343,
+		NETWORK_XXX,
+		NETWORK_457
 	)
 
 //
@@ -76,11 +79,17 @@ var/const/NETWORK_895			= "SCP-895 CCTV Network (CAUTION!)"
 /obj/machinery/camera/network/scp513
 	network = list(NETWORK_513)
 
-/obj/machinery/camera/network/scp035
-	network = list(NETWORK_035)
+/obj/machinery/camera/network/scpXXX
+	network = list(NETWORK_XXX)
 
 /obj/machinery/camera/network/scp343
 	network = list(NETWORK_343)
+
+/obj/machinery/camera/network/scpXXX
+	network = list(NETWORK_XXX)
+
+/obj/machinery/camera/network/scp457
+	network = list(NETWORK_457)
 
 /obj/machinery/camera/network/engine
 	network = list(NETWORK_ENGINE)
